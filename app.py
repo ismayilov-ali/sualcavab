@@ -3,7 +3,7 @@ import random
 import os
 
 app = Flask(__name__)
-app.secret_key = "test_key_12345" # Təhlükəsizlik üçün sessiya açarı
+app.secret_key = "bomba_acar"
 
 BUTUN_SUALAR = []
 
@@ -30,12 +30,10 @@ def suallari_yukle():
     except FileNotFoundError:
         BUTUN_SUALAR = []
 
-# Proqram başlayanda sualları yükləyirik
 suallari_yukle()
 
 @app.after_request
 def add_header(response):
-    # Brauzerin köhnə nəticə səhifəsini yaddaşda saxlamasına icazə vermirik
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
     response.headers["Pragma"] = "no-cache"
     response.headers["Expires"] = "0"
@@ -43,15 +41,20 @@ def add_header(response):
 
 @app.route('/')
 def index():
-    # Yenidən başla funksiyası üçün sessiyanı tam təmizləyirik
     session.clear()
-    if not BUTUN_SUALAR:
-        suallari_yukle()
+    return render_template('index.html', mode_selection=True)
+
+@app.route('/start/<mode>')
+def start_quiz(mode):
+    session.clear()
+    if not BUTUN_SUALAR: suallari_yukle()
     
-    # Kuki limitini aşmamaq üçün yalnız ID-ləri saxlayırıq
     indeksler = list(range(len(BUTUN_SUALAR)))
-    secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
-    
+    if mode == 'random':
+        secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
+    else:
+        secilmis_indeksler = indeksler
+
     session['sual_idleri'] = secilmis_indeksler
     session['current_index'] = 0
     session['cavablar'] = []
@@ -59,8 +62,7 @@ def index():
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    if 'sual_idleri' not in session:
-        return redirect(url_for('index'))
+    if 'sual_idleri' not in session: return redirect(url_for('index'))
 
     curr_idx = session['current_index']
     sual_idleri = session['sual_idleri']
@@ -69,8 +71,7 @@ def quiz():
         cavab = request.form.get('cavab', '').strip()
         if cavab:
             sual_id = sual_idleri[curr_idx]
-            original_sual = BUTUN_SUALAR[sual_id][0]
-            sual_no = original_sual.split('.')[0]
+            sual_no = BUTUN_SUALAR[sual_id][0].split('.')[0]
             
             cavablar = list(session.get('cavablar', []))
             cavablar.append(f"{sual_no}. {cavab}")

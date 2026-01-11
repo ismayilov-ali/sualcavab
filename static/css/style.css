@@ -1,144 +1,32 @@
-/* Rəng dəyişənləri - İlkin rejim Light */
 :root {
-    --bg-color: #f4f4f9;
-    --container-bg: #ffffff;
-    --text-color: #333333;
-    --sual-bg: #f9f9f9;
-    --input-border: #dddddd;
-    --btn-bg: #4CAF50;
-    --btn-hover: #45a049;
+    --bg-color: #f4f4f9; --container-bg: #ffffff; --text-color: #333;
+    --sual-bg: #f9f9f9; --input-border: #ddd; --btn-bg: #4CAF50; --btn-hover: #45a049;
 }
-
-/* Dark Mode üçün rəng dəyişənləri */
 body[data-theme="dark"] {
-    --bg-color: #121212;
-    --container-bg: #1e1e1e;
-    --text-color: #e4e6eb;
-    --sual-bg: #2d2d2d;
-    --input-border: #404040;
-    --btn-bg: #2ecc71;
-    --btn-hover: #27ae60;
+    --bg-color: #121212; --container-bg: #1e1e1e; --text-color: #e4e6eb;
+    --sual-bg: #2d2d2d; --input-border: #404040; --btn-bg: #2ecc71; --btn-hover: #27ae60;
 }
-
 body { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    background: var(--bg-color); 
-    color: var(--text-color);
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    margin: 0; 
-    transition: background 0.3s ease; 
+    font-family: 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-color);
+    display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; transition: background 0.3s;
 }
-
-/* Konteynerin ölçülərini böyütdük */
 .quiz-container { 
-    background: var(--container-bg); 
-    padding: 40px; 
-    border-radius: 16px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
-    width: 95%;
-    max-width: 800px; /* Genişliyi 450px-dən 800px-ə qaldırdıq */
-    text-align: center;
-    position: relative;
-    transition: background 0.3s ease, transform 0.2s ease;
+    background: var(--container-bg); padding: 40px; border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 95%; max-width: 800px; text-align: center; position: relative;
 }
-
-.theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid var(--input-border);
-    color: var(--text-color);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    transition: 0.2s;
-}
-
-.theme-toggle:hover {
-    background: rgba(128, 128, 128, 0.1);
-}
-
-/* Sual bloku və yazı ölçülərini artırdıq */
-.sual-text { 
-    text-align: left; 
-    background: var(--sual-bg); 
-    padding: 30px; 
-    border-radius: 12px; 
-    margin: 25px 0; 
-    font-size: 1.4em; /* Yazıları daha iri və oxunaqlı etdik */
-    line-height: 1.6;
-    border-left: 6px solid var(--btn-bg);
-}
-
-/* Cavab yazılan hissəni böyütdük */
-input[type="text"] { 
-    width: 100%; 
-    padding: 15px; 
-    margin-bottom: 25px; 
-    border: 2px solid var(--input-border); 
-    border-radius: 8px; 
-    box-sizing: border-box; 
-    background: var(--container-bg);
-    color: var(--text-color);
-    font-size: 1.2em;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-    border-color: var(--btn-bg);
-}
-
-/* Düyməni böyütdük */
-.main-btn { 
-    background: var(--btn-bg); 
-    color: white; 
-    border: none; 
-    padding: 15px 30px; 
-    border-radius: 8px; 
-    cursor: pointer; 
-    font-size: 1.2em; 
-    width: 100%;
-    font-weight: bold;
-    transition: 0.2s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.main-btn:hover { 
-    background: var(--btn-hover); 
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.main-btn:disabled {
-    background: #888 !important;
-    cursor: not-allowed;
-    transform: none;
-}
-
-.result-list { 
-    text-align: left; 
-    list-style: none; 
-    padding: 0; 
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.result-list li { 
-    padding: 15px; 
-    border-bottom: 1px solid var(--input-border); 
-    font-size: 1.1em;
-}
-
-/* Sual nömrəsi p teqi üçün */
-.quiz-container p:first-of-type {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--btn-bg);
-}
+.theme-toggle { position: absolute; top: 15px; right: 15px; cursor: pointer; background: none; border: 1px solid var(--input-border); color: var(--text-color); padding: 5px 12px; border-radius: 20px; font-size: 0.85em; }
+.mode-buttons { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.mode-random { background-color: #3498db !important; }
+.quiz-container p:first-of-type { font-size: 1.2em; font-weight: bold; color: var(--btn-bg); }
+.sual-text { text-align: left; background: var(--sual-bg); padding: 30px; border-radius: 12px; margin: 25px 0; font-size: 1.4em; line-height: 1.6; border-left: 6px solid var(--btn-bg); }
+input[type="text"] { width: 100%; padding: 15px; margin-bottom: 25px; border: 2px solid var(--input-border); border-radius: 8px; background: var(--container-bg); color: var(--text-color); font-size: 1.2em; box-sizing: border-box; outline: none; }
+input[type="text"]:focus { border-color: var(--btn-bg); }
+.main-btn { width: 100%; padding: 15px; background: var(--btn-bg); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2em; font-weight: bold; transition: 0.2s; text-transform: uppercase; }
+.main-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.main-btn:disabled { background: #888 !important; cursor: not-allowed; transform: none; }
+.quiz-controls { display: flex; gap: 10px; margin-top: 15px; }
+.control-btn { flex: 1; padding: 12px; border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; font-size: 0.9em; }
+.view-results { background: #f39c12; }
+.restart-quiz { background: #95a5a6; }
+.result-list { text-align: left; list-style: none; padding: 0; max-height: 400px; overflow-y: auto; }
+.result-list li { padding: 15px; border-bottom: 1px solid var(--input-border); font-size: 1.1em; }

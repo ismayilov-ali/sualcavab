@@ -9,46 +9,61 @@
 <body>
     <script>
         (function() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                document.body.setAttribute('data-theme', 'dark');
-            }
+            if (localStorage.getItem('theme') === 'dark') document.body.setAttribute('data-theme', 'dark');
         })();
     </script>
 
     <div class="quiz-container">
         <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙 Dark Mode</button>
 
-        {% if result %}
-            <h2>Nəticə</h2>
+        {% if mode_selection %}
+            <h2>Xoş Gəlmisiniz!</h2>
+            <p>Rejim seçin:</p>
+            <div class="mode-buttons">
+                <button class="main-btn" onclick="window.location.href='/start/order'">Sıra ilə</button>
+                <button class="main-btn mode-random" onclick="window.location.href='/start/random'">Təsadüfi (25 Sual)</button>
+            </div>
+
+        {% elif result %}
+            <h2>Sizin Cavablarınız</h2>
             <ul class="result-list">
                 {% for c in cavablar %}
                     <li>{{ c }}</li>
                 {% endfor %}
             </ul>
-            <button class="main-btn" onclick="window.location.href='/'">Yenidən Başla</button>
-        {% else %}
-            <p style="font-weight: bold; color: var(--btn-bg);">Sual {{ no }} / {{ total }}</p>
-            <div class="sual-text">
-                {% for line in sual %}
-                    {{ line }}<br>
-                {% endfor %}
+
+            <div class="result-controls" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                {# Əgər quiz bitməyibsə "Davam Et" düyməsini göstər #}
+                {% if not is_finished %}
+                    <button class="main-btn" style="background-color: #3498db;" onclick="window.location.href='/quiz'">
+                        ▶ Yazmağa Davam Et
+                    </button>
+                {% endif %}
+
+                <button class="main-btn" onclick="window.location.href='/'">
+                    🏠 Ana Səhifə (Yenidən Başla)
+                </button>
             </div>
-            
+
+        {% else %}
+            <p class="quiz-status">Sual {{ no }} / {{ total }}</p>
+            <div class="sual-text">
+                {% for line in sual %}{{ line }}<br>{% endfor %}
+            </div>
             <form method="POST" id="quizForm">
                 <input type="text" name="cavab" id="cavabInput" placeholder="Cavabınızı yazın..." required autofocus autocomplete="off">
                 <button type="submit" class="main-btn" id="submitBtn">Növbəti Sual</button>
             </form>
+            <div class="quiz-controls">
+                <button class="control-btn view-results" onclick="window.location.href='/result'">📋 Cavablar</button>
+                <button class="control-btn restart-quiz" onclick="window.location.href='/'">🏠 Menyu</button>
+            </div>
         {% endif %}
     </div>
 
     <script>
-        const btn = document.getElementById('themeBtn');
-        const quizForm = document.getElementById('quizForm');
-        const submitBtn = document.getElementById('submitBtn');
-
         function updateButtonText() {
-            btn.innerText = document.body.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
+            document.getElementById('themeBtn').innerText = document.body.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
         }
         updateButtonText();
 
@@ -63,11 +78,12 @@
             updateButtonText();
         }
 
+        const quizForm = document.getElementById('quizForm');
         if (quizForm) {
-            quizForm.addEventListener('submit', function() {
-                submitBtn.disabled = true;
-                submitBtn.innerText = "Gözləyin...";
-                submitBtn.style.opacity = "0.7";
+            quizForm.addEventListener('submit', () => {
+                const btn = document.getElementById('submitBtn');
+                btn.disabled = true;
+                btn.innerText = "Yüklənir...";
             });
         }
     </script>
