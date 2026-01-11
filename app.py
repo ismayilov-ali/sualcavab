@@ -3,7 +3,7 @@ import random
 import os
 
 app = Flask(__name__)
-app.secret_key = "cox_gizli_bir_acar"
+app.secret_key = "test_key_12345" # Təhlükəsizlik üçün sessiya açarı
 
 BUTUN_SUALAR = []
 
@@ -30,17 +30,28 @@ def suallari_yukle():
     except FileNotFoundError:
         BUTUN_SUALAR = []
 
+# Proqram başlayanda sualları yükləyirik
 suallari_yukle()
+
+@app.after_request
+def add_header(response):
+    # Brauzerin köhnə nəticə səhifəsini yaddaşda saxlamasına icazə vermirik
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
 
 @app.route('/')
 def index():
+    # Yenidən başla funksiyası üçün sessiyanı tam təmizləyirik
+    session.clear()
     if not BUTUN_SUALAR:
         suallari_yukle()
     
+    # Kuki limitini aşmamaq üçün yalnız ID-ləri saxlayırıq
     indeksler = list(range(len(BUTUN_SUALAR)))
     secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
     
-    session.clear()
     session['sual_idleri'] = secilmis_indeksler
     session['current_index'] = 0
     session['cavablar'] = []
@@ -64,7 +75,6 @@ def quiz():
             cavablar = list(session.get('cavablar', []))
             cavablar.append(f"{sual_no}. {cavab}")
             session['cavablar'] = cavablar
-            
             session['current_index'] = curr_idx + 1
             session.modified = True
             
@@ -74,11 +84,7 @@ def quiz():
 
     if curr_idx < len(sual_idleri):
         sual_id = sual_idleri[curr_idx]
-        return render_template('index.html', 
-                               sual=BUTUN_SUALAR[sual_id], 
-                               no=curr_idx + 1, 
-                               total=len(sual_idleri))
-    
+        return render_template('index.html', sual=BUTUN_SUALAR[sual_id], no=curr_idx+1, total=len(sual_idleri))
     return redirect(url_for('result'))
 
 @app.route('/result')

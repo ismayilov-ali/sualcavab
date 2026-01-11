@@ -26,9 +26,7 @@
                     <li>{{ c }}</li>
                 {% endfor %}
             </ul>
-            <a href="{{ url_for('index') }}" style="text-decoration: none;">
-                <button class="main-btn">Yenidən Başla</button>
-            </a>
+            <button class="main-btn" onclick="window.location.href='/'">Yenidən Başla</button>
         {% else %}
             <p style="font-weight: bold; color: var(--btn-bg);">Sual {{ no }} / {{ total }}</p>
             <div class="sual-text">
@@ -48,9 +46,7 @@
         const btn = document.getElementById('themeBtn');
         const quizForm = document.getElementById('quizForm');
         const submitBtn = document.getElementById('submitBtn');
-        const cavabInput = document.getElementById('cavabInput');
 
-        // 1. Tema İdarəetməsi
         function updateButtonText() {
             btn.innerText = document.body.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
         }
@@ -67,7 +63,6 @@
             updateButtonText();
         }
 
-        // 2. Donma və Təkrar Göndərmənin Qarşısını Alma
         if (quizForm) {
             quizForm.addEventListener('submit', function() {
                 submitBtn.disabled = true;
