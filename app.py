@@ -3,9 +3,12 @@ import random
 import os
 
 app = Flask(__name__)
-app.secret_key = "gizli_acar_buraya"
+app.secret_key = "cox_gizli_bir_acar"
 
-def duzsual():
+BUTUN_SUALAR = []
+
+def suallari_yukle():
+    global BUTUN_SUALAR
     sualar_path = os.path.join("txt", "sualar.txt")
     try:
         with open(sualar_path, "r", encoding="utf-8") as f:
@@ -23,43 +26,58 @@ def duzsual():
                 else:
                     alt_sualar.append(line)
             if alt_sualar: sualar.append(alt_sualar)
-        return sualar
+        BUTUN_SUALAR = sualar
     except FileNotFoundError:
-        return []
+        BUTUN_SUALAR = []
+
+suallari_yukle()
 
 @app.route('/')
 def index():
-    butun_sualar = duzsual()
-    secilmis = random.sample(butun_sualar, min(len(butun_sualar), 5))
+    if not BUTUN_SUALAR:
+        suallari_yukle()
     
-    session['sualar'] = secilmis
+    indeksler = list(range(len(BUTUN_SUALAR)))
+    secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
+    
+    session.clear()
+    session['sual_idleri'] = secilmis_indeksler
     session['current_index'] = 0
     session['cavablar'] = []
-    
     return redirect(url_for('quiz'))
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    if 'sualar' not in session:
+    if 'sual_idleri' not in session:
         return redirect(url_for('index'))
 
-    index = session['current_index']
-    sualar = session['sualar']
+    curr_idx = session['current_index']
+    sual_idleri = session['sual_idleri']
 
     if request.method == 'POST':
-        cavab = request.form.get('cavab')
+        cavab = request.form.get('cavab', '').strip()
         if cavab:
-            session['cavablar'].append(cavab)
-            session['current_index'] += 1
+            sual_id = sual_idleri[curr_idx]
+            original_sual = BUTUN_SUALAR[sual_id][0]
+            sual_no = original_sual.split('.')[0]
+            
+            cavablar = list(session.get('cavablar', []))
+            cavablar.append(f"{sual_no}. {cavab}")
+            session['cavablar'] = cavablar
+            
+            session['current_index'] = curr_idx + 1
             session.modified = True
             
-            if session['current_index'] >= len(sualar):
+            if session['current_index'] >= len(sual_idleri):
                 return redirect(url_for('result'))
             return redirect(url_for('quiz'))
 
-    if index < len(sualar):
-        hazirki_sual = sualar[index]
-        return render_template('index.html', sual=hazirki_sual, no=index+1, total=len(sualar))
+    if curr_idx < len(sual_idleri):
+        sual_id = sual_idleri[curr_idx]
+        return render_template('index.html', 
+                               sual=BUTUN_SUALAR[sual_id], 
+                               no=curr_idx + 1, 
+                               total=len(sual_idleri))
     
     return redirect(url_for('result'))
 
