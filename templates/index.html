@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sual-Cavab Veb App</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .quiz-container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 400px; text-align: center; }
+        h2 { color: #333; }
+        .sual-text { text-align: left; background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 1.1em; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1em; }
+        button:hover { background: #45a049; }
+        .result-list { text-align: left; list-style: none; padding: 0; }
+        .result-list li { padding: 8px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    {% if result %}
+        <h2>Nəticə</h2>
+        <p>Suallar bitdi! Cavablarınız:</p>
+        <ul class="result-list">
+            {% for c in cavablar %}
+                <li><strong>{{ loop.index }}.</strong> {{ c }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('index') }}"><button>Yenidən Başla</button></a>
+    {% else %}
+        <p>Sual {{ no }} / {{ total }}</p>
+        <div class="sual-text">
+            {% for line in sual %}
+                {{ line }}<br>
+            {% endfor %}
+        </div>
+        <form method="POST">
+            <input type="text" name="cavab" placeholder="Cavabınızı yazın..." required autofocus autocomplete="off">
+            <button type="submit">Növbəti Sual</button>
+        </form>
+    {% endif %}
+</div>
+
+</body>
+</html>
