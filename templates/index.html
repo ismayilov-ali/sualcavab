@@ -18,55 +18,72 @@
 
         {% if mode_selection %}
             <h2>Xoş Gəlmisiniz!</h2>
-            <p>Rejim seçin:</p>
             <div class="mode-buttons">
-                <button class="main-btn" onclick="window.location.href='/start/order'">Sıra ilə</button>
-                <button class="main-btn mode-random" onclick="window.location.href='/start/random'">Təsadüfi (25 Sual)</button>
+                <div style="margin-bottom: 15px; background: var(--sual-bg); padding: 15px; border-radius: 10px;">
+                    <label for="start_no" style="display: block; margin-bottom: 8px; font-weight: bold;">Neçənci sualdan başlasın?</label>
+                    <input type="number" id="start_no" value="1" min="1" max="{{ total_available }}" 
+                           style="width: 100px; padding: 10px; border-radius: 8px; border: 2px solid var(--btn-bg); text-align: center; font-size: 1.1em; background: var(--container-bg); color: var(--text-color);">
+                    <p style="font-size: 0.8em; margin-top: 5px; color: #888;">Cəmi sual: {{ total_available }}</p>
+                </div>
+
+                <button class="main-btn" onclick="startFrom()">Sıra ilə Başla</button>
+                <button class="main-btn mode-random" style="margin-top: 10px;" onclick="window.location.href='/start/random'">Təsadüfi (25 Sual)</button>
             </div>
+
+            <script>
+                function startFrom() {
+                    const startNo = document.getElementById('start_no').value || 1;
+                    window.location.href = '/start/order?start=' + startNo;
+                }
+            </script>
 
         {% elif result %}
-            <h2>Sizin Cavablarınız</h2>
-            <ul class="result-list">
-                {% for c in cavablar %}
-                    <li>{{ c }}</li>
-                {% endfor %}
-            </ul>
-
-            <div class="result-controls" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
-                {# Əgər quiz bitməyibsə "Davam Et" düyməsini göstər #}
-                {% if not is_finished %}
-                    <button class="main-btn" style="background-color: #3498db;" onclick="window.location.href='/quiz'">
-                        ▶ Yazmağa Davam Et
-                    </button>
-                {% endif %}
-
-                <button class="main-btn" onclick="window.location.href='/'">
-                    🏠 Ana Səhifə (Yenidən Başla)
-                </button>
+            <h2>Nəticələr</h2>
+            <div class="stats" style="margin-bottom: 20px; font-weight: bold; font-size: 1.2em;">
+                Düz: <span style="color: #2ecc71;">{{ cavablar|selectattr('status', 'equalto', True)|list|length }}</span> | 
+                Səhv: <span style="color: #e74c3c;">{{ cavablar|selectattr('status', 'equalto', False)|list|length }}</span>
+            </div>
+            <div class="result-list-container" style="max-height: 400px; overflow-y: auto; margin-bottom: 20px; border-radius: 8px;">
+                <ul class="result-list" style="list-style: none; padding: 0;">
+                    {% for c in cavablar %}
+                        <li style="border-left: 5px solid {{ '#2ecc71' if c.status else '#e74c3c' }}; margin-bottom: 8px; background: var(--sual-bg); padding: 15px; border-radius: 4px; text-align: left;">
+                            <strong>Sual {{ c.no }}:</strong> Sizin cavab: <b>{{ c.user.upper() }}</b> 
+                            {% if not c.status %} | Düzgün: <b style="color: #2ecc71;">{{ c.correct.upper() }}</b>{% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
 
+            <div class="result-controls" style="display: flex; flex-direction: column; gap: 10px;">
+                {% if not is_finished %}
+                    <button class="main-btn" style="background-color: #3498db;" onclick="window.location.href='/quiz'">
+                        ✍️ Davam et
+                    </button>
+                {% endif %}
+                <button class="main-btn" onclick="window.location.href='/'">🏠 Ana Səhifə</button>
+            </div>
+            
         {% else %}
             <p class="quiz-status">Sual {{ no }} / {{ total }}</p>
+            <div style="margin-bottom: 10px; font-weight: bold;">
+                Düz: <span style="color: #2ecc71;">{{ duz_sayi }}</span> | 
+                Səhv: <span style="color: #e74c3c;">{{ sehv_sayi }}</span>
+            </div>
             <div class="sual-text">
                 {% for line in sual %}{{ line }}<br>{% endfor %}
             </div>
             <form method="POST" id="quizForm">
                 <input type="text" name="cavab" id="cavabInput" placeholder="Cavabınızı yazın..." required autofocus autocomplete="off">
-                <button type="submit" class="main-btn" id="submitBtn">Növbəti Sual</button>
+                <button type="submit" class="main-btn" id="submitBtn">Təsdiqlə</button>
             </form>
-            <div class="quiz-controls">
-                <button class="control-btn view-results" onclick="window.location.href='/result'">📋 Cavablar</button>
-                <button class="control-btn restart-quiz" onclick="window.location.href='/'">🏠 Menyu</button>
+            <div class="quiz-controls" style="margin-top: 20px; display: flex; gap: 10px;">
+                <button class="control-btn view-results" style="flex: 1; padding: 10px; cursor: pointer;" onclick="window.location.href='/result'">📋 Nəticələr</button>
+                <button class="control-btn restart-quiz" style="flex: 1; padding: 10px; cursor: pointer;" onclick="window.location.href='/'">🏠 Menyu</button>
             </div>
         {% endif %}
     </div>
 
     <script>
-        function updateButtonText() {
-            document.getElementById('themeBtn').innerText = document.body.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
-        }
-        updateButtonText();
-
         function toggleTheme() {
             if (document.body.hasAttribute('data-theme')) {
                 document.body.removeAttribute('data-theme');
@@ -75,7 +92,7 @@
                 document.body.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
             }
-            updateButtonText();
+            document.getElementById('themeBtn').innerText = document.body.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
         }
 
         const quizForm = document.getElementById('quizForm');
@@ -83,7 +100,7 @@
             quizForm.addEventListener('submit', () => {
                 const btn = document.getElementById('submitBtn');
                 btn.disabled = true;
-                btn.innerText = "Yüklənir...";
+                btn.innerText = "Yoxlanılır...";
             });
         }
     </script>
