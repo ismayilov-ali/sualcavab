@@ -1,56 +1,311 @@
+/* ========================================
+   CSS VARİABLES
+======================================== */
 :root {
-    --bg-color: #f4f4f9; --container-bg: #ffffff; --text-color: #333;
-    --sual-bg: #f9f9f9; --input-border: #ddd; --btn-bg: #4CAF50; --btn-hover: #45a049;
+    /* Light theme */
+    --bg-color: #f4f4f9;
+    --container-bg: #ffffff;
+    --text-color: #333;
+    --sual-bg: #f9f9f9;
+    --input-border: #ddd;
+    --btn-bg: #4CAF50;
+    --btn-hover: #45a049;
 }
+
 body[data-theme="dark"] {
-    --bg-color: #121212; --container-bg: #1e1e1e; --text-color: #e4e6eb;
-    --sual-bg: #2d2d2d; --input-border: #404040; --btn-bg: #2ecc71; --btn-hover: #27ae60;
+    /* Dark theme */
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e4e6eb;
+    --sual-bg: #2d2d2d;
+    --input-border: #404040;
+    --btn-bg: #2ecc71;
+    --btn-hover: #27ae60;
 }
-body { 
-    font-family: 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-color);
-    display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; transition: background 0.3s;
+
+
+/* ========================================
+   ƏSAS LAYİHƏ
+======================================== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s;
 }
-.quiz-container { 
-    background: var(--container-bg); padding: 40px; border-radius: 16px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); width: 95%; max-width: 800px; text-align: center; position: relative;
+
+.quiz-container {
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
 }
-.theme-toggle { position: absolute; top: 15px; right: 15px; cursor: pointer; background: none; border: 1px solid var(--input-border); color: var(--text-color); padding: 5px 12px; border-radius: 20px; font-size: 0.85em; }
-.mode-buttons { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
-.mode-random { background-color: #3498db !important; }
-.quiz-container p:first-of-type { font-size: 1.2em; font-weight: bold; color: var(--btn-bg); }
-.sual-text { text-align: left; background: var(--sual-bg); padding: 30px; border-radius: 12px; margin: 25px 0; font-size: 1.4em; line-height: 1.6; border-left: 6px solid var(--btn-bg); }
-input[type="text"] { width: 100%; padding: 15px; margin-bottom: 25px; border: 2px solid var(--input-border); border-radius: 8px; background: var(--container-bg); color: var(--text-color); font-size: 1.2em; box-sizing: border-box; outline: none; }
-input[type="text"]:focus { border-color: var(--btn-bg); }
-.main-btn { width: 100%; padding: 15px; background: var(--btn-bg); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.2em; font-weight: bold; transition: 0.2s; text-transform: uppercase; }
-.main-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
-.main-btn:disabled { background: #888 !important; cursor: not-allowed; transform: none; }
-.quiz-controls { display: flex; gap: 10px; margin-top: 15px; }
-.control-btn { flex: 1; padding: 12px; border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: bold; font-size: 0.9em; }
-.view-results { background: #f39c12; }
-.restart-quiz { background: #95a5a6; }
-.result-list { text-align: left; list-style: none; padding: 0; max-height: 400px; overflow-y: auto; }
-.result-list li { padding: 15px; border-bottom: 1px solid var(--input-border); font-size: 1.1em; }
-/* Nəticələr siyahısı üçün xüsusi stillər */
+
+
+/* ========================================
+   THEME TOGGLE
+======================================== */
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    background: var(--sual-bg);
+}
+
+
+/* ========================================
+   MODE SEÇİMİ
+======================================== */
+.mode-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.start-number-section {
+    background: var(--sual-bg);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.start-number-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.start-number-input {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--btn-bg);
+    text-align: center;
+    font-size: 1.1em;
+    background: var(--container-bg);
+    color: var(--text-color);
+}
+
+.total-questions {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #888;
+}
+
+.mode-random {
+    background-color: #3498db !important;
+}
+
+.mode-random:hover {
+    background-color: #2980b9 !important;
+}
+
+
+/* ========================================
+   SUAL SƏHİFƏSİ
+======================================== */
+.quiz-status {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--btn-bg);
+    margin-bottom: 10px;
+}
+
+.current-stats {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.sual-text {
+    text-align: left;
+    background: var(--sual-bg);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 25px 0;
+    font-size: 1.4em;
+    line-height: 1.6;
+    border-left: 6px solid var(--btn-bg);
+}
+
+
+/* ========================================
+   CAVAB DÜYMƏLƏRİ (A B C D E)
+======================================== */
+.answer-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.answer-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    border: 3px solid var(--input-border);
+    background: var(--container-bg);
+    color: var(--text-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.answer-btn:hover {
+    transform: translateY(-3px);
+    border-color: var(--btn-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.answer-btn.selected {
+    background: var(--btn-bg);
+    color: white;
+    border-color: var(--btn-bg);
+    transform: scale(1.05);
+}
+
+.answer-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* ========================================
+   ƏSAS DÜYMƏLƏRİ
+======================================== */
+.main-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.main-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.main-btn:disabled {
+    background: #888 !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* ========================================
+   NAVİQASİYA DÜYMƏLƏRİ
+======================================== */
+.quiz-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.control-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all 0.2s;
+}
+
+.view-results {
+    background: #f39c12;
+}
+
+.view-results:hover {
+    background: #e67e22;
+}
+
+.restart-quiz {
+    background: #95a5a6;
+}
+
+.restart-quiz:hover {
+    background: #7f8c8d;
+}
+
+
+/* ========================================
+   NƏTİCƏLƏR SƏHİFƏSİ
+======================================== */
+.stats {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.result-list-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
 .result-list {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
-    max-height: 400px; /* Siyahı çox uzanarsa skroll çıxsın */
-    overflow-y: auto;
+    margin: 0;
     text-align: left;
 }
 
-.result-list li {
+.result-item {
     background: var(--sual-bg);
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
     font-size: 1.1em;
     line-height: 1.5;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
-/* Nəticə səhifəsindəki göy rəngli düymə (Yazmağa davam et) */
+.result-item.correct {
+    border-left: 5px solid #2ecc71;
+}
+
+.result-item.incorrect {
+    border-left: 5px solid #e74c3c;
+}
+
+.result-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .btn-continue {
     background-color: #3498db !important;
 }
@@ -59,7 +314,10 @@ input[type="text"]:focus { border-color: var(--btn-bg); }
     background-color: #2980b9 !important;
 }
 
-/* Düz və Səhv cavabların rəng vurğuları */
+
+/* ========================================
+   RƏNGLƏNDİRMƏ
+======================================== */
 .text-success {
     color: #2ecc71;
     font-weight: bold;
@@ -70,24 +328,44 @@ input[type="text"]:focus { border-color: var(--btn-bg); }
     font-weight: bold;
 }
 
-/* Statistika paneli */
-.stats-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-    font-size: 1.3em;
-    font-weight: bold;
-}
 
-/* Skroll barın dizaynı (dark mode-a uyğun) */
-.result-list::-webkit-scrollbar {
+/* ========================================
+   SCROLLBAR
+======================================== */
+.result-list-container::-webkit-scrollbar {
     width: 8px;
 }
-.result-list::-webkit-scrollbar-track {
+
+.result-list-container::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
-.result-list::-webkit-scrollbar-thumb {
+
+.result-list-container::-webkit-scrollbar-thumb {
     background: var(--btn-bg);
     border-radius: 10px;
+}
+
+
+/* ========================================
+   RESPONSİVE DİZAYN
+======================================== */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .answer-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+    .answer-buttons {
+        gap: 10px;
+    }
+
+    .sual-text {
+        font-size: 1.2em;
+        padding: 20px;
+    }
 }
