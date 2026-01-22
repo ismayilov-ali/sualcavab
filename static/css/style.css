@@ -191,9 +191,30 @@ body {
     transform: scale(0.95);
 }
 
+/* Klaviatura basılma animasiyası */
+.answer-btn.keyboard-pressed {
+    animation: keyboardPress 0.2s ease;
+    transform: scale(0.95);
+}
+
+@keyframes keyboardPress {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(0.9);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+}
+
 
 /* ========================================
-   ƏSAS DÜYMƏLƏRİ
+   ƏSAS DÜYMƏLƏR
 ======================================== */
 .main-btn {
     width: 100%;
@@ -228,10 +249,12 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .control-btn {
     flex: 1;
+    min-width: 120px;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -242,12 +265,22 @@ body {
     transition: all 0.2s;
 }
 
+.go-back {
+    background: #9b59b6;
+}
+
+.go-back:hover {
+    background: #8e44ad;
+    transform: translateY(-2px);
+}
+
 .view-results {
     background: #f39c12;
 }
 
 .view-results:hover {
     background: #e67e22;
+    transform: translateY(-2px);
 }
 
 .restart-quiz {
@@ -256,6 +289,7 @@ body {
 
 .restart-quiz:hover {
     background: #7f8c8d;
+    transform: translateY(-2px);
 }
 
 
@@ -367,5 +401,13 @@ body {
     .sual-text {
         font-size: 1.2em;
         padding: 20px;
+    }
+
+    .quiz-controls {
+        flex-direction: column;
+    }
+
+    .control-btn {
+        width: 100%;
     }
 }

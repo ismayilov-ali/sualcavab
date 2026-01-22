@@ -113,6 +113,7 @@
             <!-- Cavab forması -->
             <form method="POST" id="quizForm">
                 <input type="hidden" name="cavab" id="cavabInput" value="">
+                <input type="hidden" name="action" id="actionInput" value="submit">
                 
                 <!-- A B C D E düymələri -->
                 <div class="answer-buttons">
@@ -130,6 +131,11 @@
 
             <!-- Naviqasiya düymələri -->
             <div class="quiz-controls">
+                {% if can_go_back %}
+                    <button class="control-btn go-back" onclick="goPrevious()">
+                        ⬅️ Əvvəlki
+                    </button>
+                {% endif %}
                 <button class="control-btn view-results" onclick="window.location.href='/result'">
                     📋 Nəticələr
                 </button>
@@ -163,6 +169,14 @@
             window.location.href = '/start/order?start=' + startNo;
         }
 
+        // Əvvəlki suala qayıt
+        function goPrevious() {
+            if (confirm('Əvvəlki suala qayıtmaq istəyirsiniz? Son cavabınız silinəcək.')) {
+                document.getElementById('actionInput').value = 'prev';
+                document.getElementById('quizForm').submit();
+            }
+        }
+
         // Cavab seçimi
         let selectedAnswer = null;
 
@@ -183,23 +197,59 @@
         const quizForm = document.getElementById('quizForm');
         if (quizForm) {
             quizForm.addEventListener('submit', (e) => {
-                if (!selectedAnswer) {
+                if (document.getElementById('actionInput').value === 'submit' && !selectedAnswer) {
                     e.preventDefault();
                     alert('Zəhmət olmasa bir cavab seçin!');
                     return;
                 }
                 
                 const btn = document.getElementById('submitBtn');
-                btn.disabled = true;
-                btn.innerText = "Yoxlanılır...";
+                if (btn && document.getElementById('actionInput').value === 'submit') {
+                    btn.disabled = true;
+                    btn.innerText = "Yoxlanılır...";
+                }
             });
         }
 
-        // Enter düyməsi ilə submit
+        // Klaviatura dəstəyi - A, B, C, D, E düymələri
         document.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase();
+            
+            // A, B, C, D, E düymələrinə basıldıqda
+            if (['a', 'b', 'c', 'd', 'e'].includes(key) && quizForm) {
+                e.preventDefault();
+                
+                // Müvafiq düyməni tap və animasiya əlavə et
+                const buttons = document.querySelectorAll('.answer-btn');
+                buttons.forEach(btn => {
+                    if (btn.textContent.toLowerCase() === key) {
+                        // Basılma animasiyası
+                        btn.classList.add('keyboard-pressed');
+                        setTimeout(() => {
+                            btn.classList.remove('keyboard-pressed');
+                        }, 200);
+                        
+                        // Cavabı seç
+                        btn.click();
+                    }
+                });
+            }
+            
+            // Enter düyməsi ilə submit
             if (e.key === 'Enter' && selectedAnswer && quizForm) {
                 e.preventDefault();
+                document.getElementById('actionInput').value = 'submit';
                 quizForm.submit();
+            }
+        });
+
+        // Səhifə yüklənəndə theme düyməsini yenilə
+        window.addEventListener('load', () => {
+            const themeBtn = document.getElementById('themeBtn');
+            if (document.body.hasAttribute('data-theme')) {
+                themeBtn.innerText = '☀️ Light Mode';
+            } else {
+                themeBtn.innerText = '🌙 Dark Mode';
             }
         });
     </script>

@@ -3,7 +3,7 @@ import random
 import os
 
 app = Flask(__name__)
-app.secret_key = "bomba_acar" # Təhlükəsizlik açarı
+app.secret_key = "bomba_acar"
 
 BUTUN_SUALAR = []
 DUZGUN_CAVABLAR = {}
@@ -51,7 +51,6 @@ cavablari_yukle()
 
 @app.route('/')
 def index():
-    # Ümumi mövcud sual sayını interfeysə göndəririk
     return render_template('index.html', mode_selection=True, total_available=len(BUTUN_SUALAR))
 
 @app.route('/start/<mode>')
@@ -62,9 +61,8 @@ def start_quiz(mode):
     if mode == 'random':
         secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
     else:
-        # URL-dən 'start' parametrini götürürük, yoxdursa 1-dən başlayırıq
         start_from = request.args.get('start', default=1, type=int)
-        start_idx = max(0, start_from - 1) # Python indeksi üçün 1 çıxılır
+        start_idx = max(0, start_from - 1)
         secilmis_indeksler = indeksler[start_idx:]
 
     if not secilmis_indeksler:
@@ -83,28 +81,43 @@ def quiz():
     sual_idleri = session['sual_idleri']
 
     if request.method == 'POST':
-        istifadeci_cavabi = request.form.get('cavab', '').strip().lower()
-        if istifadeci_cavabi:
-            sual_id = sual_idleri[curr_idx]
-            sual_no = BUTUN_SUALAR[sual_id][0].split('.')[0].strip()
-            duzgun_cavab = DUZGUN_CAVABLAR.get(sual_no, "")
-            
-            is_correct = (istifadeci_cavabi == duzgun_cavab)
-            
+        action = request.form.get('action', 'submit')
+        
+        # Əvvəlki suala qayıt
+        if action == 'prev' and curr_idx > 0:
+            # Son cavabı sil
             cavablar = list(session.get('cavablar', []))
-            cavablar.append({
-                'no': sual_no,
-                'user': istifadeci_cavabi,
-                'correct': duzgun_cavab,
-                'status': is_correct
-            })
-            session['cavablar'] = cavablar
-            session['current_index'] = curr_idx + 1
+            if cavablar:
+                cavablar.pop()
+                session['cavablar'] = cavablar
+            session['current_index'] = curr_idx - 1
             session.modified = True
-            
-            if session['current_index'] >= len(sual_idleri):
-                return redirect(url_for('result'))
             return redirect(url_for('quiz'))
+        
+        # Cavab təsdiq et
+        if action == 'submit':
+            istifadeci_cavabi = request.form.get('cavab', '').strip().lower()
+            if istifadeci_cavabi:
+                sual_id = sual_idleri[curr_idx]
+                sual_no = BUTUN_SUALAR[sual_id][0].split('.')[0].strip()
+                duzgun_cavab = DUZGUN_CAVABLAR.get(sual_no, "")
+                
+                is_correct = (istifadeci_cavabi == duzgun_cavab)
+                
+                cavablar = list(session.get('cavablar', []))
+                cavablar.append({
+                    'no': sual_no,
+                    'user': istifadeci_cavabi,
+                    'correct': duzgun_cavab,
+                    'status': is_correct
+                })
+                session['cavablar'] = cavablar
+                session['current_index'] = curr_idx + 1
+                session.modified = True
+                
+                if session['current_index'] >= len(sual_idleri):
+                    return redirect(url_for('result'))
+                return redirect(url_for('quiz'))
 
     if curr_idx < len(sual_idleri):
         sual_id = sual_idleri[curr_idx]
@@ -117,7 +130,8 @@ def quiz():
                                no=curr_idx+1, 
                                total=len(sual_idleri),
                                duz_sayi=duz_sayi,
-                               sehv_sayi=sehv_sayi)
+                               sehv_sayi=sehv_sayi,
+                               can_go_back=(curr_idx > 0))
     return redirect(url_for('result'))
 
 @app.route('/result')
