@@ -140,5 +140,14 @@ def result():
     is_finished = session.get('current_index', 0) >= len(session.get('sual_idleri', []))
     return render_template('index.html', result=True, cavablar=cavablar, is_finished=is_finished)
 
+@app.route('/basic-result')
+def basic_result():
+    cavablar = session.get('cavablar', [])
+    is_finished = session.get('current_index', 0) >= len(session.get('sual_idleri', []))
+    return render_template('index.html', 
+                         basic_result=True,  # ✅ Yeni parametr
+                         cavablar=cavablar, 
+                         is_finished=is_finished)
+
 if __name__ == "__main__":
     app.run(debug=True)

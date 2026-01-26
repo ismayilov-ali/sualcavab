@@ -1,1460 +1,2048 @@
-1. 65.126.34.234 IP ünvanı hansı sinfə aiddir?
-A) B
-B) D
-C) C
-D) A
-E) E
-2. 126.146.74.114 IP ünvanı hansı sinfə aiddir?
-A) B
-B) A
-C) E
-D) D
-E) C
-3. 165.126.34.234 IP ünvanı hansı sinfə aiddir?
-A) B
-B) C
-C) E
-D) D
-E) A
-4. 185.126.34.234 IP ünvanı hansı sinfə aiddir?
-A) E
-B) A
-C) B
-D) D
-E) C
-5. 212.146.234.23 IP ünvanı hansı sinfə aiddir?
-A) A
-B) E
-C) C
-D) B
-E) D
-6. 199.26.34.23 IP ünvanı hansı sinfə aiddir?
-A) A
-B) B
-C) D
-D) C
-E) E
-7. 224.126.34.234 IP ünvanı hansı sinfə aiddir?
-A) E
-B) B
-C) C
-D) A
-E) D
-8. 255.126.34.234 IP ünvanı hansı sinfə aiddir?
-A) C
-B) B
-C) E
-D) D
-E) A
-9. Kompüter şəbəkəsinin düzgün IP ünvanı hansıdır?
-A) 78.142.62.71
-B) 45. 200.111.265
-C) 89. 236.12.256
-D) 65. 256.34.79
-E) 123.53.223.251.
-10. Kompüter şəbəkəsinin düzgün IP ünvanı hansıdır?
-A) 178.12.162.171
-B) 165.256.34.179
-C) 145.22.171.261
-D) 223.53.223.251.
-E) 189.36.102.256
-11. Kompüter şəbəkəsinin düzgün IP ünvanı hansıdır?
-A) 95.256.44.229
-B) 13. 53.23.51.5
-C) 108.172.182. 217
-D) 145.209.1.259
-E) 19. 26.256.256
-12. Kompüter şəbəkəsinin düzgün IP ünvanı hansıdır?
-A) 123.53.223.251.
-B) 65.56.34.7.8
-C) 78. 142.62.71
-D) 89.62.92.6.0
-E) 49. 170.22.260
-13. Verilmiş 67.152.201.14 IP ünvanında neçə bayt şəbəkə nömrəsi var?
-A) 3
-B) 2
-C) 5
-D) 1
-E) 4
-14. Verilmiş 99.52.251.114 IP ünvanda neçə bayt şəbəkə nömrəsi var?
+1. Hansı misalda işarəsiz iki ədədin toplanması zamanı böyük mərtəbədən keçid
+alınır?
+A) 1010 + 0101 =
+B) 1010 + 0110 =
+C) 1110 + 0001 =
+D) 0111 + 1000 =
+E) 1001 + 0110 =
+2. Aşağıdakı mühakimələrdən hansı doğrudur?
+A) Printer giriş\çıxış qurğusudur
+B) Mouse çıxış qurğusudur
+C) Mikroprosessor giriş\çıxış qurğusudur
+D) Monitor çıxış qurğusudur
+E) Klaviatura giriş\çıxış qurğusudur
+3. MUL qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) işarəli ədədlər üçün vurma əməli
+B) işarəsiz ədədlər üçün bölmə əməli
+C) işarəsiz ədədlər üçün vurma əməli
+D) işarəli ədədlər üçün bölmə əməli
+E) müqayisəetmə əməli
+4. İşləmə prinsipinə görə monitorlar hansı tiplərə bölünürlər?
+A) mətnli, qrafikalı
+B) sərt, elastik, pikselli
+C) rəngli, monoxrom, vektorlu
+D) lazerli, tutumlu
+E) elektron-şüa borusu, maye kristallı displeylər
+5. Dəqiqləşdirilmə tipi DWORD olduqda seqment necə seçilir?
+A) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+B) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+C) Seqment yaddaşın yalnız 256-ya bölünən ünvanlarından başlaya bilər
+D) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+E) Seqment yaddaşın istənilən ünvanından başlaya bilər.
+6. Xarici qurğudan kəsilmə sorğusu alan prosessor nə edir?
+A) icra olunan proqramı saxlayır
+B) icra olunan proqramı saxlayır və xarici qurğuya xüsusi xəttlə kəsilmənintəsdiqini
+göndərir
+C) icra olunan əmri tamamlayır
+D) icra olunan əmri davam etdirir
+E) icra olunan proqramı saxlayır və xarici qurğuya xidmət proqramına başlayır
+7. Çıxma əməlləri zamanı CF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticə 0 olursa
+B) borc lazım olduqda
+C) nəticədə vahidlərin syaı cüt olarsa
+D) nəticə mənfidirsə.
+E) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+8. Assembler dilində əmrlərin formatı hansıdır?
+A) [Label:] mnemokod [operand] [; şərhlər.]
+B) [Label:] [; şərhlər.] mnemokod [operand]
+C) mnemokod [operand] [; şərhlər.] [Label:]
+D) [operand] [Label:] mnemokod [; şərhlər.]
+E) [; şərhlər.][Label:] mnemokod [operand]
+9. Ədədlərin yazılışı üçün hansı şərti işarələrdən istifadə olunur?
+A) rəqəmlərdən
+B) hərflərdən
+C) məntiqi işarələrdən
+D) informasiya ölçü vahidlərindən
+E) nöqtə və xətlərdən
+10. Hansı əlaqə tipində, seqment paraqrafın mütləq ünvanına qoyulur?
+A) PPUBLİC
+B) STACK
+C) PRİVATE
+D) COMMON
+E) AT xxx
+11. Çıxma əməlləri zamanı nəticədə vahidlərin syaı cüt olarsa hansı göstərici
+qoyulmalıdır?
+A) PF=1 göstəricisini
+B) ZF=1 göstəricisini
+C) CF=1 göstəricisini
+D) SF=1 göstəricisini
+E) AF=1 göstəricisini
+12. Aşağıdakılardan hansı mövqesiz say sistemidir?
+A) roma sistemi
+B) onluq sistemi
+C) ikilik sistemi
+D) onaltılıq sistemi
+E) ərəb sistemi
+13. İMUL qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) işarəsiz ədədlər üçün vurma əməli
+B) işarəsiz ədədlər üçün bölmə əməli
+C) işarəli ədədlər üçün vurma əməli
+D) müqayisəetmə əməli
+E) işarəli ədədlər üçün bölmə əməli
+14. Şəkildəki hansı rəqəmsal qurğunun sxemidir?
+A) tamcəmləyici
+B) çoxmərtəbəli cəmləyici
+C) trigger
+D) yarımcəmləyici
+E) HMQ
+15. EHM-də xarici qurğularla informasiya mübadiləsinin hansı əsas rejimləritətbiq
+olunur?
+A)baytların ötürülməsi rejimində, proramın kəsilməsi rejimində, yaddaşa birbaşa müraciət
+rejimində
+B)paketlərin ötürülməsi rejimində, proramın kəsilməsi rejimində, yaddaşa birbaşa
+müraciət rejimində
+C)qurğunun hazrlıq bayrağına görə, proramın kəsilməsi rejimində, paketlərinötürülməsi
+rejimində
+D)qurğunun hazrlıq bayrağına görə, proramın kəsilməsi rejimində, baytların ötürülməsi
+rejimində
+E) qurğunun hazrlıq bayrağına görə, proramın kəsilməsi rejimində, yaddaşa birbaşa
+müraciət rejimində
+16. Stekdən qrup halında oxumaq əmri hansıdır?
+A) POPF
+B) POPA
+C) PUSHFW
+D) POPFW
+E) PUSH
+17. Çıxma əməlləri zamanı OF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+C) nəticə 0 olursa
+D) nəticə mənfidirsə.
+E) nəticə əks kodda diapazona yerləşmirsə
+18. İDİV qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) işarəli ədədlər üçün vurma əməli
+B) müqayisəetmə əməli
+C) işarəsiz ədədlər üçün bölmə əməli
+D) işarəli ədədlər üçün vurma əməli
+E) işarəli ədədlər üçün bölmə əməli
+19. Çoxmərtəbəli cəmləyicinin köməyi ilə hansı əməliyyat aparılır?
+A) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədənkeçidi
+nəzərəalmadan toplama əməliyyatı
+B) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədənkeçidi
+nəzərəalmaqla toplama əməliyyatı
+C) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan vurma əməliyyatı
+D) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan toplama əməliyyatı
+E) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, toplama əməliyyatı
+20. Assembler dilində operandlar sahəsində neçə operand ola bilər?
 A) 2
-B) 1
-C) 4
-D) 3
-E) 5
-15. Verilmiş 134.152.231.214 IP ünvanında neçə bayt şəbəkə nömrəsi var?
-A) 5
-B) 1
-C) 4
-D) 2
-E) 3
-16. Verilmiş 147.192.21.134 IP ünvanında neçə bayt şəbəkə nömrəsi var?
-A) 5
-B) 3
-C) 1
-D) 2
-E) 4
-17. Verilmiş 223.112.11.167 IP ünvanında neçə bayt şəbəkə nömrəsi var?
-A) 1
-B) 4
-C) 5
-D) 2
-E) 3
-18. Verilmiş 199.152.201.14 IP ünvanında neçə bayt şəbəkə nömrəsi var?
-A) 1
-B) 5
-C) 2
-D) 4
-E) 3
-19. Verilmiş 67.152.201.14 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 1
-B) 2
-C) 4
-D) 3
-E) 5
-20. Verilmiş 79.12.21.14 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 3
-B) 2
-C) 5
-D) 1
-E) 4
-21. Verilmiş 167.151.101.214 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 1
-B) 3
-C) 2
-D) 4
-E) 5
-22. Verilmiş 188.172.231.149 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 3
-B) 1
-C) 2
-D) 4
-E) 5
-23. Verilmiş 210.112.91.165 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 3
-B) 2
-C) 1
-D) 5
-E) 4
-24. Verilmiş 214. 52.251.134 IP ünvanında neçə bayt kompüter şəbəkəsindəki hostların sayını
-göstərir?
-A) 4
-B) 3
-C) 5
-D) 1
-E) 2
-25. IP ünvanında neçə bayt var?
-A) 4
-B) 2
-C) 3
-D) 1
-E) 8
-26. IP ünvanında neçə bit var?
-A) 4
-B) 64
-C) 2
-D) 8
-E) 32
-27. IP ünvanında neçə bayt var?
-A) 4
-B) 32
-C) 16
-D) 2
-E) 64
-28. IP ünvanında neçə bit var?
-A) 4
-B) 8
-C) 128
-D) 32
-E) 256
-29. IP ünvanında hər bir baytın onluq say sistemində təsviri necə olur?
-A) 0 - 128
-B) 0 - 256
-C) 1024 bytes
-D) 0 -255
-E) 1024 bits
-30. IP ünvanında hər bir baytın onluq say sistemində təsviri necə olur?
-A) 0 - 255
-B) 0 - 1024
-C) 0 - 512
-D) till 1 Kb
-E) till 512 байт
-31. Kompüter şəbəkəsinin A sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 3
-B) 2
-C) 5
-D) 4
-E) 1
-32. Kompüter şəbəkəsinin A sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 4
-B) 2
-C) 1
-D) 8
-E) 16
-33. Kompüter şəbəkəsinin B sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 16
-B) 4
-C) 2
-D) 8
-E) 32
-34. Kompüter şəbəkəsinin B sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 16
-B) 2
-C) 64
-D) 32
-E) 128
-35. Kompüter şəbəkəsinin C sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 2
-B) 5
-C) 4
-D) 3
-E) 1
-36. Kompüter şəbəkəsinin C sinif IP ünvanında şəbəkə nömrəsi üçün hansı bayt təyin olunur?
-A) 3
-B) 16
-C) 5
-D) 512
-E) 4
-37. Kompüter şəbəkəsinin A sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 5
-B) 3
-C) 2
-D) 8
-E) 4
-38. Kompüter şəbəkəsinin A sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 2
-B) 16
-C) 8
-D) 32
-E) 4
-39. Kompüter şəbəkəsinin B sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 8
-B) 32
-C) 4
-D) 16
-E) 2
-40. Kompüter şəbəkəsinin B sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 128
-B) 32
-C) 64
-D) 8
-E) 16
-41. Kompüter şəbəkəsinin C sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 2
-B) 8
-C) 16
-D) 24
-E) 4
-42. Kompüter şəbəkəsinin C sinif IP ünvanında şəbəkə nömrəsinə neçə bit ayrılır?
-A) 64
-B) 512
-C) 32
-D) 24
-E) 128
-43. A sinif şəbəkələrdə IP ünvanının ilk baytı hansı intervalda dəyişir?
-A) 128 - 191
-B) 0 - 128
-C) 0 - 64
-D) 192 - 256
-E) 0 - 127
-44. A sinif şəbəkələrdə IP ünvanının ilk baytının diapazonu hansıdır?
-A) 128 - 224
-B) 0 - 256
-C) 0 - 127
-D) 0 - 32
-E) 128 - 256
-45. B sinif şəbəkələrdə IP ünvanının ilk baytı hansı intervalda dəyişir?
-A) 128 - 192
-B) 0 - 128
-C) 128 - 224
-D) 192 - 223
-E) 128 - 191
-46. B sinif şəbəkələrdə IP ünvanının ilk baytı hansı intervalda dəyişir?
-A) 128 - 191
-B) 32 - 128
-C) 223 - 256
-D) 64 - 128
-E) 128 - 193
-47. C sinif şəbəkələrdə IP ünvanının ilk baytı hansı intervalda dəyişir?
-A) 192 - 223
-B) 192 - 256
-C) 128 - 191
-D) 0 - 128
-E) 0 - 64
-48. C sinif şəbəkələrdə IP ünvanının ilk baytı hansı intervalda dəyişir?
-A) 192 - 223
-B) 192 - 256
-C) 0 - 64
-D) 128 - 191
-E) 0 - 128
-49. A sinif şəbəkələrinin maskası hansıdır?
-A) 255.0.0.0
-B) 255.255.0.0
-C) 0.255.255.0
-D) 0.0.0.255
-E) 255.255.255.255
-50. B sinif şəbəkələrinin maskası hansıdır?
-A) 255.0.0.0
-B) 255.255.0.0
-C) 255.255.255.255
-D) 255.2550.0.255
-E) 0.255.255.0
-51. C sinif şəbəkələrinin maskası hansıdır?
-A) 255.255.255.255
-B) 255.0.0.255
-C) 255.255.0.0
-D) 255.255.255.0
-E) 255.0.0.0
-52. 255.255.224.0 maskasındakı neçə bit şəbəkədəki kompüterlərin sayını göstərir?
-A) 24
-B) 13
-C) 11
-D) 12
-E) 32
-53. 255.255.0.0 maskasındakı neçə bit şəbəkədəki kompüterlərin sayını göstərir?
-A) 12
-B) 20
-C) 14
-D) 16
-E) 15
-54. 255.255.128.0 maskasındakı neçə bit şəbəkədəki kompüterlərin sayını göstərir?
-A) 17
-B) 19
-C) 14
-D) 18
-E) 15
-55. 255.255. 240.0 maskasındakı neçə bit şəbəkədəki kompüterlərin sayını göstərir?
-A) 18
-B) 16
-C) 12
-D) 15
-E) 19
-56. 255.255.240.0 maskasında şəbəkə nömrəsi nə qədərdir?
-A) 22
-B) 24
-C) 18
-D) 20
-E) 12
-57. 255.255.192.0 maskasında şəbəkə nömrəsi nə qədərdir?
-A) 20
-B) 17
-C) 21
-D) 18
-E) 19
-58. 255.255.128.0 maskasında şəbəkə nömrəsi nə qədərdir?
-A) 17
-B) 16
-C) 14
-D) 19
-E) 18
-59. 255.255.248.0 maskasında şəbəkə nömrəsi nə qədərdir?
-A) 24
-B) 20
-C) 32
-D) 21
-E) 19
-60. 255.255.255.248 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.11111110.11111000
-B) 11111111.11111111.11111111.11110000
-C) 11111111.11111111.11111111.11111000
-D) 11111111.11111111.11111111.11100000
-E) 11111110.11111110.11111110.11111000
-61. 255.255.240.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.11111110.10000000
-B) 11111111.11111111.11110000.00000000
-C) 11111111.11111111.11111111.11000000
-D) 11111110.11111110.11111110.11100000
-E) 11111111.11111111.11111111.00000000
-62. 255.255.224.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11000011.11110000
-B) 11111110.11111110.11111110.00000000
-C) 11111110.11111110.11111110.11111000
-D) 11111111.11111111.11000000.11000000
-E) 11111111.11111111.11100000.00000000
-63. 255.255.192.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111100.11111110.11111000
-B) 11111111.11111111.11111000.11110000
-C) 11111111.11111111.11000000.00000000
-D) 11111110.11111110.11111110.11111000
-E) 11111111.11111111.11111111.11100000
-64. 255.255.128.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.11111110.11111000
-B) 11111111.11111111.11111111.11000000
-C) 11111111.11111111.10000000.0000000
-D) 11111111.11111111.11111111.11000000
-E) 11111110.11111110.11111110.11111000
-65. 255.240.0.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11111110.11000000
-B) 11111111.11111111.11111111.11100000
-C) 11111111.11110000.00000000.00000000
-D) 11111110.11111110.11111110.11111000
-E) 11111110.11111110.11111110.11100000
-66. 255.248.0.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.00000000.00000000
-B) 11111111.11111110.00000000.00000000
-C) 11111111.11111000.00000000.00000000
-D) 11111110.11111110.00000000.00000000
-E) 11111111.11111110.00000000.00000000
-67. 255.192.0.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111100.00000000.00000000
-B) 11111110.11111110.00000000.00000000
-C) 11111111.11000000.00000000.00000000
-D) 11111111.11111110.00000000.00000000
-E) 11111110.11111110.00000000.00000000
-68. 255.254.0.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.11111110.00000000
-B) 11111111.11111111.11111100.00000000
-C) 11111111.11111111.11111100.00000000
-D) 11111111.11111110.00000000.00000000
-E) 11111110.11111110.11111110.00000000
-69. 255.255.254.0 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11111111.10000000
-B) 11111110.11111110.11111110.11111000
-C) 11111111.11111111.11111000.00000000
-D) 11111111.11111111.11111110.00000000
-E) 11111110.11111110.11111110.00000000
-70. 255.255.255.128 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11111111.00000000
-B) 11111111.11111111.11111111.11000000
-C) 11111111.11111111.11111111.10000000
-D) 11111110.11111110.11111110.10000000
-E) 11111110.11111110.11111110.11100000
-71. 255.255.255.192 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111110.11111110.11111000
-B) 11111110.11111110.11111110.00000000
-C) 11111111.11111111.11111111.11000000
-D) 11111111.11111111.11000000.11000000
-E) 11111111.11111111.11000011.11110000
-72. 255.255.255.224 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111110.11111100.11111110.11111000
-B) 11111111.11011111.11111111.11100000
-C) 11111111.11111111.11111000.11110000
-D) 11111111.11111111.11111111.11100000
-E) 11111110.11111110.11111110.11111000
-73. 255.255.255.240 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11111111.11000000
-B) 11111110.11111110.11111110.11111000
-C) 11111111.11111111.11111111.11110000
-D) 11111110.11111110.11111110.11111000
-E) 11111111.11111111.11111111.11000000
-74. 255.255.255.252 şəbəkə maskası ikilik say sisteminə ekvivalentdir…
-A) 11111111.11111111.11111110.11000000
-B) 11111110.11111110.11111110.11100000
-C) 11111111.11111111.11111111.11111100
-D) 11111110.11111110.11111110.11111000
-E) 11111111.11111111.11111111.11100000
-75. 137.158.128.0/17 IP ünvanın sonundakı "/17" nə deməkdir?
-A) Həmin IP ünvanına malik şəbəkələrin sayı
-B) Kompüter şəbəkəsindəki kompüterlərin sayı
-C) Kompüter şəbəkəsinin şəbəkə hissəsindəki sıfırların sayı
-D) Kompüter şəbəkəsində marşrutlaşdırıcıların sayı
-E) Kompüter şəbəkəsinin şəbəkə hissəsindəki vahidlərin sayı
-76. 205.37.193.134/26 IP ünvanının sonundakı "/26" nə deməkdir?
-A) Kompüter şəbəkəsinin şəbəkə hissəsindəki sıfırların sayı
-B) Həmin IP ünvanına malik şəbəkələrin sayı
-C) ) Kompüter şəbəkəsinin şəbəkə hissəsindəki vahidlərin sayı
-D) Kompüter şəbəkəsindəki kompüterlərin sayı
-E) Kompüter şəbəkəsində marşrutlaşdırıcıların sayı
-77. Şəkildə kompüter şəbəkəsinin hansı sinif IP ünvanı göstərilmişdir?
-A) D
-B) C
-C) B
-D) E
-E) A
-78. Şəkildə kompüter şəbəkəsinin hansı sinif IP ünvanı göstərilmişdir?
-A) C
-B) B
-C) D
-D) E
-E) A
-79. Şəkildə kompüter şəbəkəsinin hansı sinif IP ünvanı göstərilmişdir?
-A) B
-B) E
-C) C
-D) A
-E) D
-80. A sinif şəbəkələrində şəbəkə nömrələri üçün ayrılmış bitlərin sayı...
-A) 16
-B) 24
-C) 4
-D) 32
-E) 8
-81. B sinif şəbəkələrində şəbəkə nömrələri üçün ayrılmış bitlərin sayı...
-A) 16
-B) 24
-C) 32
-D) 8
-E) 4
-82. C sinif şəbəkələrində şəbəkə nömrələri üçün ayrılmış bitlərin sayı...
-A) 32
-B) 8
-C) 4
-D) 24
-E) 16
-83. A sinif şəbəkələrində hostların sayı üçün ayrılmış bitlərin sayı...
-A) 24
-B) 8
-C) 32
-D) 16
-E) 4
-84. B sinif şəbəkələrində hostların sayı üçün ayrılmış bitlərin sayı...
-A) 32
-B) 4
-C) 8
-D) 16
-E) 24
-85. C sinif şəbəkələrində hostların sayı üçün ayrılmış bitlərin sayı...
-A) 8
-B) 32
-C) 24
-D) 16
-E) 4
-86. Verilmiş IP ünvan diapazonlarından hansı A sinif alt şəbəkələrə aiddir?
-A) 198.168.0.0 - 198.168.255.255
-B) 192.168.0.0 - 192.168.255.255
-C) 178.16.0.0 - 178.31.255.255
-D) 10. 0.0.0 - 10.255.255.255
-E) 172.16.0.0 - 172.31.255.255
-87. Verilmiş IP ünvan diapazonlarından hansı B sinif alt şəbəkələrə aiddir?
-A) 172.16.0.0 - 172.31.255.255
-B) 198.168.0.0 - 198.168.255.255
-C) 178.16.0.0 - 178.31.255.255
-D) 192.168.0.0 - 192.168.255.255
-E) 10.0.0.0 - 10.255.255.255
-88. Verilmiş IP ünvan diapazonlarından hansı C sinif alt şəbəkələrə aiddir?
-A) 172.16.0.0 - 172.31.255.255
-B) 178.16.0.0 - 178.31.255.255
-C) 198.168.0.0 - 198.168.255.255
-D) 10.0.0.0 - 10.255.255.255
-E) 192.168.0.0 - 192.168.255.255
-89. DNS ünvana aiddir:
-A) 178.16.0.0 - 178.31.255.255
-B) 10.0.0.0 - 10.255.255.255
-C) 172.16.0.0 - 172.31.255.255
-D) www.gmail.com
-E) 198.168.0.0 - 198.168.255.255
-90. LAN nə deməkdir?
-A) Long Around Network
-B) Lost Area Network
-C) Local Area Network
-D) Local Around Network
-E) Line Area Network
-91. FF.FF.FF.F8 maskasının onluq say sistemində təsviri …
-A) 255.228.CD.99
-B) 235.248.20.55
-C) 255.248.0.09
-D) 255.248.170.90
-E) 255.255.255.248
-92. FF.FF.FF.80 maskasının onluq say sistemində təsviri …
-A) 255.28.CD.45
-B) 235.248.20.0
-C) 255.255.255.128
-D) 255.248.110.12
-E) 255.148.0.09
-93. FF.FF.FF.C0 maskasının onluq say sistemində təsviri …
-A) 255.255.255.192
-B) 155.248.DE.09
-C) 255.E28.CD.0
-D) 205.248.10.00
-E) 235.248.A0.0
-94. FF.FF.FF.E0 maskasının onluq say sistemində təsviri …
-A) 255.228.10.00
-B) 255.248.10.09
-C) 235.248.220.0
-D) 255.255.255.224
-E) 255.228.D7.23
-95. FF.FF.FF.F0 maskasının onluq say sistemində təsviri …
-A) 255.128.CD.1
-B) 254.248.10.00
-C) 255.228.A0.09
-D) 255.255.255.240
-E) 235.248.C0.10
-96. FF.FF.FF.FC maskasının onluq say sistemində təsviri …
-A) 255.2C.0.09
-B) 235.248.20.0D
-C) 252.248.110.0AD
-D) 255.255.255.252
-E) 255.218.CD.B0
-97. 192.24.1.4 IP ünvanının ikilik say sistemində təsviri…
-A) 11111110.11111110.00000000.00000000
-B) 11111111.11111110.00000000.00000000
-C) 11000000.00011000.00000001.00000100
-D) 11111110.11111110.00000000.00000000
-E) 11111111.11111110.00000000.00000000
-98. 127.192.16.2 IP ünvanının ikilik say sistemində təsviri…
-A) 11111111.11111110.00000000.00000000
-B) 11111110.11111110.00000000.00000000
-C) 01111111.11000000.00010000.00000010
-D) 11111110.11111110.00000000.00000000
-E) 11111111.11111100.00000000.00000000
-99. 3.127.32.1 IP ünvanının ikilik say sistemində təsviri…
-A) 11111111.11111111.11111100.00000000
-B) 11111111.11111111.11111100.00000000
-C) 00000011.01111111.00100000.00000001
-D) 11111110.11111110.11111110.00000000
-E) 11111110.11111110.11111110.00000000
-100. 15.7.128.64 IP ünvanının ikilik say sistemində təsviri…
-A) 11111110.11111110.11111110.00000000
-B) 11111111.11111111.11111111.10000000
-C) 11111111.11111111.11111000.00000000
-D) 00001111.00000111.10000000.01000000
-E) 11111110.11111110.11111110.11111000
-101. 3.63.15.8 IP ünvanının ikilik say sistemində təsviri…
-A) 11111110.11111110.11111110.11111000
-B) 11111110.11111110.11111110.11111000
-C) 00000011.00111111.00001111.00001000
-D) 11111111.11111111.11111111.11100000
-E) 11111111.11111111.11111111.11110000
-102. TELNET məlumat əlaqəsi üçün protokolundan istifadə edir.
-A) TCP
-B) IP
-C) ARP
-D) UDP
-E) DHCP
-103. Başqa bir şəbəkəyə giriş təmin edən şəbəkə nöqtəsi necə adlanır?
-A) Adapter
-B) Körpü
-C) Şlüz
-D) Çevirici
-E) Düyün nöqtəsi
-104. hər bir IP şəbəkə adapterinə MAC ünvanı adlanan unikal bir nömrə təyin
-edir.
-A) Media Access Control
-B) Metro Access Control
-C) Metropolitan Access Control
-D) Multi-Media Access Control
-E) Media Access Central
-105. Şəbəkə marşrutlayıcısı (router) iki bir-birinə birləşdirir.
-A) Çeviricini
-B) Şlüzü
-C) Kompüteri
-D) Körpünü
-E) Şəbəkəni
-106. Aşağıda göstərilənlərdən hansı təhlükəsiz VPN protokoludur?
-A) TCP
-B) SSTP
-C) UDP
-D) SMTP
-E) ARP
-107. MAC ünvanlar həmçinin necə tanınır?
-A) Yalnız Fiziki ünvan
-B) Yalnız Aparat ünvanı
-C) Şəbəkə ünvanı
-D) IP ünvanı
-E) Aparat və Fiziki ünvan
-108. UMTS-in tam açılışı nədir?
-A) Universal Mobile Telecommunication Server
-B) Universal Mobile Telephonic Server
-C) Universal Mobile Telecommunications System
-D) Universal Mobile Telephonic System
-E) Units Mobile Telephonic System
-109. İlk yaranan şəbəkə necə adlanır?
-A) CSNET
-B) PANNET
-C) ANSNET
-D) NSFNET
-E) ARPANET
-110. Ümumi halda HUB mərkəzi kontroller hansı tip topologiyada istifadə olunur?
-A) Ulduz
-B) Ulduz və Şin
-C) Şin
-D) Tor
-E) Halqa
-111. Şəbəkənin fiziki və ya məntiqi düzülüşü necə adlanır?
-A) Struktur
-B) Topologiya və Məlumat Axını
-C) Düzülüş
-D) Topologiya
-E) Məlumat Axını
-112. Hansı şəbəkənin qoşulma məsafəsi 10 metrə qədərdir?
-A) WLAN
-B) PAN
-C) WAN
-D) LAN
-E) MAN
-113. Unicode nədir?
-A) Yalnız az sayda işarə dəstəkləyir
-B) Vahid (Uniform) kod
-C) İstənilən dildə istifadə olunan simvolları və ya işarələri (hərfləri) təmsil edir
-D) Yalnız az sayda dil dəstəkləyir
-E) A-dan Z-ə qədər olan işarələr
-114. Məlumatın bir cihazdan digərinə ötürülməsi üçün tələb olunan vaxt necə adlanır?
-A) Dialoq müddəti
-B) Cavab müddəti
-C) Gözləmə müddəti
-D) Təkrar cavab müddəti
-E) Tranzit müddəti
-115. Bir əlaqə (link) sıradan çıxarsa, yalnız həmin əlaqə təsirlənir. Qalan bütün əlaqələr aktiv
-qalır. Bu hansı topologiyaya aiddir?
-A) Tor topologiyası
-B) Ulduz topologiyası
-C) Fiziki topologiya
-D) Məntiqi topologiya
-E) Şin topologiyası
-116. WAN nədir?
-A) World Area Network
-B) Wide Area Nets
-C) World Area Nets
-D) Wide Area Network
-E) Wide Antenna Network
-117. Hansı şəbəkə topologiyasında terminatora ehtiyac var?
-A) Ağacvari topologiya
-B) Halqa topologiyası
-C) Hibrid topologiyası
-D) Şin topologiyası
-E) Ulduz topologiyası
-118. Veb səhifələrə baxmağa imkan verən proqram təminatının adı nədir?
-A) Browser
-B) FTP Client
-C) Program manager
-D) Mail Client
-E) Messenger
-119. ISP nədir?
-A) Internet Service Provider
-B) Internet Security Protocol
-C) Internet Service Program
-D) Integrated Service Provider
-E) Integrated Security Provider
-120. Keş yaddaşı nədir?
-A) Əməli yaddaş
-B) Sərt disk
-C) Fləş yaddaş
-D) Təsadüfi giriş yaddaşı
-E) Müvəqqəti yaddaş
-121. CMOS parolu necə təmizlənir?
-A) Bios Batareyasını çıxarmaq və ƏS-ni formatlamaqla
-B) Bios Batareyasını çıxarmaqla
-C) Yalnız ƏS-ni formatlamaqla
-D) Ana platada cumper parametrlərini dəyişdirməklə
-E) Sistemi formatlamaqla
-122. Dəyişkən yaddaş hansıdır?
-A) Programmable Read Only Memory
-B) Read Only Memory (ROM)
-C) Random Access Memory (RAM)
-D) Internal Memory
-E) Read Only Memory Programmable RAM
-123. PAN nədir?
-A) Personal Area Network
-B) Private Area Network
-C) Public Area Nets
-D) Private Area Nets
-E) Public Area Network
-124. Verilənlərdən hansı, əsasən hostlar arasında paketlərin ünvanlanması və
-marşrutlaşdırılmasına cavabdeh olan, əlaqəsiz, etibarsız daşınma protokoldur?
-A) Only IPv6
-B) Both IPv6 & IPv4
-C) TCP/IP
-D) DNS
-E) Only IPv4
-125. Hostdakı prosesi hansı ünvan müəyyən (identifikasiya) edir?
-A) Fiziki
-B) IP
-C) Kontroller
-D) Fiziki rejim
-E) Port
-126. Siqnalları işıq seli şəklində ötürən kabel tipi hansıdır?
-A) Ekranlı burulmuş cüt kabel
-B) Cheapernet kabel
-C) Burulmuş cüt kabel
-D) Fiber optik kabel
-E) Koaksial kabel
-127. Tam domen adın elementlər ardıcıllığı bir-birindən nə ilə ayrılır?
-A) İki nöqtə
-B) Nöqtəli vergül
-C) Vergül
-D) @ işarəsi
-E) Nöqtə
-128. GPON abreviaturasının tam açılışını tapın.
-A) Gigabyte Passive Optical Network
-B) Gigabyte Protocol Optical Network
-C) Gigabit Passive Optical Network
-D) Gigabit Protocol Optical Network
-E) Gigabyte Power Optical Network
-129. GPON topologiyasında bina şəbəkəsini qlobal - səs, məlumat və video şəbəkələrinə
-birləşdirən mərkəzi kommutator necə adlanır?
-A) DPF
-B) ONT
-C) FDT
-D) OLT
-E) FDP
-130. LTE-nin tam açılışını tapın.
-A) Loop Term Evolution
-B) Large Technology Evolution
-C) Long Term Evolution
-D) Long Technology Evolution
-E) Loop Technology Evolution
-131. Şəbəkədəki ən vacib və ya güclü kompüter aşağıdakılardan hansıdır?
-A) Şəbəkə stansiyası
-B) Şəbəkə klienti
-C) Masaüstü Kompüter
-D) Şəbəkə Serveri
-E) Terminal
-132. Ethernet-də hansı topologiyadan istifadə olunur?
-A) Şin
-B) Halqa
-C) Ulduz
-D) Xətti
-E) Tor
-133. Paketin ünvanına əsaslanaraq paketləri müəyyən portlara yönləndirmək üçün nəzərdə
-tutulmuş qurğu aşağıdakılardan hansıdır?
-A) Ardıcıl hab (Serial hub)
-B) Port habı (Port hub)
-C) Filtrləmə habı (Filtering hub)
-D) Kommutasiya habı (Switching hub)
-E) Xüsusi təyinatlı hab (Specialty hub)
-134. Halqa topologiyasında məlumatlar yalnız … halında ötürülə bilər.
-A) Paket
-B) Access metod
-C) Verilənlər
-D) Əks istiqamətdə
-E) Token
-135. Kompüter şəbəkəsində kabel qırıldığı təqdirdə bütün şəbəkənin fəaliyyətini dayandıran
-topologiyanın adı nədir?
-A) Ulduz
-B) Ağacvari
-C) Şin
-D) Tor
-E) Halqa
-136. Böyük şəbəkələr üçün hansı topologiyadan istifadə olunur?
-A) Halqa
-B) Xətti
-C) Şin
-D) Ulduz
-E) İkiqathalqa
-137. İnternetdə bir hostu unikal şəkildə müəyyən edən ünvan hansıdır?
-A) IP
-B) Məntiqi
-C) Port
-D) Fiziki
-E) Kontroller
-138. Mesajın (məlumatın) tam şəkildə prosesdən-prosesə çatdırılmasına görə məsuliyyət
-daşıyan səviyyə hansıdır?
-A) Nəqliyyat
-B) Fiziki
-C) Kanal
-D) Şəbəkə
-E) Dialoq
-139. Hansı ünvan həmçinin link ünvanı kimi də tanınır?
-A) Fiziki
-B) Konkret
-C) Paralel
-D) Məntiqi
-E) Port
-140. Seans səviyyəsinin əsas funksiyası nədir?
-A) Səhvlərə nəzarət
-B) Endirmə/Yüklənmənin idarə edilməsi
-C) Dialoqun idarə edilməsi
-D) Axına nəzarət
-E) Yükləmənin idarə edilməsi
-141. SMS mesajları saxlamaq və irəli ötürmək üçün hansı servisdən istifadə edir?
-A) Qısa Mesaj Servis Mərkəzi (SMSC)
-B) Qısa Mesaj Servisinin Texniki Reallaşdırılması (GSM TR)
-C) Qısa Mesaj Servisi (GSM)
-D) Şlüz GPRS Dəstək Qovşağı (GGSN)
-E) GPRS Dəstək Qovşaq Servisi (SGSN)
-142. Elektron poçtların təhlükəsizliyini təmin etmək üçün hansı protokoldan istifadə olunur?
-A) HTTP
-B) SNMP
-C) ARP
-D) POP
-E) PGP
-143. İstənilən qurğudan və istənilən yerdən elektron poçtlara daxil olmaq üçün hansı
-protokoldan istifadə olunur?
-A) TCP
-B) PGP
-C) IMAP
-D) ARP
-E) POP
-144. Sadə Poçt Transferi Protokolu (SMTP) hansı faylların ötürülməsində istifadə olunur?
-A) Yalnız şəkil faylları
-B) Yalnız video faylları
-C) Yalnız mətn faylları
-D) Səs, şəkil, video faylları
-E) Yalnız səs faylları
-145. Hansı autentifikasiya olunmuş (təsdiqlənmiş) və məxfi elektron poçtları yaratmaq üçün
-nəzərdə tutulub?
-A) PGP
-B) IMAP
-C) ARP
-D) TCP
-E) POP
-146. Domen Ad Sistemində son şəkilçi kimi iki simvoldan istifadə edən alt domeni tapın.
-A) Ümumi domenlər
-B) Tərs domen
-C) Ölkə domenləri
-D) İkinci domen
-E) Üçüncü domen
-147. Məlumat paketində səhvi aşkarlamaq üçün ona əlavə olunur.
-A) səhv biti
-B) yalnız paritet biti
-C) nəzarət cəmi və paritet bitləri
-D) səhv və paritet bitləri
-E) yalnız nəzarət cəmi biti
-148. Piconet-lərdə Bluetooth-da minimum iki və maksimum Bluetooth peer
-(həmkar) cihazı ola bilər.
-A) Dörd
-B) Səkkiz
-C) Beş
-D) Doqquz
-E) Üç
-149. İstifadəçinin Bluetooth-u mobil telefonla uyğunlaşdırması halına hansı termin deyilir?
-A) Bluetooth-un aktivləşdirilməsi (Bluetooth Enabling)
-B) Bluetooth ilə birləşmə (Bluetooth Connecting)
-C) Bluetooth cütləşməsi (Bluetooth Pairing)
-D) Bluetooth zəngi (Bluetooth Calling)
-E) Bluetooth qoşulması (Bluetooth Attachment)
-150. Göndərilən məlumat paketlərində (datagramlarda) yaranan problemlər barədə məlumatı
-göndərənə geri yollamaq üçün hostlar və şlüzlər tərəfindən istifadə olunan mexanizm hansı
-protokoldur?
-A) Reverse Address Resolution Protocol
-B) Internet Group Message Protocol
-C) Internet Control Message Protocol
-D) Address Resolution Protocol
-E) File Transfer Protocol
-151. İnternetdə qoşulmuş bir hostu (kompüteri/cihazı) bənzərsiz şəkildə müəyyən edə bilən, 32
-bitlik ünvan hansıdır?
-A) Port və Fiziki ünvan
-B) Port və Məntiqi ünvan
-C) Məntiqi ünvan
-D) Fiziki ünvan
-E) Port ünvanı
-152. Səmt Vektoru Protokolunun (Path Vector Protocol) tətbiqi hansıdır?
-A) Border Gateway Protocol (BGP)
-B) Port and Fiziki ünvan
-C) Open Shortest Path First (OSPF)
-D) Port and Məntiai ünvan
-E) Routing Information Protocol (RIP)
-153. Hansı tətbiq həmçinin User-Friendly ünvanlar kimi də tanınır?
-A) Nəzarətçi (Controller) Ünvanlar
-B) Xüsusi Ünvanlar
-C) Fiziki Ünvanlar
-D) Port Ünvanları
-E) Məntiqi Ünvanlar
-154. İnternet xidməti provayderi aşağıdakı növlərdə ola bilər:
-A) Regional və Lokal
-B) Yalnız Regional
-C) Yalnız Beynəlxalq
-D) Milli və Beynəlxalq, Regional, Lokal
-E) Yalnız Lokal
-155. Tam dupleks rabitə rejimi üçün düzgün metod hansıdır?
-A) Bir cihaz göndərə, digər cihaz yalnız qəbul edə bilər
-B) İki cihaz göndərə, digər cihaz isə yalnız qəbul edə bilər
-C) İki cihaz göndərir, digər cihaz isə qəbul edir və əksinə
-D) Hər iki stansiya eyni anda məlumat ötürə və qəbul edə bilər
-E) Bir cihaz göndərir, digər cihaz isə qəbul edir və əksinə
-156. SSTP nədir?
-A) Second Socket Tunneling Port
-B) Secure Socket Tunneling Port
-C) Second Socket Tunneling Protocol
-D) Secure Socket Turn Protocol
-E) Secure Socket Tunneling Protocol
-157. OLP nədir?
-A) Optical Line Terminal
-B) Office Long Terminal
-C) Optical Long Terminal
-D) Original Line Terminal
-E) Office Line Terminal
-158. Tətbiqi səviyyə OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 7
-B) 5
-C) 2
-D) 3
-E) 6
-159. Təqdimat səviyyəsi OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 1
+B) 0, 1, vəya 2
+C) 1, 2, vəya 3
+D) max 8
+E) 2, 3
+21. EHM-dən xarici qurğuya ədədin və ya kodun ötürülməsi (xarici) necərealizə
+olunur?
+A) xarici qurğunun interfeysinin verilənlər registrindən, verilənlər şininə ötürülməklə
+B) yaddaşın verilənlər registrindən, verilənlər şininə ötürülməklə
+C) yaddaşın ünvanlar registrindən, verilənlər şininə ötürülməklə
+D) yaddaşa birbaşa müraciət rejimində
+E) prosessorun registrindən, xarici qurğunun interfeysinin verilənlər registrinə ötürülməklə
+22. Mənfi-610 ədədinin 8 mərtəbəli ikilik-tamamlama kodunu tapın
+A) 111010012
+B) 111110102
+C) 111110002
+D) 111110102
+E) 100110012
+23. Hesabi daşma nədir?
+A) əgər işarəli iki ədədin toplanması zamanı keçid alınmırsa
+B) əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa
+C) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə vahidəbərabər olursa
+D) əgər işarəli iki ədədin toplanması zamanı yalnız bir keçid alınırsa
+E) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə sıfırabərabər olursa
+24. Hansı sadələşdirilmiş direktiv sabit verilənlər seqmentinin başlanğıcınıvə
+davamını müyyən edir?
+A) CODE
+B) DATA?
+C) CONST
+D) STACK
+E) DATA
+25. lss qəbuledici, verici əmri ilə nə edilir?
+A) icra ünvanının yüklənməsi
+B) göstəricinin verilənlərinin əlavə segment registrinə (ss) yüklənməsi
+C) göstəricilər registri ds veriləənlər registrinə yüklənilir
+D) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+E) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+26. EHM-in ünvanlar fəzasının həcmi nədən assılıdır?
+A) ünvanlar sözünün mərtəbələrinin miqdarından
+B) EHM-in arxitekturasından
+C) məntiqi elementlərin sürətindən
+D) qida mənbəyinin gərginliyindən
+E) verilənlər registrinin mərtəbələrinin miqdarından
+27. Ümumi registrlərin köməyi ilə ünvanlama üsullarından olmayan bəndigöstərin.
+A) dolayısı-avtoinkrementasiya üsulu
+B) avtoinkrementasiya üsulu
+C) xarici qurğu-prosessor üsulu
+D) dolayısı-registr üsulu
+E) birbaşa registr üsulu
+28. HMQ-nun N çıxışında vahidin olması nəyi göstərir?
+A) müsbət nəticənin alınmasını
+B) ”0” nəticəsinin alınmasını
+C) mənfi nəticənin alınmasını
+D) hesabi daşmanın yaranmasını
+E) böyük mərtəbədən keçidin olmasını
+29. Stekə qrup halında yazmaq əmri hansıdır?
+A) PUSHFW
+B) POPAW
+C) POPF
+D) PUSHA
+E) POPFW
+30. Əlaqə tipi PRİVATE olduqda seqment necə seçilir?
+A) seqment paraqrafın mütləq ünvanına qoyulur
+B) Stek seqmentini müəyyən edir
+C) seqment müxtəlif modullardakı eyni adlı bütün seqmentlər ilə birləşdirilir
+D) müxtəlif modullardakı eyni adlı bütün seqmentlər bir ünvanda birləşdirilir.
+E) seqment müxtəlif modullardakı eyni adlı seqmentlər ilə birləşdirilmir.
+31. Əlaqə tipi COMMON olduqda seqment necə seçilir?
+A) müxtəlif modullardakı eyni adlı bütün seqmentlər bir ünvanda birləşdirilir.
+B) seqment müxtəlif modullardakı eyni adlı seqmentlər ilə birləşdirilmir
+C) seqment müxtəlif modullardakı eyni adlı bütün seqmentlər ilə birləşdirilir.
+D) seqment paraqrafın mütləq ünvanına qoyulur
+E) Stek seqmentini müəyyən edir
+32. Hansı dəqiqləşdirilmə tipində, seqment yaddaşın yalnız cüt ünvanlarından
+başlaya bilər?
+A) DWORD
+B) PARA
+C) WORD
+D) byte
+E) PAGE
+33. PUSH-verici əmri ilə nə edilir?
+A) mənbənin tərkibi stekin zirvəsinə yazılır
+B) stekdən qrup halında oxumaq
+C) stekə qrup halında yazma
+D) Göstəricilər registrləri stekə yazılır
+E) stekin zirvəsinin tərkibi qəbuledici operandın yerinə yazılır
+34. Modemlər nə üçün nəzərdə tutulmuşdur?
+A) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+B) mətnlərin və ya qrafiki məlumatların kağız üzərində çıxarılması
+C) telefon xətləri ilə məlumatlar mübadiləsi üçün
+D) istifadəçiyə məlumatın çıxarılması üçün
+E) istifadəçi tərəfindən məlumatın EHM-ə daxil edilməsi üçün
+35. Assembler dilində verilənlərlə işləmək üçün onları harada yerləşdirməklazımdır?
+A) onlarıoperandlarda yerləşdirmək lazımdır.
+B) verilənlər seqmentndə yerləşdirmək lazımdır.
+C) hesab məntiq qurğusunun girişinə vermək lazımdır
+D) onları əvvəlcə elan etmək lazımdır
+E) onlarıstekdə yerləşdirmək lazımdır.
+36. DW psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı söz ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+37. Müsbət ədəddən, ona uyğun mənfi ədədin ikilik-tamamlama kodunun
+alınmasıalqoritmini göstərin
+A) ilkin müsbət ədəddən vahid çıxılır, sonra nəticənin bütün mərtəbələri inversiyaolunur
+B) ilkin müsbət ədədin bütün mərtəbələri inversiya olunur, sonra nəticə ikiyəvurulur
+C) ilkin müsbət ədədin bütün mərtəbələri inversiya olunur, sonra nəticəyə vahidəlavə edilir
+D) ilkin müsbət ədədə vahid əlavə edilir, sonra nəticənin bütün mərtəbələri inversiyaolunur
+E) ilkin müsbət ədədin bütün mərtəbələri inversiya olunur, sonra nəticədən vahidçıxılır
+38. Assembler dilində direktivlər nədir?
+A) Çeviriciyə (translyatora) iş rejimlərini göstərir
+B) Proqramın mətninin müəyyən bir şəkildə formalaşmış cümləsidir
+C) Maşın dilində analoqu yoxdur
+D) tərcüməçi tərəfindən nəzərə alınmır
+E) Maşın təlimatlarının simvolik analoqları
+39. Assembler dilində proqramın hər cümləsi nədən ibarətdir?
+A) prosedura və funksiyalardan
+B) idarəetmə əmrləri ardıcıllığından
+C) assembler nüvədən və modullardan
+D) assembler komponent və istinadlardan
+E) assembler sətrlərindən
+40. Toplama əməlləri zamanı nəticədə vahidlərin syaı cüt olarsa hansı göstərici
+qoyulmalıdır?
+A) SF=1 göstəricisini
+B) ZF=1 göstəricisini
+C) CF=1 göstəricisini
+D) PF=1 göstəricisini
+E) AF=1 göstəricisini
+41. Dəqiqləşdirilmə tipi PAGE olduqda seqment necə seçilir?
+A) Dəqiqləşdirilməaparılmır. Seqment yaddaşın istənilən ünvanından başlaya bilər.
+B) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+C) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+D) Seqment yaddaşın yalnız 256-ya bölünən ünvanlarından başlaya bilər
+E) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+42. Hansı sadələşdirilmiş direktiv inisalizasiya olunmamış verilənlər seqmentinin
+başlanğıcını və davamını müyyən edir?
+A) CODE
+B) DATA
+C) CONST
+D) DATA?
+E) STACK
+43. Assembler dilində cümlələrin növü olmayan hansıdır?
+A) Makroəmrlər
+B) Direktivlər
+C) əmrlər və ya təlimatlar
+D) kəsilmələr
+E) Şərhlər
+44. 85,2410 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 3·23
++7·22
++8·21
++4·20
+B) 1·23
++0·22
++1·21
++0·20
+C) 2·83
++7·82
++3·81
++1·80
+D) 3·103
++4·102
++8·101
++5·100
+E) 8·101
++5·100
++2·10-1
++4·10-2
+45. Assembler dilində olmayan operand növü hansıdır?
+A) mnemоkod operandlar
+B) Ünvan operandları
+C) Dəyişdirilən operandlar
+D) Sabit və birbaşa operandlar
+E) Ünvanlar sayğacı
+46. Yaddaşın ünvanlar deşifratoru nə üçün nəzərdə tutulmuşdur?
+A) seçilmiş yaddaşın verilənlərini yadda saxlamaq üçün
+B) seçilmiş yaddaşın ünvanını formalaşdırmaq üçün
+C) seçilmiş yaddaşın ünvanını yadda saxlamaq üçün
+D) ”yaz”siqnalını formalaşdırmaq üçün
+E) ”oxu”siqnalını formalaşdırmaq üçün
+47. HMQ-nun idarəetmə şini vasitəsi ilə hansı məlumat ötürülür?
+A) əməliyyatın nəticəsi
+B) verilənlər
+C) idarə etmə siqnalları
+D) əməliyyatın kodu
+E) sinxroimpulslar
+48. POPFW əmri ilə nə edilir?
+A) flags göstəricilər registrinə stekdən yazılır
+B) stekin zirvəsinin tərkibi qəbuledici operandın yerə yazılır
+C) stekdən qrup halında oxumaq
+D) Göstəricilər registrləri stekə yazılır
+E) eflags göstəricilər registrinə stekdən yazılır
+49. Assembler dilində əmrlərin formatında label nə üçün nəzərdə tutulub?
+A) keçid nöqtələrini göstərir
+B) operandların ünvanı üçüçn
+C) əmrə ad vermək üçün
+D) ümumi registrlərin ünvanları üçün
+E) əmrin aid olduğu seqmqenti göstərir
+50. EHM tərkibindəki yaddaş qurğusu nə üçün nəzərdə tutulmuşdur?
+A) həqiqilik cədvəllərinin saxlanması üçün
+B) arxivləşdirilmiş verilənlərin saxlanması üçün
+C) idarəedici siqnalların saxlanması üçün
+D) istifadəçinin verilənlərinin saxlanması üçün
+E) proqramın və verilənlərin saxlanması üçün
+51. flags və ya eflags göstəricilər registrlərnin stekə yazılması əmri hansıdır?
+A) POPF
+B) PUSH
+C) PUSHFW
+D) POPFW
+E) POPA
+52. ünvanlar sayğacı operandları nəyi göstərirlər?
+A) ünvanlar sayğacının cari andakı qiymətini
+B) ünvanlar sayğacının başlanğıc qiymətini
+C) ünvanlar sayğacının yaddaşda fiziki yerini
+D) operandın, yaddaşda fiziki yerini
+E) sadəcə registrin adını
+53. Toplama əməlləri zamanı nəticə əks kodda diapazona yerləşmirsə hansı
+göstərici qoyulmalıdır?
+A) AF=1 göstəricisini
+B) CF=1 göstəricisini
+C) SF=1 göstəricisini
+D) PF=1 göstəricisini
+E) OF=1 göstəricisini
+54. İkilik-tamamlama kodlaşdırılması ilə təsvir olunan işarəli iki ədədintoplanması
+qaydasını göstərən bənd hansıdır?
+A) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə vahidəbərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+B) əgər işarəli iki ədədin toplanması zamanı yalnız ən böyük mərtəbəyə keçid alınırsa
+onda hesab əməlinin nəticəsi düzgün deyildir
+C)əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa onda hesab əməlinin nəticəsi düzgün deyildir
+D)əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə sıfırabərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+E) əgər işarəli iki ədədin toplanması zamanı keçid alınmırsa onda hesabəməlinin
+nəticəsi düzgün deyildir
+55. DQ psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı söz ayırır
+56. DF psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı söz ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+57. Yaddaşa birbaşa müraciət rejimində, verilənlərin mübadiləsi necə keçirilir?
+A) xarici qurğunun təşəbbüsü və idarəsi ilə
+B) EHM-in mərkəzi prosessorunda icra olunan proqramın təşəbbüsü və idarəsi ilə
+C)EHM-in mərkəzi prosessorunda icra olunan proqramın təşəbbüsü, ancaqxarici
+qurğunun idarəsi ilə
+D) xarici qurğunun təşəbbüsü , ilə ancaq EHM-in mərkəzi prosessorunda icra olunan
+proqramın idarəsi ilə
+E) yaddaş qurğusunun təşəbbüsü və idarəsi ilə
+58. Qurğunun hazrlıq bayrağına görə, verilənlərin proram mübadiləsi necəkeçirilir?
+A) EHM-in mərkəzi prosessorunda icra olunan istifadəçi proqramının təşəbbüsü vəidarəsi
+ilə
+B) xarici qurğunun təşəbbüsü , ilə ancaq EHM-in mərkəzi prosessorunda icra olunan
+proqramın idarəsi ilə
+C)EHM-in mərkəzi prosessorunda icra olunan proqramın təşəbbüsü, ancaqxarici
+qurğunun idarəsi ilə
+D) yaddaşa birbaşa müraciət rejimində
+E) xarici qurğunun təşəbbüsü və idarəsi ilə
+59. Mövqeli say sistemlərində ədədi təşkil edən rəqəmlərin qiymətlərinecə
+təyinolunur?
+A) rəqəmin ədədin daxilindəki yerinə görə
+B) sıfırların sayına görə
+C) ədədin mərtəbələrinin miqdarına görə
+D) vahidlərin sayına görə
+E) bütün rəqəmlər eyni qiymətli olur
+60. Əməli yaddaş qurğusunun registrlərindən olan bəndi göstərin.
+A) ünvanlar registri (ÜR)
+B) prosessorun vəziyyəti registri (PVR)
+C) əmrlər registry (ƏR)
+D) əmrlər sayğacının registry (ƏSR)
+E) stekin göstəricisi registri (SGR)
+61. Kursorun idarə edilməsi klavişləri nə üçün nəzərdə tutulmuşdur?
+A) kursorun formasını seçmək
+B) kursorun yanıb-sönmə tezliyini seçmək
+C) ekranda kursoru hərəkət etdirmək
+D) ekranda simvolları hərəkət etdirmək
+E) ekranda təsvirləri hərəkət etdirmək
+62. Hansı ildə Con fon-Neyman bir qrup alim kollegiyaları ilə birgə EHM
+arxitekturasınınəsas prinsiplərini formalaşdırmışdır?
+A) 1945
+B) 1936
+C) 1946
+D) 1951
+E) 1967
+63. Avtoinkrementasiya ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operandyerləşən
+yaddaş ünvanı kimi interpretasiya olunur sonra 1 və ya 2 qədər artırılır
+B) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operandyerləşən
+yaddaş ünvanı kimi interpretasiya olunur
+C) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+D) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+artırılır
+E) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand
+kimiinterpretasiya olunur
+64. İşarəsiz ədədlər üçün bölmə əməliyyatı hansıdır?
+A) CMP 1operand, 2operand əmri
+B) DİV qəbuledici əmri
+C) not operand əmri
+D) and verici, qəbuledici əmri
+E) or verici, qəbuledici əmri
+65. Klaviaturanın klavişlərinin funksional qruplarına aid olmayan bənd hansıdır?
+A) xidməti
+B) kursorun idarə edilməsi
+C) əlifba-rəqəm, funksional
+D) əlavə platanın klavişləri
+E) multimedia, gərginlyin verilməsi
+66. POP əmri ilə nə edilir?
+A) stekdən qrup halında oxumaq
+B) stekin zirvəsinin tərkibi qəbuledici operandın yerinə yazılır
+C) mənbənin tərkibi stekin zirvəsinə yazılır
+D) stekə qrup halında yazma
+E) Göstəricilər registrləri stekə yazılır
+67. Hansı yaddaşlara “sərbəst seçimli yaddaş” deyilir?
+A) yuvalara paralel müraciət oluna bilən
+B) yuvalara ancaq dolayısı müraciət oluna bilən
+C) yuvalara ardıcıl müraciət oluna bilən
+D) ancaq bir qrup yuvaya birdən müraciət oluna bilən
+E) istənilən yuvaya birbaşa müraciət oluna bilən
+68. Stekin zirvəsinin tərkibini qəbuledici operandın yerinə yazmaq əmrihansıdır?
+A) POPFW
+B) POP
+C) POPF
+D) PUSHFW
+E) POPAW
+69. DATA sadələşdirilmiş direktiv nəyi müyyən edir?
+A) modul stekinin seqmentinin başlanğıcı və davamı
+B) verilənlər seqmentinin başlanğıcı
+C) sabit verilənlər seqmentinin başlanğıcı və davamı
+D) kod seqmentinin başlanğıcı
+E) inisalizasiya olunmamış verilənlər seqmentinin başlanğıcı və davamı
+70. Assembler dilində MOV AX, CX ;necə interpretasiya olunur?
+A) ax registrinin tərkibi, cx registrinə göndərilir.
+B) ax registrinin tərkibi, cx registry ilə toplanılır.
+C) cx registrinin tərkibi, ax registry ilə müqayisə olunur.
+D) cx registrinin tərkibi, ax registrinə göndərilir.
+E) cx registrinin tərkibi, ax registry ilə toplanılır.
+71. DİV qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) işarəli ədədlər üçün bölmə əməli
+B) işarəsiz ədədlər üçün vurma əməli
+C) müqayisəetmə əməli
+D) işarəsiz ədədlər üçün bölmə əməli
+E) işarəli ədədlər üçün vurma əməli
+72. SUB qəbuledici, verici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledici = qəbuledici - verici- borc
+B) qəbuledicinin tərkibi 1 qədər azaldılır
+C) qəbuledici = qəbuledici - verici
+D) qəbuledici = 0
+E) qəbuledicinin tərkibi 1 qədər çoxaldılır
+73. Nisbi ünvanlama və ya əsaslanma nə deməkdir?
+A) əmrdə operandın ünvanı yox , özü yerləşir
+B) əmrdə operandın ünvan haqqında birbaşa göstəriş yoxdur
+C) bu operand proqpamın birinci əmrinin operandı kimi nəzərdə tutulur
+D) icra ünvanı, ünvanın kodu və müyyən bir ədədin cəmi kimi təyin olunur
+E) bu operand proqpamın növbəti əmrinin operandı kimi nəzərdə tutulur
+74. Hansı say sistemlərinə mövqeli say sistemləri deyilir?
+A) əgər ədədin yazılışında rəqəmin qiyməti tutduğu mövqedən asılı deyilsə
+B) əgər ədədin yazılışında rəqəmin qiyməti onun miqdarından asılı deyilsə
+C) əgər ədədin yazılışında rəqəmin qiyməti tutduğu mövqedən asılıdırsa
+D) əgər ədədin yazılışında rəqəmin qiyməti onun miqdarından asılıdırsa
+E) əgər ədədin yazılışı əlifba-rəqəm işarələrindən ibarətdirsə
+75. Hesab məntiq əməliyyatlarini icra edir...
+A) idarəetmə qurğusu
+B) giriş/cixiş portlari
+C) əməli yaddas qurğusu
+D) prosessor
+E) klaviatura
+76. Ünvanlama üsullarına aid olmayan bəndi göstərin
+A) dolayısı ünvanlanma
+B) birbaşa ünvanlanma
+C) cədvəl ünvanlanması
+D) nisbi ünvanlamavə ya əsaslanma
+E) registr ünvanlanması
+77. Prosessorun əməliyyatlar ardıcıllığına aid olmayan bəndi göstərin.
+A) yaddaşın ünvanlar registrinin göstərdiyi ünvandan əmrin kodu oxunur
+B) əmrlər sayğacı registri avtomatik artır və növbəti sözün ünvanına çevrilir
+C) özünün əmrlər sayğacı registrini yaddaşın ünvanlar registrinə yukləyir
+D) proqrqmın birinci əmri olan yaddaşın ünvanını, prosessorun vəziyyəti registrinə yukləyir
+E) prosessorun idarəetmə qurğusu əmrlər registrindəki əmri interpretasiya edir
+78. İnterfeysin tərkibi nədən ibarətdir?
+A) vericilər və çeviricilər toplusu
+B) EHM-lər arasında verilənlərin ötürülməsi protokolları toplusu
+C) sinxronlaşdırma xəttləri və kəsilmə siqnalları xəttləri toplusu
+D) standartlar toplusu
+E) xəttlər, siqnallar, elektron siqnallar və alqoritmlər toplusu
+79. İcra ünvanının yüklənməsi əməliyyatı hansıdır?
+A) not operand əmri
+B) or verici, qəbuledici əmri
+C) lea qəbuledici, verici əmri
+D) and verici, qəbuledici əmri
+E) CMP 1operand, 2operand əmri
+80. Göstəricinin verilənlərinin əlavə segment registrinə(gs) yüklənməsiəmri
+hansıdır?
+A) lfs qəbuledici, verici
+B) lss qəbuledici, verici
+C) igs qəbuledici, verici
+D) lgs qəbuledici, verici
+E) kgs qəbuledici, verici
+81. Əmrlər sayğacının registry (ƏSR) nə üçün nəzərdə tutulmuşdur?
+A) prosessorun cari vəziyyətini göstərmək
+B) seçiləcək əmrin ünvanının formalaşması
+C) cari əmrin kodunun müvəqqəti saxlanması
+D) cari verilənlərin kodunun müvəqqəti saxlanması
+E) EHM-in yaddaşında stekin təşkili
+82. İki ədədin toplanmasının icrası zamanı, prosessorun əməliyyatlarardıcıllığına
+aidolmayan bəndi göstərin.
+A) birinci operand oxunur və verilənlər şini vasitəsi ilə HMQ-nun birinci girişinə verilir
+B) ikinci operand oxunur və verilənlər şini vasitəsi ilə HMQ-nun ikinci girişinə verilir
+C)idarəetmə qurğusu birinci operandın ünvanını təyin edib onu yaddaşın ünvanlar
+registrinə yükləyir
+D) kompyüterin qurğuları və ətraf mühitdən daxil olan sorğuları qəbul və icra edir
+E) seçilmiş operandların toplanması icra olunur
+83. Monitorun əsas xarakteristikaları hansılardır?
+A) ekranın ölçüsü, etibarlığı, regenerasiya tezliyi
+B) ekranın ölçüsü, seçmə xarakteristikası, regenerasiya tezliyi
+C) etibarlığı, effektliyi, təhlükəsizlik sinifi
+D) etibarlığı, seçmə xarakteristikası, təhlükəsizlik sinifi
+E) regenerasiya tezliyi, elastikliyi, təhlükəsizlik sinifi
+84. Çıxma əməlləri zamanı AF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) nəticə 0 olursa
+C) nəticə əks kodda diapazona yerləşmirsə
+D) onluq ədədlərin çıxılması zamanı düzəliş tələb olunarsa
+E) nəticə mənfidirsə.
+85. Aşağıdakılardan hansı kəsilmə vektorunun işlənməsi alqoritminə aid deyildir?
+A) prosessor xarici qurğuya xüsusi xəttlə kəsilmənin təsdiqini göndərir
+B) kəsilmənin təsdiqini alan xarici qurğu prosessora öz kəsilmə vektorunun
+ünvanınıgöndərir
+C) xarici qurğu xüsusi xəttlə kəsilmə sorğusu siqnalı göndərir
+D) prosessor periodik olaraq xarici qurğunun hazırlığını sorğu iləyoxlayır
+E) xarici qurğudan kəsilmə sorğusu alan prosessor icra olunan proqramın cari andakı
+vəziyyətini yadda saxlayır
+86. Şəkildəki elektron sxem hansı məntiqi əməliyyatı yerinə yetirir?
+A) YOX
+B) VƏ
+C) VƏ-YOX
+D) VƏYA
+E) VƏYA-YOX
+87. EHM-də daxl-xaric alt sistemi nə üçün nəzərdə tutulmuşdur?
+A) EHM və xarici qurğular arasında informasiya mübadiləsini təşkil etmək üçün
+B) EHM-ə yaddaşdan informasiyanın oxunmasınıi təşkil etmək üçün
+C) EHM-dən yaddaşa informasiyanın yazılmasınıi təşkil etmək üçün
+D) EHM-dən xarici qurğulara informasiyanın yazılmasınıi təşkil etməküçün
+E) EHM-ə xarici qurğulardan informasiyanın oxunmasınıi təşkil etməküçün
+88. 17368 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 3·23
++7·22
++8·21
++4·20
+B) 3·101
++7·100
++8·10-1
++4·10-2
+C) 3·103
++4·102
++8·101
++5·100
+D) 1·83
++7·82
++3·81
++6·80
+E) 2·83
++7·82
++3·81
++1·80
+89. HMQ-nun V çıxışında vahidin olması nəyi göstərir?
+A) hesabi daşmanın yaranmasını
+B) böyük mərtəbədən keçidin olmasını
+C) müsbət nəticənin alınmasını
+D) mənfi nəticənin alınmasını
+E) ”0” nəticəsinin alınmasını
+90. Kəsilmə vektorunun birinci yaddaş yuvasında nə yerləşir?
+A) kəsilmə anında əmrlər sayğacının tərkibi
+B) ƏYQ verilənlər registrinin tərkibi
+C) əsas proqrama qayıdış ünvanı
+D) uyğun xarici qurğudan olan kəsilməyə xidmət proqramının ünvanı
+E) əsas proqramın ünvanı
+91. Əlaqə tipi PPUBLİC olduqda seqment necə seçilir?
+A) seqment müxtəlif modullardakı eyni adlı bütün seqmentlər ilə birləşdirilir.
+B) seqment müxtəlif modullardakı eyni adlı seqmentlər ilə birləşdirilmir
+C) müxtəlif modullardakı eyni adlı bütün seqmentlər bir ünvanda birləşdirilir.
+D) seqment paraqrafın mütləq ünvanına qoyulur
+E) Stek seqmentini müəyyən edir
+92. İstifadəçi interfeysi nədir?
+A) insan və proqram təminatının arasında qarşılıqlı mübadilə vasitələri
+B) insan və aparat qurğuları arasında qarşılıqlı mübadilə vasitələri
+C) ƏS-ində qarşılıqlı mübadilə vasitələri
+D) aparat modulları arasında qarşılıqlı mübadilə vasitələri
+E) insan və proqram-aparat modulları arasında qarşılıqlı mübadilə vasitələri
+93. İkilik-tamamlama kodlaşdırılması ilə təsvir olunan işarəli iki ədədintoplanması
+qaydasını göstərən bənd hansıdır?
+A) əgər işarəli iki ədədin toplanması zamanı keçid alınmırsa onda hesabəməlinin
+nəticəsi düzgündür.
+B) əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa onda hesab əməlinin nəticəsi düzgün deyildir
+C)əgər işarəli iki ədədin toplanması zamanı keçid alınmırsa onda hesabəməlinin
+nəticəsi düzgün deyildir
+D)əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə vahidəbərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+E) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə sıfırabərabər olursa onda
+hesab əməlinin nəticəsi düzgün deyildir
+94. Con fon-Neyman arxitekuralı EHM-də prosessor əmrlərin vəverilənlərin
+yaddaşın hansı-hansı yuvalarında olmasını necə təyin edir?
+A) yuvaların atributuna görə
+B) göstərici bayraqlara görə
+C) proqramın kontekstinə görə
+D) yuvanın ünvanına görə
+E) təyin etmir
+95. Say sistemi nəyə deyilir?
+A) məntiqi işarələrin adlandırılması və təsvr edilməsi üsullarının toplusuna
+B) verilənlərin adlandırılması və təsvr edilməsi üsullarının toplusuna
+C) bütün məlumatların adlandırılması və təsvr edilməsi üsullarının toplusuna
+D) hərflərin adlandırılması və təsvr edilməsi üsullarının toplusuna
+E) ədədlərin adlandırılması və təsvr edilməsi üsullarının toplusuna
+96. Tipik rəqəm EHM tərkibinə hansı əsas komponentlər daxildir?
+A) generator, yaddaş və xarici qurğular
+B) prosessor, generator və formalayıcı
+C) prosessor, gücləndirici və xarici qurğular
+D) qida bloku, prosessor, və xarici qurğular
+E) prosessor, yaddaş və xarici qurğular
+97. İşarəli ədədlərin ikilik-tamamlama kodlaşdırılmasının xüsusiyyətlərinə aid
+olmayan bəndi göstərin
+A) bütün mənfit ədədlərin böyük mərtəbəsi vahidə bərabərdir
+B) bütün müsbət ədədlərin böyük mərtəbəsi sıfıra bərabərdir
+C) bütün müsbət ədədlərin kiçik mərtəbəsi sıfıra bərabərdir
+D) müsbət ədədlə mütləq qiymətcə ona bərabər mənfi ədədin cəmisıfıra bərabərdir
+E) müsbət ədədlər adi qaydada təsvir olunurlar
+98. PUSH əmri ilə nə edilir?
+A) stekdən qrup halında oxumaq
+B) stekin zirvəsinin tərkibi qəbuledici operandın yerinə yazılır
+C) stekə qrup halında yazma
+D) mənbənin tərkibi stekin zirvəsinə yazılır
+E) Göstəricilər registrləri stekə yazılır
+99. Dəqiqləşdirilmə tipi byte olduqda seqment necə seçilir?
+A) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+B) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+C) Seqment yaddaşın istənilən ünvanından başlaya bilər.
+D) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+E) Seqment yaddaşın yalnız 256-ya bölünən ünvanlarından başlaya bilər
+100. Göstəricilər registrlərinin stekə yazılması əmri hansıdır?
+A) PUSH
+B) PUSHFW
+C) POPA
+D) POPFW
+E) POPF
+101. Stekin yuvalarına müdaxilə necə realizə olunur?
+A) stekin mərkəzi yuvasından
+B) stekin istənilən yuvasından
+C) qrup müdaxiləsi ilə
+D) stekin sonuncu yuvasından
+E) stekin zirvə yuvasından
+102. Hansı ildə Con fon-Neyman bir qrup alim kollegiyaları ilə birgə EHM
+arxitekturasınınəsas prinsiplərini formalaşdırmışdır?
+A) 1945
+B) 1951
+C) 1967
+D) 1946
+E) 1936
+103. Assembler dilində olmayan operand növü hansıdır?
+A) Baza və indeks operandları
+B) Struktur operandları
+C) Yazılar
+D) label (nişan) operandlar
+E) Registr operandı
+104. Çıxma əməlləri zamanı ZF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticə 0 olursa
+B) nəticə mənfidirsə.
+C) nəticədə vahidlərin syaı cüt olarsa
+D) nəticə əks kodda diapazona yerləşmirsə
+E) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+105. Kompyüterdə ana plata üzərindəki xüsusi şinlər nə üçün nəzərdətutulmuşdur?
+A) EHM komponentləri arasında informasiya siqnallarının ötürülməsi üçün
+B) EHM komponentləri arasında informasiya və idarəetmə siqnallarının ötürülməsi üçün
+C) EHM komponentləri arasında informasiya paketlərinin ötürülməsi üçün
+D) EHM-lər arasında informasiya və idarəetmə siqnallarının ötürülməsi üçün
+E) EHM komponentləri arasında qida gərginliyinin ötürülməsi üçün
+106. 10102 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 1·23
++0·22
++1·2 1
++0·2 0
+B) 3·101
++7·100
++8·10-1
++4·10-2
+C) 2·83
++7·82
++3·81
++1·80
+D) 3·103
++4·102
++8·101
++5·100
+E) 3·23
++7·22
++8·21
++4·20
+107. Toplama əməlləri zamanı SF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) nəticə mənfidirsə.
+C) nəticə 0 olursa
+D) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+E) nəticə qəbulediciyə yerləşmirsə (keçid alınarsa)
+108. Ümumi registrlərin köməyi ilə ünvanlama üsullarından olmayan bəndigöstərin.
+A) birbaşa registr üsulu
+B) cədvəl-registr üsulu
+C) dolayısı-avtoinkrementasiya üsulu
+D) dolayısı-registr üsulu
+E) avtoinkrementasiya üsulu
+109. Çıxma əməlləri zamanı SF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) nəticə 0 olursa
+C) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+D) nəticə mənfidirsə
+E) nəticə əks kodda diapazona yerləşmirsə
+110. Xarici qurğunun hazırığını soruşmaqla aparılan proqramlı daxil-xaric rejiminin
+əsas mənfi xüsusiyyəti nədir?
+A) mərkəzi prosessorun vaxtının rasional istifadəsi
+B) xarici qurğuların vaxtının qeyri rasional istifadəsi
+C) daxili qurğuların vaxtının qeyri rasional istifadəsi
+D) müxtəlif tipli xarici qurğulardan istifadə olunması
+E) mərkəzi prosessorun vaxtının qeyri rasional istifadəsi
+111. Əməli yaddaş qurğusunun registrlərindən olan bəndi göstərin.
+A) verilənlər registri (VR)
+B) əmrlər sayğacının registry (ƏSR)
+C) stekin göstəricisi registri (SGR)
+D) əmrlər registry (ƏR)
+E) prosessorun vəziyyəti registri (PVR)
+112. Şəkildəki hansı rəqəmsal qurğunun həqiqilik cədvəlidir?
+A) çoxmərtəbəlicəmləyici
+B) HMQ
+C) tamcəmləyici
+D) trigger
+E) yarımcəmləyici
+113. Çıxma əməlləri zamanı PF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticə 0 olursa
+B) nəticə əks kodda diapazona yerləşmirsə
+C) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+D) nəticə mənfidirsə.
+E) nəticədə vahidlərin syaı cüt olarsa
+114. Birünvanlı əmrlərə aid olmayan bəndi göstərin.
+A) yaddaşın hər hansı yuvasını təmizləmək
+B) hər hansı yuvanın qiymətini digər yuvaya köçürmək
+C) yaddaşın hər hansı yuvasına yazmaq
+D) yaddaşın hər hansı yuvasının qiymətini bir vahid artırmaq
+E) ədədin işarəsini dəyişmək
+115. Şəkildəki hansı rəqəmsal qurğunun həqiqilik cədvəlidir?
+A) tamcəmləyici
+B) çoxmərtəbəlicəmləyici
+C) HMQ
+D) trigger
+E) yarımcəmləyici
+116. Qəbuledicinin -1 azaldılması əməliyyatı hansıdır?
+A) CMP 1operand, 2operand əmri
+B) not operand əmri
+C) and verici, qəbuledici əmri
+D) DEC qəbuledici əmri
+E) or verici, qəbuledici əmri
+117. Fon-Neyman arxitekturlu EHM baza strukturuna daxil olmayan bəndi göstərin
+A) prosessor
+B) multipleksor
+C) əməli yaddaş qurğusu
+D) xarici yaddaş qurğusu
+E) giriş-çıxış qurğusu
+118. RISC arxitekturalı EHM-lərdə neçə ünvfnlandırma üsulu tətbiq olunur?
+A) adətən 2-3
+B) adətən 5-7
+C) adətən 8-10
+D) 20 çox
+E) 10 çox
+119. Mənfi-910 ədədinin 8 mərtəbəli ikilik-tamamlama kodunu tapın
+A) 100110012
+B) 111110002
+C) 111010012
+D) 111110102
+E) 111101112
+120. Mənfi-1010 ədədinin 8 mərtəbəli ikilik-tamamlama kodunu tapın
+A) 100110012
+B) 111010012
+C) 111110002
+D) 111101102
+E) 111110102
+121. lds qəbuledici, verici əmri ilə nə edilir?
+A) icra ünvanının yüklənməsi
+B) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+C) göstəricinin verilənlərin əlavə segment registrinə (gs)yüklənməsi
+D) göstəricilər registri ds veriləənlər registrinə yüklənilir
+E) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+122. Assembler dilində proqramın strukturu nədən ibarətdir?
+A) komponent və istinadlardan
+B) idarəetmə əmrləri ardıcıllığından
+C) yaddaş seqmentləri adlanan bloklarından
+D) prosedura və funksiyalardan
+E) nüvədən və modullardan
+123. İşarəli ikilik ədədlərin ikilik-tamamlama kodlaşdırılmasının ən əsas müsbət
+xüsusiyyətini göstərən bənd hansıdır?
+A) toplama hesab əməli, işarəli ədədlərin cəbri çıxılmasıəməli ilə əvəz oluna bilər
+B) çıxma hesab əməli, işarəli ədədlərin cəbri çıxılmasıəməli ilə əvəz oluna bilər
+C) müsbət ədədlə mütləq qiymətcə ona bərabər mənfi ədədin cəmisıfıra bərabərdir
+D) çıxma hesab əməli, işarəli ədədlərin cəbri toplanması əməli ilə əvəz oluna bilər
+E) toplama hesab əməli, işarəli ədədlərin cəbri toplanmasıəməli ilə əvəz oluna bilər
+124. EHM-lə xarici qurğularların informasiya mübadiləsinin əsas problemi nədir?
+A) xarici qurğuların sürəti prosessorun sürətindən çoxdur və xarici qurğular bəzənhazır
+olmurlar
+B) xarici qurğuların sayı çoxdur və və prosessor bəzən hazır olmur
+C) xarici qurğuların müxtəlifliyi çoxdur və və prosessor bəzən hazır olmur
+D) bəzi xarici qurğuların proqram təminatı ilə təmin olunmurlar
+E) xarici qurğuların sürəti prosessorun sürətindən aşağıdır və xarici qurğular bəzən hazır
+olmurlar
+125. DP psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı söz ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+126. Mövqeli say sistemlərində hansı yazılış formasından istifadə olunur?
+A) əsasın dərəcəsinə görə paylanmanın qısa formalı yazılışından
+B) hər rəqəmə görə paylanmanın tam yazılışından
+C) əsasın dərəcəsinə görə paylanmanın uzun formalı yazılışından
+D) əsasa görə paylanmanın tam formalı yazılışından
+E) hər rəqəmə görə paylanmanın qısa formalı yazılışından
+127. Dəqiqləşdirilmə tipi PARA olduqda seqment necə seçilir?
+A) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+B) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+C) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+D) Seqment yaddaşın istənilən ünvanından başlaya bilər.
+E) Seqment yaddaşın yalnız 256-ya bölünən ünvanlarından başlaya bilər
+128. Kompyüterin yaddaşında ədədlərin təsviri üçün ikilik say sistemlərindənniyə
+geniş istsfadə olunur?
+A) sadə və etibarlı fiziki təsvir və qənaətli yaddaş istifadəsi olduğu üçün
+B) sadə və etibarlı fiziki təsvir və prosessorun sürət artını olduğu üçün
+C) qənaətli fiziki təsvir və qənaətli yaddaş istifadəsi olduğu üçün
+D) qənaətli fiziki təsvir və sadə hesab əməliyyatları olduğu üçün
+E) sadə və etibarlı fiziki təsvir və sadə hesab əməliyyatları olduğu üçün
+129. Assembler dilində neçə psevdooperator vardır ?
+A) 6
 B) 7
-C) 6
-D) 5
-E) 3
-160. Seans səviyyəsi OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 1
-B) 5
-C) 6
-D) 2
-E) 7
-161. Nəqliyyat səviyyəsi OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 2
-B) 3
 C) 4
 D) 5
-E) 6
-162. Şəbəkə səviyyəsi OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 5
-B) 4
-C) 3
-D) 6
-E) 2
-163. Kanal səviyyəsi OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 1
-B) 5
-C) 2
-D) 3
-E) 6
-164. Fiziki səviyyə OSI modelinin neçənci səviyyəsinə uyğun gəlir?
-A) 3
-B) 5
-C) 2
-D) 1
-E) 6
-165. OSI modelində birinci səviyyənin adı nədir?
-A) şəbəkə
-B) fiziki
-C) təqdimat
-D) nəqliyyat
-E) tətbiqi
-166. OSI modelində ikinci səviyyənin adı nədir?
-A) seans
-B) təqdimat
-C) şəbəkə
-D) kanal
-E) tətbiqi
-167. OSI modelində üçüncü səviyyənin adı nədir?
-A) tətbiqi
-B) nəqliyyat
-C) şəbəkə
-D) təqdimat
-E) seans
-168. OSI modelində dördüncü səviyyənin adı nədir?
-A) nəqliyyat
-B) tətbiqi
-C) şəbəkə
-D) seans
-E) təqdimat
-169. OSI modelində beşinci səviyyənin adı nədir?
-A) tətbiqi
-B) təqdimat
-C) seans
-D) şəbəkə
-E) nəqliyyat
-170. OSI modelində altıncı səviyyənin adı nədir?
-A) nəqliyyat
-B) kanal
-C) təqdimat
-D) seans
-E) tətbiqi
-171. OSI modelində yeddinci səviyyənin adı nədir?
-A) fiziki
-B) təqdimat
-C) tətbiqi
-D) seans
-E) nəqliyyat
-172. Rabitə kanalının adı nədir?
-A) Yarımdupleks rabitə kanalı
-B) ADC və DAC
-C) Modulyator və Demodulyator
-D) Simpleks rabitə kanalı
-E) Dupleks rabitə kanalı
-173. Şəkildəki "?" işarəsi nəyi bildirir?
-A) ADC
-B) Ötürücü (Transmitter)
-C) DAC
-D) Modem
-E) Şəbəkə adaptoru
-174. Şəkildəki "?" işarəsi nəyi bildirir?
-A) Modem
-B) ADC
-C) Qəbuledici (Receiver)
-D) DAC
-E) Şəbəkə adaptoru
-175. Şəkildəki "?" işarəsi nəyi bildirir?
-A) Şəbəkə adaptoru
-B) DAC
-C) Modem
-D) ADC
-E) Qovşaq (Node)
-176. Rabitə kanalının adı nədir?
-A) Yarımdupleks rabitə kanalı
-B) ADC və DAC
-C) Simpleks rabitə kanalı
-D) Dupleks rabitə kanalı
-E) Modulyator və Demodulyator
-177. Şəkildəki "?" işarəsi nəyi bildirir?
-A) DAC
-B) ADC
-C) Ötürücü (Transmitter)
-D) Şəbəkə adaptoru
-E) Modem
-178. Şəkildəki "?" işarəsi nəyi bildirir?
-A) DAC
-B) Modem
-C) ADC
-D) Şəbəkə adaptoru
-E) Qəbuledici (Receiver)
-179. Şəkildəki "?" işarəsi nəyi bildirir?
-A) ADC
-B) Qovşaq (Node)
-C) Şəbəkə adaptoru
-D) Modem
-E) DAC
-180. Rabitə kanalının adı nədir?
-A) Simpleks rabitə kanalı
-B) Modulyator və Demodulyator
-C) Dupleks rabitə kanalı
-D) Yarımdupleks rabitə kanalı
-E) ADC və DAC
-181. Şəkildəki "?" işarəsi nəyi bildirir?
-A) ADC
-B) Şəbəkə adaptoru
-C) DAC
-D) Modem
-E) Ötürücü (Transmitter)
-182. Şəkildəki "?" işarəsi nəyi bildirir?
-A) Şəbəkə adaptoru
-B) Qəbuledici (Receiver)
-C) Modem
-D) DAC
-E) ADC
-183. Şəkildəki "?" işarəsi nəyi bildirir?
-A) Şəbəkə adaptoru
-B) ADC
-C) Modem
-D) Qovşaq (Node)
-E) DAC
-184. 11111111 = ?8
-A) 777
-B) 333
-C) 337
-D) 773
-E) 377
-185. 000000002 = ?8
-A) 000
-B) 00
-C) 0
-D) 08
-E) 80
-186. 111111112 = ?16
-A) CC
-B) FF
-C) BB
-D) DD
-E) AA
-187. 000000002 = ?16
-A) 0
-B) 4040
-C)00
-D) 08
-E) 80
-188. 11111111 111111112 = ?8
-A) 733733
-B) 337337
-C) 377377
-D) 177777
-E) 137137
-189. 00000000 000000002 = ?8
-A) 80 80
-B) 0808
-C) 00
-D) 000000
-E) 0
-190. 11111111 111111112 = ?16
-A) FFFF
-B) AAAA
-C) DDDD
-D) BBBB
-E) CCCC
-191. 0000000 000000002 = ?16
-A) 0808
-B) 0
-C) 8080
-D) 00
-E)0000
-192. FF16=?10
+E) 8
+130. lea qəbuledici, verici əmri ilə nə edilir?
+A) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+B) göstəricinin verilənlərin əlavə segment registrinə (gs) yüklənməsi
+C) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+D) icra ünvanının yüklənməsi
+E) göstəricilər registri ds veriləənlər registrinə yüklənilir
+131. Üçünvanlı əmr olan punktu göstərin
+A) yaddaşın hər hansı yuvasını təmizləmək
+B) yaddaşın hər hansı yuvasının qiymətini bir vahid artırmaq
+C) hər hansı iki yuvanın qiymətini toplayıb digər yuvaya yazmaq
+D) hər hansı yuvanın qiymətini digər yuvaya köçürmək
+E) yaddaşın hər hansı yuvasına yazmaq
+132. İşarəsiz iki ədədin toplanması qaydasını göstərən bənd hansıdır?
+A) əgər işarəsiz iki ədədin toplanması zamanı ən böyük mərtəbəsivahid olursa onda
+hesab əməlinin nəticəsi düzgün deyildir
+B) əgər işarəsiz iki ədədin toplanması zamanı ən böyük mərtəbə sisıfır olursa onda
+hesab əməlinin nəticəsi düzgün deyildir
+C)əgər işarəsiz iki ədədin toplanması zamanı ən böyük mərtəbədən keçid alınırsa onda
+hesab əməlinin nəticəsi düzgündür
+D)əgər işarəsiz iki ədədin toplanması zamanı ən böyük mərtəbədən keçid yoxdursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+E) əgər işarəsiz iki ədədin toplanması zamanı ən böyük mərtəbədən keçid alınırsa onda
+hesab əməlinin nəticəsi düzgün deyildir
+133. Mövqeli say sistemlərində ədədi təşkil edən rəqəmlərinqiymətlərinin
+təyinolunma alqoritmini göstərin.
+A) hər bir rəqəm say sisteminin əsaına bölünür
+B) hər bir rəqəm say sisteminin əsaına vurulur
+C) hər bir rəqəm ədədin tərkibindəki vahidlərin miqdarına bölünür
+D) say sisteminin əsası rəqəmin yazılışdakı yerinin sağdan sayı qədər qüvvətə vəhəmin
+rəqəmə vurulur
+E) say sisteminin əsası rəqəmin yazılışdakı yerinin soldan sayı qədər qüvvətəyüksəldilir və
+həmin rəqəmə vurulur
+134. Çıxma əməlləri zamanı onluq ədədlərin çıxılmasında düzəliş tələb olunarsa
+hansı göstərici qoyulmalıdır?
+A) PF=1 göstəricisini
+B) AF=1 göstəricisini
+C) ZF=1 göstəricisini
+D) SF=1 göstəricisini
+E) CF=1 göstəricisini
+135. Prosessorun əməliyyatlar ardıcıllığına aid olmayan bəndi göstərin.
+A) əmrlər sayğacı registri avtomatik artır və növbəti sözün ünvanına çevrilir
+B) proqrqmın cari əmri olan yaddaşın ünvanını, prosessorun vəziyyəti registrinə yukləyir
+C) özünün əmrlər sayğacı registrini yaddaşın ünvanlar registrinə yukləyir
+D) prosessorun idarəetmə qurğusu əmrlər registrindəki əmri interpretasiya edir
+E) yaddaşın ünvanlar registrinin göstərdiyi ünvandan əmrin kodu oxunur
+136. Yaddaşın verilənlər registri nə üçün nəzərdə tutulmuşdur?
+A) seçilmiş yaddaşın verilənlərini yadda saxlamaq üçün
+B) seçilmiş yaddaşın ünvanını formalaşdırmaq üçün
+C) seçilmiş yaddaşın ünvanını yadda saxlamaq üçün
+D) ”yaz”siqnalını formalaşdırmaq üçün
+E) ”oxu”siqnalını formalaşdırmaq üçün
+137. Assembler dilində ünvanlamanın əsas rejimi olmayan bəndi göstərin
+A) azad ünvanlama
+B) əsasa nisbətən ünvanlanması
+C) indeksləmə ilə düzünə ünvanlama
+D) indeksləmə ilə əsasa nisbətən ünvanlama
+E) dolayı ünvanlama
+138. Mənfi-810 ədədinin 8 mərtəbəli ikilik-tamamlama kodunu tapın
+A) 100110012
+B) 111110102
+C) 111010012
+D) 111110002
+E) 111110002
+139. Aşağıdakılardan hansı kəsilmə vektorunun işlənməsi alqoritminə aid deyildir?
+A) prosessor periodik olaraq əsas proqramı dayandırır və xarici qurğununhazırlığını
+yoxlayır
+B) xarici qurğudan kəsilmə sorğusu alan prosessor icra olunan proqramın cari andakı
+vəziyyətini yadda saxlayır
+C) prosessor xarici qurğuya xüsusi xəttlə kəsilmənin təsdiqini göndərir
+D) kəsilmənin təsdiqini alan xarici qurğu prosessora öz kəsilmə vektorunun
+ünvanınıgöndərir
+E) xarici qurğu xüsusi xəttlə kəsilmə sorğusu siqnalı göndərir
+140. Hansı dəqiqləşdirilmə tipində, seqment yaddaşın istənilən ünvanından başlaya
+bilər?
+A) byte
+B) DWORD
+C) PARA
+D) PAGE
+E) WORD
+141. Şinlər nədən ibfrətdir?
+A) kommunikasiya qurğuları dəstindən
+B) gücləndiricilər dəstindən
+C) əlaqə xətləri dəstindən
+D) ötürücü və qəbuledicilər dəstindən
+E) kodçeviricilərindən
+142. flags göstəricilər registrinə stekdən yazma əmri hansıdır?
+A) PUSHFW
+B) PUSH
+C) POPF
+D) POPFW
+E) POPA
+143. Toplama əməlləri zamanı PF=1 göstəricisinin qoyulması nə deməkdir ?
+A) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+B) nəticə qəbulediciyə yerləşmirsə (keçid alınarsa)
+C) nəticə 0 olursa
+D) nəticə mənfidirsə.
+E) nəticədə vahidlərin syaı cüt olarsa
+144. HMQ-nun X şini vasitəsi ilə hansı məlumat ötürülür?
+A) əməliyyatın kodu
+B) verilənlər
+C) idarə etmə siqnalları
+D) əməliyyatın nəticəsi
+E) sinxroimpulslar
+145. Assembler dilində cümlələrin növü olmayan hansıdır?
+A) əmrlər və ya təlimatlar
+B) Makroəmrlər
+C) Direktivlər
+D) Şərhlər
+E) modullar
+146. Assembler dilində əmrlərin formatında mnemоkod nə üçün nəzərdə tutulub?
+A) əmrin aid olduğu seqmqenti göstərir
+B) ümumi registrlərin ünvanları üçün
+C) keçid nöqtələrini göstərir
+D) operandların ünvanı üçüçn
+E) əməliyyatın adıdır
+147. Stekə qrup halında yazmaq əmri hansıdır?
+A) PUSHFW
+B) POPAW
+C) POPF
+D) POPFW
+E) PUSHW
+148. İşarəli ədədlər üçün bölmə əməliyyatı hansıdır?
+A) not operand əmri
+B) İDİV qəbuledici əmri
+C) CMP 1operand, 2operand əmri
+D) or verici, qəbuledici əmri
+E) and verici, qəbuledici əmri
+149. Toplama əməlləri zamanı CF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+C) nəticə 0 olursa
+D) nəticə mənfidirsə.
+E) nəticə qəbulediciyə yerləşmirsə (keçid alınarsa)
+150. Aşağıdakı mühakimələrdən hansı doğrudur?
+A) Printer kodlaşdırma qurğusudur
+B) Mikropresessor çıxış qurğusudur
+C) CD-ROM giriş qurğusudur
+D) Klaviatura giriş qurğusudur
+E) Monitor giriş qurğusudur
+151. EHM yaddaşının yuvasının ünvanı dedikdə nə başa düşülür?
+A) tipi
+B) parolu
+C) loqini
+D) sıra sayı
+E) göstərici bayrağı
+152. Con fon-Neyman arxitekuralı EHM-də verilənlər və əmrlər necə saxlanılır?
+A) əmrlər yaddaşında və verilənlər yaddaşında
+B) əmrlər yaddaşda, verilənlər isə xarici qurğulardan daxil olur
+C) ümumi yaddaşda
+D) əmrlər və verilənlər xarici qurğulardan daxil olur
+E) verilənlər yaddaşda, əmrlər isə xarici qurğulardan daxil olur
+153. EHM-in interfeysi nədir?
+A) xarici qurğuları idarəetmə vasitələri
+B) xarici qurğular və istifadəçilərlə qarşılıqlı mübadilə vasitələri
+C) ƏS-ində qarşılıqlı mübadilə vasitələri
+D) elektrik siqnallarını ölçmə vasitələri
+E) istifadəçinin xəbərdarlığı və məlumatlandırılması vasitələri
+154. Göstəricinin verilənlərinin əlavə segment registrinə(ss)yüklənməsi əmri
+hansıdır?
+A) lss qəbuledici, verici
+B) lfs qəbuledici, verici
+C) iss qəbuledici, verici
+D) les qəbuledici, verici
+E) kss qəbuledici, verici
+155. DB psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı söz ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+156. Kəsilmə vektorunun ikinci yaddaş yuvasında nə yerləşir?
+A) uyğun xarici qurğudan olan kəsilməyə xidmət proqramının ünvanı
+B) əsas proqrama qayıdış ünvanı
+C) prosessorun vəziyyətlər sözü
+D) ƏYQ verilənlər registrinin tərkibi
+E) kəsilmə anında əmrlər sayğacının tərkibi
+157. Hesab-məntiq qurğusunun köməyi ilə hansı əməliyyat aparılır?
+A) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan toplama əməliyyatı
+B) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədənkeçidi
+nəzərəalmaqla toplama əməliyyatı
+C) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan vurma əməliyyatı
+D) ikilik ədədlər üzərində, hesab və məntiq əməliyyatları
+E) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidinəzərə
+almadan toplama əməliyyatı
+158. İcra olunan ünvan nə deməkdir?
+A) proqramın birinci əmrinin ünvanıdır
+B) proqramın növbəti əmrinin ünvanıdır
+C) operandın ünvanı haqqında məlumatdır
+D) əmrin ünvanı haqqında məlumatdır
+E) yaddaşın yuvasının ünvanıdır (sayıdır)
+159. Birbaşa ünvanloama nə deməkdir?
+A) əmrdə operandın ünvanı yox , özü yerləşir
+B) əmrdə operandın ünvan haqqında birbaşa göstəriş yoxdur
+C) bu operand proqpamın birinci əmrinin operandı kimi nəzərdə tutulur
+D) bu operand proqpamın növbəti əmrinin operandı kimi nəzərdə tutulur
+E) bu operand proqpamın conuncu əmrinin operandı kimi nəzərdə tutulur
+160. Operandların sayına görə əmrlərin əsas tiplərinə aid olmayan bəndi göstərin.
+A) üçünvanlı əmrlər
+B) dördünvanlı əmrlər
+C) dolayısı əmrlər
+D) ikiünvanlı əmrlər
+E) birünvanlı əmrlər
+161. Prosessorun alt proqramı çağırma və oradan qayıtma zamanı etdiyi
+əməliyyatlardan olmayanı hansıdır?
+A) əmrlər sayğacı registrinin cari tərkibi bir addım azaldılır
+B) ünvanı əmrlər sayğacı registrində olan əmr yaddaşdan oxunur
+C) alt proqramı cağırma əmrində verilmiş ünvan əmrlər sayğacı registrinə yazılır
+D) stekdən qayıtma ünvanı oxunur və əmrlər sayğacı registrinə yazılır
+E) əmrlər sayğacı registrinin cari tərkibi stekə göndərilir
+162. EHM-də maşın sözü neçə ikilik mərtəbədən ibarətdir?
+A) 8
+B) 64
+C) 16
+D) 32
+E) 18
+163. and verici, qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) mərtəbələr üzrə inkar əməliyyatı
+B) mərtəbələr üzrə “və”əməliyyatı
+C) müqayisəetmə əməli
+D) mərtəbələr üzrə “və ya”əməliyyatı
+E) mərtəbələr üzrə “təcridedici toplama”əməliyyatı
+164. Hansı misalda işarəsiz iki ədədin toplanması zamanı böyük mərtəbəyə keçid
+alınır?
+A) 00100110+01001101=
+B) 00100110+01001100 =
+C) 00100111+01001101=
+D) 01100111+01001100=
+E) 00100111+01001100=
+165. Hansı əlaqə tipində, seqment müxtəlif modullardakı eyni adlı seqmentlər ilə
+birləşdirilir?
+A) AT xxx
+B) STACK
+C) PPUBLİC
+D) COMMON
+E) PRİVATE
+166. 37,8410 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 3·101
++7·100
++8·10-1
++4·10-2
+B) 3·23
++7·22
++8·21
++4·20
+C) 1·23
++0·22
++1·21
++0·20
+D) 2·83
++7·82
++3·81
++1·80
+E) 3·103
++4·102
++8·101
++5·100
+167. Çıxma əməlləri zamanı nəticə mənfidirsə hansı göstərici qoyulmalıdır?
+A) PF=1 göstəricisini
+B) ZF=1 göstəricisini
+C) CF=1 göstəricisini
+D) AF=1 göstəricisini
+E) SF=1 göstəricisini
+168. Prosessorun registrlərindən olmayan bənd hansıdır?
+A) vəziyyəti registri (PVR)
+B) əmrlər sayğacının registry (ƏSR)
+C) stekin göstəricisi registri (SGR)
+D) verilənlər registri (VR)
+E) əmrlər registry (ƏR)
+169. İkiünvanlı əmr olan punktu göstərin
+A) yaddaşın hər hansı yuvasını təmizləmək
+B) yaddaşın hər hansı yuvasının qiymətini bir vahid artırmaq
+C) ədədin işarəsini dəyişmək
+D) hər hansı yuvanın qiymətini digər yuvaya köçürmək
+E) yaddaşın hər hansı yuvasına yazmaq
+170. Avtodekrementasiya ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand
+kimiinterpretasiya olunur
+B) əmrdə göstərilmiş ümumi registrin qiyməti oxunduqdan sonra 1 və ya 2 qədərartırılır
+C) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+artırılır
+D) əmrdə göstərilmiş ümumi registrin qiyməti azaldılır, sonra prosessortərəfindənoperand
+yerləşən yaddaş ünvanı kimi interpretasiya olunur
+E) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+171. 469310 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 3·23
++7·22
++8·21
++4·20
+B) 1·23
++0·22
++1·21
++0·20
+C) 3·103
++4·102
++8·101
++5·100
+D) 4·103
++6·102
++9·101
++3·100
+E) 2·83
++7·82
++3·81
++1·80
+172. Hansı dəqiqləşdirilmə tipində, seqment yaddaşın yalnız 4k-ya bölünən
+ünvanlarından başlaya bilər?
+A) WORD
+B) DWORD
+C) PARA
+D) PAGE
+E) MEMPAGE
+173. 11012 ədədini təşkil edən hər rəqəmin qiymətini təyin edin
+A) 1·23
++1·22
++0·2 1
++1·2
+0
+B)
+3·23
++7·22
++8·21
++4·20
+C) 3·101
++7·100
++8·10-1
++4·10-2
+D) 3·103
++4·102
++8·101
++5·100
+E) 2·83
++7·82
++3·81
++1·80
+174. Göstəricinin verilənlərinin əlavə segment registrinə(es)yüklənməsi əmri
+hansıdır?
+A) ies qəbuledici, verici
+B) les qəbuledici, verici
+C) lfs qəbuledici, verici
+D) lss qəbuledici, verici
+E) lds qəbuledici, verici
+175. EHM-in yaddaşında vektor kəsilmələri sistemi necə təşkil olunur?
+A) əsas proqram, kəsilmələrə xidmət proqramları, kəsilmə drayverləri
+B) əsas proqram, hazırlığın sorğusu proqramları, kəsilmə vektorları
+C) əsas proqram, yaddaşa birbaşa sorğu proqramları, kəsilmə vektorları
+D) əsas proqram, kəsilmələrə xidmət proqramları, kəsilmə vektorları
+E) əsas proqram, istifadəçi proqramları, kəsilmə vektorları
+176. Bir ikilik ədədi yadda saxlayan qurğu hansıdır?
+A) tamcəmləyici
+B) yarımcəmləyici
+C) çoxmərtəbəli cəmləyici
+D) trigger
+E) registr
+177. Prosessorun gördüyü işlərə aid olmayan bəndi göstərin.
+A) əməli yaddaşa müraciəti təşkil edir
+B) periferik qurğuların işinə təkan verir
+C) qida gərginliyi qiymətinə nəzarət edir
+D) sorğuları qəbul və emal edir
+E) proqramın əmrlərini yerinə yetirir
+178. Ünvan operandları nəyi göstərirlər?
+A) hər hansı yaddaş ünvanından ibarət simvolik adlar
+B) ünvanlar sayğacının cari andakı qiymətini
+C) müyyən bir sabit qiyməti olan ədəd, sətir, ad və ya ifadəni
+D) sadəcə registrin adını
+E) operandın, yaddaşda fiziki yerini
+179. 58.HMQ-nun Z çıxışında vahidin olması nəyi göstərir?
+A) hesabi daşmanın yaranmasını
+B) müsbət nəticənin alınmasını
+C) ”0” nəticəsinin alınmasını
+D) böyük mərtəbədən keçidin olmasını
+E) mənfi nəticənin alınmasını
+180. Stekin göstəricisi registri (SGR) nə üçün nəzərdə tutulmuşdur?
+A) EHM-in yaddaşında stekin təşkili
+B) seçiləcək əmrin ünvanının formalaşması
+C) stekdən oxunmuş verilənlərin kodunun müvəqqəti saxlanması
+D) cari əmrin kodunun müvəqqəti saxlanması
+E) ünvanlanma fəzasının genişləndirilməsi
+181. Aşağıdakılardan hansı EHM-in xarici qurğularla, proqram kəsilməsi rejimində
+işləməsinin mərhələsi deyildir?
+A) xarici qurğu prosessora icra olunan proqramı dayandırmaq sorğusu (tələbi)göndərir
+B) prosessor əsas proqramın işini dayandırır və xarici qurğuya xidmət proqramına keçir
+C) xarici qurğuya xidmət proqramı bitdikdən sonra prosessor əsas proqramın icrasına
+qayıdır
+D) xarici qurğuda müəyyən anda, EHM-nin müəyyən əməiyyatlar aparması tələbatı yaranır
+E) prosessor əsas proqramın işini dayandırır və xarici qurğunun hazırlığını yoxlayır
+182. CONST sadələşdirilmiş direktiv nəyi müyyən edir?
+A) inisalizasiya olunmamış verilənlər seqmentinin başlanğıcı və davamı
+B) sabit verilənlər seqmentinin başlanğıcı və davamı
+C) kod seqmentinin başlanğıcı
+D) modul stekinin seqmentinin başlanğıcı və davamı
+E) verilənlər seqmentinin başlanğıcı
+183. Yarımcəmləyicinin köməyi ilə hansı əməliyyat aparılır?
+A) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədənkeçidi
+nəzərəalmaqla toplama əməliyyatı
+B) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidinəzərə
+almadan toplama əməliyyatı
+C) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmaqla toplama əməliyyatı
+D)birmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidinəzərəalmadan
+vurma əməliyyatı
+E) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan toplama əməliyyatı
+184. Stekdə tətbiq olunan verilənlərə müraciət üsulu necə adlanır?
+A) axırıncı gəldi birinci cıxdı
+B) yazılma qaydasının əksi ilə
+C) birinci gəldi birinci cıxdı
+D) axırıncı gəldi axırıncı cıxdı
+E) yazılma qaydası ilə
+185. Şəkildəki hansı rəqəmsal qurğunun sxemidir?
+A) çoxmərtəbəli cəmləyici
+B) tamcəmləyici
+C) HMQ
+D) yarımcəmləyici
+E) trigger
+186. Toplama əməlləri zamanı AF=1 göstəricisinin qoyulması nə deməkdir ?
+A) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+B) nəticədə vahidlərin syaı cüt olarsa
+C) nəticə 0 olursa
+D) nəticə mənfidirsə.
+E) nəticə qəbulediciyə yerləşmirsə (keçid alınarsa)
+187. RISC arxitekturalı EHM-də nəyi rrealizasiya etmək nəzərdə tutulur?
+A) sadə və çoxişlənən əmrlər dəstini
+B) idaretmə qurğusunun mikroproqram realizasiyası
+C) əmrlər dəstinin genişləndirilməsi
+D) ünvanlandırma üsullarının artırılmsı
+E) prosessorun takt tezliyinin artırılması
+188. les qəbuledici, verici əmri ilə nə edilir?
+A) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+B) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+C) icra ünvanının yüklənməsi
+D) göstəricilər registri ds veriləənlər registrinə yüklənilir
+E) göstəricinin verilənlərin əlavə segment registrinə (gs) yüklənməsi
+189. POPF əmri ilə nə edilir?
+A) eflags göstəricilər registrinə stekdən yazılır
+B) stekdən qrup halında oxumaq
+C) flags göstəricilər registrinə stekdən yazılır
+D) stekin zirvəsinin tərkibi qəbuledici operandın yerə yazılır
+E) Göstəricilər registrləri stekə yazılır
+190. Ünvanlama üsullarına aid olmayan bəndi göstərin
+A) dolayısı ünvanlanma
+B) registr ünvanlanması
+C) müqayisəli ünvanlanma
+D) birbaşa ünvanlanma
+E) nisbi ünvanlamavə ya əsaslanma
+191. Neçə işarəsiz ədədi 16 ikilik mərtəbə vasitəsi ilə təsvir etmək olar?
 A) 65536
-B) 65535
-C) 256
-D)255
-E) 1024
-193. FFFF16=?10
-A) 65536
-B) 16 777 215
-C) 16 777 216
-D) 255
-E) 65535
-194. FFFFFF16=?10
-A) 65535
-B) 16 777 215
-C) 255
-D) 16 777 216
-E) 65536
-195. 778=?16
-A) 3FF
-B) 2F
-C) 3F
-D) 1FF
-E) 1F
-196. 7778=?16
-A) 3F
-B) 2FF
-C) 3FF
-D) 2F
-E) 1FF
-197. 77778=?16
-A) 2FFF
-B) 4FFF
-C) 1FFF
-D) FFF
-E) 3FFF
-198. 777778=?16
-A) 4FFF
-B) 3FFF
-C) 7FFF
-D) 5FFF
-E) 6FFF
-199. 7778=?10
-A) 3232
-B) 1023
-C) 1024
-D) 512
-E) 511
-200. 77778=?10
-A) 1023
-B) 1024
-C) 4095
+B) 16
+C) 32768
 D) 4096
-E) 2048
-201. FF16=?8
-A) 3777
-B) 4777
-C) 6777
-D) 5777
-E) 7777
-201 nomreli sualda cavab 377 olmalidir variantlarda yoxdur
-202. MAN nə deməkdir?
-A) Manage Around Network
-B) Metro Area Network
-C) Metropolitan Around Network
-D) Metropolitan Area Network
-E) Manage Area Network
-203. Tətbiqi Səviyyənin (Application Layer) funksiyaları hansılardır?
-A) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-B) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-C) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-D) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-E) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-204. Təqdimat səviyyəsinin (Presentation Layer) funksiyaları hansılardır?
-A) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-B) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-C) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-D) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-E) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-205. Seans səviyyəsinin (Session Layer) funksiyaları hansılardır?
-A) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-B) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-C) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-D) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-E) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-206. Nəqliyyat səviyyəsinin (Transport Layer) funksiyaları hansılardır?
-A) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-B) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-C) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-D) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-E) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-207. Şəbəkə səviyyəsinin (Network Layer) funksiyaları hansılardır?
-A) Məlumat çərçivələrinin səhvsiz ötürülməsi üçün istifadə olunur
-B) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-C) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-D) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-E) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-208. Kanal səviyyəsinin (Network Layer) funksiyaları hansılardır?
-A) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-B) Prosesdən-prosesə etibarlı mesaj çatdırılmasını təmin edir
-C) Bu səviyyə istifadəçiyə xidmətlər təqdim edir
-D) Məlumat çərçivələrinin səhvsiz ötürülməsi üçün istifadə olunur
-E) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-209. Fiziki səviyyənin (Network Layer) funksiyaları hansılardır?
-A) Məlumat çərçivələrinin səhvsiz ötürülməsi üçün istifadə olunur
-B) Paketlərin mənbədən təyinat nöqtəsinə köçürülməsinə görə məsuliyyət daşıyır
-C) Tərcümə, sıxılma və şifrələməyə görə məsuliyyət daşıyır
-D) Dialoqları qurmaq, idarə etmək və sonlandırmaq üçün istifadə olunur
-E) Bitlərin ötürülməsi üçün fiziki mühit təmin edir
-210. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) maksimum
-B) əsas
-C) orta
-D) tətbiqi
-E) minimum
-211. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) təqdimat
-B) yuxarı
-C) maksimum
-D) əsas
-E) başlanğıc
-212. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) minimum
-B) seans
-C) əsas
-D) orta
-E) maksimum
-213. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) əsas
-B) nəqliyyat
-C) orta
-D) minimum
-E) maksimum
-214. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) minimum
-B) şəbəkə
-C) orta
-D) əsas
-E) maksimum
-215. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) əsas
-B) kanal
-C) başlanğıc
-D) yuxarı
-E) maksimum
-216. “?” işarəsi OSI modelinin hansı səviyyəsinə uyğun gəlir?
-A) fiziki
-B) başlanğıc
-C) maksimum
-D) yuxarı
-E) əsas
-217. "?" ilə işarələnmiş kompüter şəbəkəsinin növü nədir?
-A) TCP
-B) FTP
-C) LAN
-D) HTTP
-E) ATM
-218. "?" ilə işarələnmiş kompüter şəbəkəsinin növü nədir?
-A) ATM
-B) TCP
-C) MAN
-D) HTTP
-E) FTP
-219. "?" ilə işarələnmiş kompüter şəbəkəsinin növü nədir?
-A) TCP
-B) ATM
-C) FTP
-D) HTTP
-E) WAN
-220. "?" ilə işarələnmiş kompüter şəbəkəsinin növü nədir?
-A) ATM
-B) HTTP
-C) TCP
-D) FTP
-E) PAN
-221. Şəkildə göstərilən diaqram hansı şəbəkəyə aiddir?
-A) METROPOLITAN AREA NETWORK
-B) PERSONAL AREA NETWORK
-C) WIDE AREA NETWORK
-D) HYBRID
-E) LOCAL AREA NETWORK
-222. Şəkildə göstərilən diaqram hansı şəbəkəyə aiddir?
-A) HYBRID
-B) WAN
-C) MAN
-D) LAN
-E) PAN
-223. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) şəbəkə topologiyasının növləri
-B) texnologiya topologiyasının növləri
-C) texnologiya apparat növləri
-D) kompüterlərin növləri
-E) kabellərin növləri
-224. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) LAN
-B) WAN
-C) ATM
-D) BUS
-E) FTP
-225. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) FTP
-B) TREE
-C) ATM
-D) LAN
-E) WAN
-226. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) FTP
-B) WAN
-C) ATM
-D) MESH
-E) LAN
-227. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) POP3
-B) FTP
-C) HTTP
-D) RING
-E) TCP
-228. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) TCP
-B) STAR
-C) FTP
-D) POP3
-E) HTTP
-229. "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) HTTP
-B) POP3
-C) HYBRID
-D) FTP
-E) TCP
-230. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) RING
-B) BUS
-C) MESH
-D) TREE
-E) HYBRID
-231. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) TREE
-B) HYBRID
-C) RING
-D) BUS
-E) MESH
-232. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) BUS
-B) TREE
-C) STAR
-D) MESH
-E) HYBRID
-233. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) MESH
-B) BUS
-C) RING
-D) TREE
-E) HYBRID
-234. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) BUS
-B) RING
-C) TREE
-D) MESH
-E) HYBRID
-235. Şəkildə "?" işarəsinə hansı şəbəkə topologoya tipi uyğun gəlir?
-A) MESH
-B) HYBRID
-C) RING
-D) BUS
-E) TREE
-236. OSI modelinin Təqdimat səviyyəsi Tətbiqi və ... səviyyəsi arasında yerləşir.
-A) Şəbəkə
-B) Fiziki
-C) Kanal
-D) Seans
-E) Nəqliyyat
-237. OSI modelinin Seans səviyyəsi Təqdimat və ... səviyyəsi arasında yerləşir.
-A) Şəbəkə
-B) Nəqliyyat
-C) Tətbiqi
-D) Fiziki
-E) Kanal
-238. OSI modelinin Nəqliyyat səviyyəsi Seans və … səviyyəsi arasında yerləşir.
-A) Fiziki
-B) Nəqliyyat
-C) Tətbiqi
-D) Şəbəkə
-E) Kanal
-239. OSI modelinin Şəbəkə səviyyəsi Nəqliyyat və ... səviyyəsi arasında yerləşir.
-A) Tətbiqi
-B) Fiziki
-C) Seans
-D) Kanal
-E) Təqdimat
-240. OSI modelinin Kanal səviyyəsi Şəbəkə və ... səviyyəsi arasında yerləşir.
-A) Tətbiqi
-B) Təqdimat
-C) Seans
-D) Fiziki
-E) Kanal
+E) 1024
+192. Nəzərdə tutulan operand nə deməkdir?
+A) bu operand proqpamın birinci əmrinin operandı kimi nəzərdə tutulur
+B) əmrdə operand ünvanı haqqında birbaşa göstəriş yoxdur, o əməliyyatn kodu ilə verilir
+C) bu operand proqpamın növbəti əmrinin operandı kimi nəzərdə tutulur
+D) bu operand proqpamın conuncu əmrinin operandı kimi nəzərdə tutulur
+E) belə operand yoxdur
+193. İkilik-tamamlama kodlaşdırılması ilə təsvir olunan işarəli iki ədədin
+toplanması qaydasını göstərən bənd hansıdır?
+A) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə vahidə bərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+B) əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa onda hesab əməlinin nəticəsi düzgün deyildir
+C)əgər işarəli iki ədədin toplanması zamanı keçid alınırsa onda hesabəməlinin nəticəsi
+düzgün deyildir
+D)əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə sıfıra bərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+E) əgər işarəli iki ədədin toplanması zamanı yalnız ən böyük mərtəbədən keçid alınırsa
+onda hesab əməlinin nəticəsi düzgün deyildir
+194. Şəkildəki hansı rəqəmsal qurğunun məntiqi sxemidir?
+A) HMQ
+B) tamcəmləyici
+C) yarımcəmləyici
+D) çoxmərtəbəli cəmləyici
+E) trigger
+195. Struktur operandları nəyi göstərirlər?
+A) operandın, yaddaşda fiziki yerini
+B) ünvanlar sayğacının cari andakı qiymətini
+C) müyyən bir sabit qiyməti olan ədəd, sətir, ad və ya ifadəni
+D) hər hansı yaddaş ünvanından ibarət simvolik adlar
+E) mürəkkəb strukturlu verilənlərin konkret elementlərini
+196. Tam cəmləyicinin köməyi ilə hansı əməliyyat aparılır?
+A) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan toplama əməliyyatı
+B) birmərətəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədənkeçidi
+nəzərəalmaqla toplama əməliyyatı
+C) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmadan toplama əməliyyatı
+D) çoxmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi
+nəzərəalmaqla toplama əməliyyatı
+E) birmərtəbəli iki ikilik Xvə Y ədədləri üzərində, əvvəlki mərtəbədən keçidi nəzərəalmadan
+vurma əməliyyatı
+197. Dolayısı-registr ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+B) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operandyerləşən
+yaddaş ünvanı kimi interpretasiya olunur
+C) əmrdə göstərilmiş ümumi registrin qiyməti oxunduqdan sonra 1 və ya 2 qədər artırılır
+D)əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand kimi
+interpretasiya olunur
+E) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+artırılır
+198. İdarəetmə qurğusunun işinə aid olmayan bəndi göstərin.
+A) mikroəmrlərin işinə təkan verir
+B) prosessorun bütün elementlərinin işini koordinasiya edir
+C) EHM-in digər blokları arasında informasiya mübadilsini idarə edir
+D) sorğuları növbələyir
+E) cari əmrin realizasiyasını təmin edir
+199. Assembler dilində əmrdə neçə operand ola bilər?
+A) 2, 3
+B) 2
+C) max 8
+D) 0, 1, vəya 2
+E) 1, 2, vəya 3
+200. İkilik-tamamlama kodlaşdırılması ilə təsvir olunan işarəli iki ədədintoplanması
+qaydasını göstərən bənd hansıdır?
+A) əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa onda hesab əməlinin nəticəsi düzgün deyildir
+B) əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə vahidəbərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+C) əgər işarəli iki ədədin toplanması zamanı həm ən böyük mərtəbəyə həmdə ən böyük
+mərtəbədən keçid alınırsa onda hesab əməlinin nəticəsi düzgündür
+D)əgər işarəli iki ədədin toplanması zamanı ən böyük mərtəbə sıfırabərabər olursa
+onda hesab əməlinin nəticəsi düzgün deyildir
+E) əgər işarəli iki ədədin toplanması zamanı keçid alınmırsa onda hesabəməlinin
+nəticəsi düzgün deyildir
+201. Mərtəbələr üzrə “və”əməliyyatı hansıdır?
+A) CMP 1operand, 2operand əmri
+B) not operand əmri
+C) or verici, qəbuledici əmri
+D) and verici, qəbuledici əmri
+E) İDİV qəbuledici əmri
+202. Stek üçün ayrılmış yaddaş yuvalarına ünvanlanma necə təşkil olunur?
+A) YÜR registrinin tətbiqi ilə
+B) YVR registrinin tətbiqi ilə
+C) SGR registrinin tətbiqi ilə
+D) ÜR registrinin tətbiqi ilə
+E) SR registrinin tətbiqi ilə
+203. ADC qəbuledici, verici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledici = qəbuledici - verici
+B) qəbuledici = qəbuledici + verici + РF tərkibi
+C) qəbuledicinin tərkibi 1 qədər çoxaldılır
+D) qəbuledici = qəbuledici + verici + CF tərkibi
+E) qəbuledici = 0
+204. Əlaqə tipi STACK olduqda hansı seqment seçilir?
+A) seqment müxtəlif modullardakı eyni adlı seqmentlər ilə birləşdirilmir
+B) müxtəlif modullardakı eyni adlı bütün seqmentlər bir ünvanda birləşdirilir.
+C) Stek seqmentini müəyyən edir
+D) seqment paraqrafın mütləq ünvanına qoyulur
+E) seqment müxtəlif modullardakı eyni adlı bütün seqmentlər ilə birləşdirilir.
+205. Yazılar operandları nəyi göstərirlər?
+A) yazının, yaddaşda fiziki yerini
+B) ünvanlar sayğacının cari andakı qiymətini
+C) müyyən bir sabit qiyməti olan yazı və ya ifadəni
+D) hər hansı bir yazının bitlər sahəsini göstərir
+E) hər hansı yaddaş ünvanından ibarət simvolik adlar
+206. ADD qəbuledici, verici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledicinin tərkibi 1 qədər çoxaldılır
+B) qəbuledicinin tərkibi 1 qədər azaldılır
+C) qəbuledici = 0
+D) qəbuledici = qəbuledici - verici
+E) qəbuledici = qəbuledici + verici
+207. Böyük miqdarda ikilik ədədləri yadda saxlamaq üçün əməli yaddaşqurğusunu
+hansı elementlərdən yığırlar?
+A) yarımcəmləyicilərdən
+B) triggerlərdən
+C) registrlərdən
+D) generatorlardan
+E) məntiqi elemenlərdən
+208. Skaynerlər nə üçün nəzərdə tutulmuşdur?
+A) istifadəçi tərəfindən məlumatın EHM-ə daxil edilməsi
+B) istifadəçiyə məlumatın çıxarılması
+C) mətnlərin və ya qrafiki məlumatların kağız üzərində çıxarılması
+D) təsvirlərin daxil edilməsi
+E) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+209. Toplama əməlləri zamanı nəticə 0 olursa hansı göstərici qoyulmalıdır?
+A) CF=1 göstəricisini
+B) ZF=1 göstəricisini
+C) PF=1 göstəricisini
+D) SF=1 göstəricisini
+E) AF=1 göstəricisini
+210. Assembler dilində ünvanlamanın əsas rejimi olmayan bəndi göstərin
+A) birbaşa ünvanlama
+B) düzünə ünvanlama
+C) registr ünvanlanması
+D) azad ünvanlama
+E) dolayı ünvanlama
+211. Göstəricilər registrinin ds veriləənlər registrinə yüklənməsi əmri hansıdır?
+A) lgs qəbuledici, verici
+B) lds qəbuledici, verici
+C) ids qəbuledici, verici
+D) kds qəbuledici, verici
+E) les qəbuledici, verici
+212. Proqramın konkret bir əmri nələrdən ibarətdir?
+A) kompyüterin qurğularından daxil olan sorğuların kodu
+B) kompyüterin qurğularından daxil olan kəsilməərin kodu
+C) kompyüterin qurğularından daxil olan verilənlərin kodu
+D) əməliyyatı və əməliyyyatda iştirak edən verilənləri təyin edən kod
+E) vericilərdən daxil olan konkret əmrin kodu
+213. Registrlər hansı elementlərdən yığılır?
+A) generatorlardan
+B) gücləndiricilərdən
+C) yarımcəmləyicilərdən
+D) triggerlərdən
+E) məntiqi elementlərdən
+214. DD psevdooperatoru nəyi müyyən edir?
+A) dəyişəni təyin edir Bir və ya bir neçə dördbaytlı ayırır
+B) dəyişəni təyin edir Bir və ya bir neçə bayt ayırır
+C) dəyişəni təyin edir Bir və ya bir neçə altıbaytlı söz ayırır
+D) dəyişəni təyin edir Bir və ya bir neçə ikibaytlı söz ayırır
+E) dəyişəni təyin edir Bir və ya bir neçə səkkizbaytlı söz ayırır
+215. Hansı misalda işarəsiz iki ədədin toplanması zamanı böyük mərtəbədən keçid
+alınır?
+A) 11100111+01001100=
+B) 01100110+01001100=
+C) 01100110+01001101=
+D) 00100110+01001101=
+E) 00100110+01001100=
+216. RISC arxitekturalı EHM-in xarakteristikasına aid olmayanı göstərin.
+A) qısaldılmış əmrlər sistemi
+B) az saylı sadə ünvanlandırma üsulları
+C) çoxlu sayda ümumi təyinatlı registrlər
+D) çoxlu sayda budaqlanan əmrlər
+E) sadə əmrlər formatı
+217. PUSHFW əmri ilə nə edilir?
+A) flags və ya eflags göstəricilər registrləri stekə yazılır
+B) stekin zirvəsinin tərkibi qəbuledici operandın yerə yazılır
+C) stekdən qrup halında oxumaq
+D) Göstəricilər registrləri stekə yazılır
+E) stekə qrup halında yazma
+218. SBB qəbuledici, verici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledicinin tərkibi 1 qədər çoxaldılır
+B) qəbuledici = qəbuledici - verici
+C) qəbuledici = 0
+D) qəbuledici = qəbuledici - verici- borc
+E) qəbuledicinin tərkibi 1 qədər azaldılır
+219. Şəkildəki hansı rəqəmsal qurğunun məntiqi sxemidir?
+A) yarımcəmləyici
+B) tamcəmləyici
+C) çoxmərtəbəlicəmləyici
+D) HMQ
+E) trigger
+220. Assembler dilində port kimi hansı registrdən istifadə etmək olar?
+A) ax
+B) dl
+C) al
+D) ex
+E) dx
+221. Çap qurğuları nə üçün nəzərdə tutulmuşdur?
+A) mətnlərin və ya qrafiki məlumatların kağız üzərində çıxarılması
+B) istifadəçiyə məlumatın çıxarılması
+C) istifadəçi tərəfindən məlumatın EHM-ə daxil edilməsi
+D) təsvirlərin daxil edilməsi
+E) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+222. Şəkildəki hansı rəqəmsal qurğunun sxemidir?
+A) yarımcəmləyici
+B) tamcəmləyici
+C) HMQ
+D) çoxmərtəbəli cəmləyici
+E) trigger
+223. Assembler dilində ünvanlamanın əsas rejimi olmayan bəndi göstərin
+A) indeksləmə ilə düzünə ünvanlama
+B) dolayı ünvanlama
+C) indeksləmə ilə əsasa nisbətən ünvanlama
+D) əsasa nisbətən ünvanlanması
+E) steklə ünvanlama
+224. Assembler dilində sabit və birbaşa operandlar nəyi gıstərirlər?
+A) operandın, yaddaşda fiziki yerini
+B) hər hansı yaddaş ünvanından ibarət simvolik adlar
+C) ünvanlar sayğacının cari andakı qiymətini
+D) sadəcə registrin adını
+E) müyyən bir sabit qiyməti olan ədəd, sətir, ad və ya ifadəni
+225. CODE[ADI] sadələşdirilmiş direktiv nəyi müyyən edir?
+A) sabit verilənlər seqmentinin başlanğıcı və davamı
+B) verilənlər seqmentinin başlanğıcı
+C) kod seqmentinin başlanğıcı
+D) modul stekinin seqmentinin başlanğıcı və davamı
+E) inisalizasiya olunmamış verilənlər seqmentinin başlanğıcı və davamı
+226. HMQ-nun Y şini vasitəsi ilə hansı məlumat ötürülür?
+A) idarə etmə siqnalları
+B) əməliyyatın nəticəsi
+C) əməliyyatın kodu
+D) sinxroimpulslar
+E) verilənlər
+227. Əmrlərin əsas qruplarına aid olmayan bəndi göstərin.
+A) hesab əməliyyatları əmrləri
+B) məntiqi əməliyyatlar əmrləri
+C) kəsilmələrin icrası qaydasını idarə edən əmrlər
+D) EHM-in komponentləri arasında kodların göndərilməsi əmrləri
+E) əmrlərin seçilməsi və icrası qaydasını idarə edən əmrlər
+228. İnformasiyanı daxil edən qurğunun adı nədir?
+A) Klaviatura
+B) Səsucaldıcı
+C) Monitor
+D) Plotter
+E) Printer
+229. HMQ-nun S şini vasitəsi ilə hansı məlumat ötürülür?
+A) əməliyyatın kodu
+B) verilənlər
+C) sinxroimpulslar
+D) idarə etmə siqnalları
+E) əməliyyatın nəticəsi
+230. EHM-in şinlər sistemi adətən hansı qruplara bölünürlər?
+A) ünvanlar şini, verilənlər şini, qidalandırma şini
+B) sinxronlaşdırma şini, verilənlər şini, qidalandırma şini
+C) ünvanlar şini, verilənlər şini, sinxronlaşdırma şini
+D) ünvanlar şini, verilənlər şini, idarəetmə şini
+E) sinxronlaşdırma şini, verilənlər şini, idarəetmə şini
+231. Əmrlər registri nə üçün nəzərdə tutulmuşdur?
+A) EHM-in yaddaşında stekin təşkili
+B) prosessorun cari vəziyyətini göstərmək
+C) cari verilənlərin kodunun müvəqqəti saxlanması
+D) cari əmrin kodunun müvəqqəti saxlanması
+E) seçiləcək əmrin ünvanının formalaşması
+232. EHM-in virtual yaddaşı dedikdə nə başa düşülür?
+A) istifadəçinin istifadə etdiyi ünvanlar fəzası
+B) xarici qurğuların yaddaşının yuvaları çoxluğu
+C) əməli yaddaşın ünvanlar fəzası
+D) vinçesterdə olan yaddaş yuvaları çoxluğu
+E) xarici qurğuların yaddaşının ünvanlar fəzası
+233. Böyük miqdarda ikilik ədədləri əməli yadda saxlamaqistifadə olunanqurğu
+necə adlanır?
+A) yarımcəmləyici
+B) ƏYQ
+C) registr
+D) cəmləyici
+E) HMQ
+234. Əməli yaddaş qurğusunun tərkibindəki registr-yuvaların miqdarı nədənasılıdır?
+A) ünvanlar şinindəki mərtəbələrin miqdarından
+B) verilənlər şinindəki mərtəbələrin miqdarından
+C) registrdəki triggerlərin tipindən
+D) registrdəki triggerlərin sürətindən
+E) idarəetmə sxemindən
+235. Proqramın kəsilməsi rejimində, verilənlərin proram mübadiləsi necə keçirilir?
+A) EHM-in mərkəzi prosessorunda icra olunan proqramın təşəbbüsü və idarəsi ilə
+B) xarici qurğunun təşəbbüsü, ilə ancaq EHM-in mərkəzi prosessorunda icra olunan
+proqramın idarəsi ilə
+C)EHM-in mərkəzi prosessorunda icra olunan proqramın təşəbbüsü, ancaq xarici
+qurğunun idarəsi ilə
+D) xarici qurğunun təşəbbüsü və idarəsi ilə
+E) yaddaşa birbaşa müraciət rejimində
+236. Əməli yaddaş qurğusunun registrlərindən olan bəndi göstərin.
+A) əmrlər registry (ƏR)
+B) verilənlər registri (VR)
+C) stekin göstəricisi registri (SGR)
+D) əmrlər sayğacının registry (ƏSR)
+E) prosessorun vəziyyəti registri (PVR)
+237. Əmrin kodu ümumi halda hansı hissələrdən ibarət olur?
+A) hesab hissəsi, ünvan hissəsi
+B) hesab hissəsi, məntiq hissəsi
+C) əməliyyat hissəsi, məntiq hissəsi
+D) əməliyyat hissəsi, ünvan hissəsi
+E) əməliyyat hissəsi, ünvan hissəsi və məntiq hissəsi
+238. Şəkildəki hansı rəqəmsal qurğunun struktur sxemidir?
+A) texnoloıi prosesləri idarəetmə qurğusunun strukturu
+B) VBİS strukturu
+C) müqayisəetmə qurğusunun strukturu
+D) HMQ strukturu
+E) fon-Neyman arxitekturlu EHM baza strukturu
+239. Göstəricinin verilənlərinin əlavə segment registrinə(fs) yüklənməsiəmri
+hansıdır?
+A) lfs qəbuledici, verici
+B) ifs qəbuledici, verici
+C) les qəbuledici, verici
+D) lss qəbuledici, verici
+E) kfs qəbuledici, verici
+240. Daxil-xaric portları nələrdən ibarətdir?
+A) standartlar toplusu
+B) EHM-lər arasında verilənlərin ötürülməsi protokolları toplusu
+C) proqram üsulu ilə tərkibini dəyişmək imkanı olan registrlər toplusu
+D) sinxronlaşdırma xəttləri və kəsilmə siqnalları xəttləri toplusu
+E) xəttlər, siqnallar, elektron siqnallar və alqoritmlər toplusu
+241. Xarici qurğuların kəsilmə vektorları yaddaşın hansı hissəsində yerləşirlər?
+A) istənilən yerində
+B) ƏS-dən sonra
+C) orta hissələrdə
+D) son hissələrdə
+E) başlanğıc hissələrdə
+242. DEC qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledicinin tərkibi 1 qədər çoxaldılır
+B) qəbuledicinin tərkibi 1 qədər azaldılır
+C) qəbuledici = 0
+D) qəbuledici = qəbuledici - verici- borc
+E) qəbuledici = qəbuledici - verici
+243. Proqram-aparat interfeysi nədir?
+A) proqram təminatının qarşılıqlı mübadilə vasitələri
+B) aparat modulları arasında qarşılıqlı mübadilə vasitələri
+C) aparat qurğuları arasında qarşılıqlı mübadilə vasitələri
+D) ƏS-ində qarşılıqlı mübadilə vasitələri
+E) proqram-aparat modulları arasında qarşılıqlı mübadilə vasitələri
+244. Assembler dilində əmrlər və ya təlimatlar nədir?
+A) Proqramın mətninin müəyyən bir şəkildə formalaşmış cümləsidir
+B) Çeviriciyə (translyatora) iş rejimlərini göstərir
+C) Maşın dilində analoqu yoxdur
+D) Maşın təlimatlarının simvolik analoqları
+E) tərcüməçi tərəfindən nəzərə alınmır
+245. Prosessorun gördüyü işlərə aid olmayan bəndi göstərin.
+A) proqramın əmrlərini yerinə yetirir
+B) qida gərginliyi kəsilərkən məlumatı yadda saxlayır
+C) əməli yaddaşa müraciəti təşkil edir
+D) periferik qurğuların işinə təkan verir
+E) sorğuları qəbul və emal edir
+246. PUSHA və PUSHW əmri ilə nə edilir?
+A) stekə qrup halında yazma
+B) stekin zirvəsinin tərkibi qəbuledici operandın yerinə yazılır
+C) mənbənin tərkibi stekin zirvəsinə yazılır
+D) Göstəricilər registrləri stekə yazılır
+E) stekdən qrup halında oxumaq
+247. ”Mouse” manipulyatoru nə üçün nəzərdə tutulmuşdur?
+A) kursorun yanıb-sönmə tezliyini seçmək
+B) kursorun formasını seçmək
+C) ekranda simvolları hərəkət etdirmək
+D) verilənlərin daxil-xaric edilməsi
+E) kursoru seçmək və idarə etmək
+248. Əlaqə tipi AT xxx olduqda seqment necə seçilir?
+A) seqment müxtəlif modullardakı eyni adlı bütün seqmentlər ilə birləşdirilir.
+B) seqment müxtəlif modullardakı eyni adlı seqmentlər ilə birləşdirilmir
+C) müxtəlif modullardakı eyni adlı bütün seqmentlər bir ünvanda birləşdirilir.
+D) seqment paraqrafın mütləq ünvanına qoyulur
+E) Stek seqmentini müəyyən edir
+249. İdarəetmə qurğusu nə üçün nəzərdə tutulmuşdur?
+A) proqramın əmrlərini yerinə yetirir
+B) əməli yaddaşa müraciəti təşkil edir
+C) periferik qurğuların işinə təkan verir
+D) idarəedici siqnallar ardıcıllığını yaradır
+E) sorğuları qəbul və emal edir
+250. Prosessorun registrlərindən olmayan bənd hansıdır?
+A) əmrlər sayğacının registry (ƏSR)
+B) vəziyyəti registri (PVR)
+C) ünvanlar registri (ÜR)
+D) əmrlər registry (ƏR)
+E) stekin göstəricisi registri (SGR)
+251. Hansı sadələşdirilmiş direktiv kod seqmentinin başlanğıcını müyyən edir?
+A) CONST
+B) DATA?
+C) STACK
+D) CODE
+E) DATA
+252. Toplama əməlləri zamanı ZF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+C) nəticə qəbulediciyə yerləşmirsə (keçid alınarsa)
+D) nəticə mənfidirsə.
+E) nəticə 0 olursa
+253. Seqment registrləri və səhifələr ünvanı registrləri nə üçün nəzərdə
+tutulmuşdur?
+A) ünvanlanma fəzasının genişləndirilməsi
+B) seçiləcək əmrin ünvanının formalaşması
+C) prosessorun cari vəziyyətini göstərmək
+D) cari əmrin kodunun müvəqqəti saxlanması
+E) EHM-in yaddaşında stekin təşkili
+254. Dəqiqləşdirilmə tipi WORD olduqda seqment necə seçilir?
+A) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+B) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+C) Seqment yaddaşın yalnız 256-ya bölünən ünvanlarından başlaya bilər
+D) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+E) Seqment yaddaşın istənilən ünvanından başlaya bilər.
+255. Vəziyyətlər registri nə üçün nəzərdə tutulmuşdur?
+A) seçiləcək əmrin ünvanının formalaşması
+B) EHM-in yaddaşında stekin təşkili
+C) prosessorun cari vəziyyətini göstərmək
+D) ünvanlanma fəzasının genişləndirilməsi
+E) cari əmrin kodunun müvəqqəti saxlanması
+256. Assembler dilində ünvanlamanın neçə əsas rejimi vardır?
+A) 6
+B) 4
+C) 5
+D) 8
+E) 7
+257. Prosessorun proqramın icrasına başlaması üçün nə etmək lazımdır?
+A) proqrqmın sonuncu əmri olan yaddaşın ünvanını, əmrlər sayğacı registrinəyukləmək
+lazımdır
+B) proqrqmın birinci əmri olan yaddaşın ünvanını, əmrlər sayğacı registrinəyukləmək
+lazımdır
+C)proqrqmın birinci əmri olan yaddaşın ünvanını, prosessorun vəziyyəti registrinə
+yukləmək lazımdır
+D)proqrqmın birinci əmri olan yaddaşın ünvanını, yaddaşın verilənlər registrinəyukləmək
+lazımdır
+E) proqrqmın birinci əmri olan yaddaşın ünvanını, yaddaşın ünvanlar registrinəyukləmək
+lazımdır
+258. İki ədədin toplanmasının icrası zamanı, prosessorun əməliyyatlarardıcıllığına
+aidolmayan bəndi göstərin.
+A) birinci operand oxunur və verilənlər şini vasitəsi ilə HMQ-nun birinci girişinəverilir
+B) analoji olaraq ikinci operand oxunur və verilənlər şini vasitəsi ilə HMQ-nun ikinci girişinə
+verilir
+C) seçilmiş operandların toplanması icra olunur
+D) kompyüterin qurğuları və ətraf mühitdən daxil olan sorğuları növbəyə qoyur
+E) idarəetmə qurğusu birinci operandın ünvanını təyin edib onu yaddaşın
+ünvanlarregistrinə yükləyir
+259. Əmrlərin əsas qruplarına aid olmayan bəndi göstərin.
+A) hesab əməliyyatları əmrləri
+B) məntiqi əməliyyatlar əmrləri
+C) kəsilmələrin seçilməsi qaydasını idarə edən əmrlər
+D) EHM-in komponentləri arasında kodların göndərilməsi əmrləri
+E) əmrlərin seçilməsi və icrası qaydasını idarə edən əmrlər
+260. Operandların sayına görə əmrlərin əsas tiplərinə aid olmayan bəndi göstərin.
+A) dördünvanlı əmrlər
+B) birünvanlı əmrlər
+C) ikiünvanlı əmrlər
+D) üçünvanlı əmrlər
+E) bilavasitə əmrlər
+261. Birünvanlı əmrlərə aid olmayan bəndi göstərin.
+A) yaddaşın hər hansı yuvasının qiymətini bir vahid artırmaq
+B) ədədin işarəsini dəyişmək
+C) yaddaşın hər hansı yuvasına yazmaq
+D) hər hansı yuvanın qiymətini digər yuvanın qiyməti ilə toplamaq
+E) yaddaşın hər hansı yuvasını təmizləmək
+262. İkiünvanlı əmr olan punktu göstərin
+A) yaddaşın hər hansı yuvasını təmizləmək
+B) hər hansı yuvanın qiymətini digər yuvanın qiyməti ilə toplamaq nəticəni 1-ci ünvana
+yazmaq
+C) yaddaşın hər hansı yuvasının qiymətini bir vahid artırmaq
+D) yaddaşın hər hansı yuvasına yazmaq
+E) ədədin işarəsini dəyişmək
+263. Dördünvanlı əmr olan punktu göstərin
+A) yaddaşın hər hansı yuvasına yazmaq
+B) hər hansı iki yuvanın qiymətini toplayıb digər yuvaya yazmaq, növbəti ünvanı oxumaq
+C) hər hansı iki yuvanın qiymətini toplayıb digər yuvaya yazmaq
+D) yaddaşın hər hansı yuvasını təmizləmək
+E) hər hansı yuvanın qiymətini digər yuvaya köçürmək
+264. Nəzərdə tutulan ünvan nə deməkdir?
+A) əmrdə əməliyyatn nəticəsinin yerləşəcəyi ünvan haqqında birbaşa göstəriş yoxdur o
+əmrdən alınır
+B) bu ünvan proqpamın birinci əmrinin ünvanı kimi nəzərdə tutulur
+C) bu ünvan proqpamın növbəti əmrinin ünvanı kimi nəzərdə tutulur
+D) bu ünvan proqpamın conuncu əmrinin ünvanı kimi nəzərdə tutulur
+E) belə ünvan yoxdur
+265. Dolayısı ünvanlama nə deməkdir?
+A) əmrin ünvan kodu, operandın və ya əmrin yerləşdiyi yaddaş yuvasının ünvanını göstərir
+B) proqpamın sonuncu əmrinin operandı kimi nəzərdə tutulur
+C) əmrdə operandın ünvanı yox , özü yerləşir
+D) proqpamın növbəti əmrinin operandı kimi nəzərdə tutulur
+E) icra ünvanı, ünvanın kodu və müyyən bir ədədin cəmi kimi təyin olunur
+266. Birbaşa-registr ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti oxunduqdan sonra 1 və ya 2 qədərartırılır
+B) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+C)əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operandyerləşən
+yaddaş ünvanı kimi interpretasiya olunur
+D) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdansonra
+artırılır
+E) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand kimi
+interpretasiya olunur
+267. Dolayısı-avtoinkrementasiya ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand kimi
+interpretasiya olunur
+B) Əmrdə göstərilən ümumi registrin tərkibi prosessor tərəfindən operandın ünvanıolan
+yaddaş yuvasının ünvanı kimi interpritasiya olunur və sonra artırılır
+C) əmrdə göstərilmiş ümumi registrin qiyməti oxunduqdan sonra 1 və ya 2 qədərartırılır
+D)əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand
+yerləşənyaddaş ünvanı kimi interpretasiya olunur
+E) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+268. Dolayısı-avtodekrementasiya ünvanlama üsulu necə realizə olunur?
+A) əmrdə göstərilmiş ümumi registrin qiyməti prosessor tərəfindən operand
+kimiinterpretasiya olunur
+B) əmrdə göstərilmiş ümumi registrin qiyməti oxunduqdan sonra 1 və ya 2 qədərartırılır
+C) əmrdə göstərilmiş ümumi registrin qiyməti azaldılır, sonra prosessor tərəfindən
+operandın ünvanı yerləşən yaddaş ünvanı kimi interpretasiya olunur
+D) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+artırılır
+E) əmrdə göstərilmiş ümumi registrin qiyməti (operandın ünvanı) oxunduqdan sonra
+azaldılır
+269. Ümumi registrlərin köməyi ilə ünvanlama üsullarından olmayan bəndigöstərin.
+A) dolayısı-registr üsulu
+B) birbaşa registr üsulu
+C) dolayısı-avtoinkrementasiya üsulu
+D) xarici qurğu-registr üsulu
+E) avtoinkrementasiya üsulu
+270. Stekin zirvəsi nədir?
+A) stekin mərkəzi yuvası
+B) stekin sonuncu yuvası
+C) stekin maksimum ünvanlı yuvası
+D) stekin minimum ünvanlı yuvası
+E) cari anda müraciət oluna bilən yuva
+271. Prosessorun alt proqramı çağırma və oradan qayıtma zamanı etdiyi
+əməliyyatlardan olmayanı hansıdır?
+A) əmrlər sayğacı registrinin cari tərkibi bir addım artırılır
+B) alt proqramı cağırma əmrində verilmiş ünvan əmrlər sayğacı registrinə yazılır
+C) ünvanı əmrlər sayğacı registrində əmr yaddaşdan oxunur
+D) əmrlər sayğacı registrinin cari tərkibi stekə göndərilir
+E) stekdən qayıtma ünvanı oxunur və əmrlər sayğacı registrinə yazılır
+272. RISC arxitekturalı EHM-də maşın dövrü nəyə deyilir?
+A) iki operandın yaddaşdan seçilməsi, HMQ-da əməliyyatın icrası və nəticəninyaddaşda
+yadda saxlanması vaxtı
+B) iki operandın registrlərdən seçilməsi, HMQ-da əməliyyatın icrası və nəticəninyaddaşda
+yadda saxlanması vaxtı
+C) iki operandın registrlərdən seçilməsi, HMQ-da əməliyyatın icrası və nəticəninregistrdə
+yadda saxlanması vaxtı
+D)iki operandın yaddaşdan seçilməsi, HMQ-da əməliyyatın icrası və növbəti əmrin
+çağrılması vaxtı
+E) iki operandın yaddaşdan seçilməsi, HMQ-da əməliyyatın icrası və nəticəninregistrdə
+yadda saxlanması vaxtı
+273. RISC arxitekturalı EHM-lərdə çoxlu sayda ümumi təyinatlı registrlərin olması
+nəyə imkan yaratdı?
+A) aralıq nəticələrin ümumi registrlərdə saxlanması,operandların bir proqramdan digər
+proqrama ümumi registrlər vasitəsi ilə ötürülməsi
+B) aralıq nəticələrin yaddaşda saxlanması,operandların bir proqramdan
+digər proqrama ümumi registrlər vasitəsi ilə ötürülməsi
+C)aralıq nəticələrin ümumi registrlərdə saxlanması,operandların bir proqramdandigər
+proqrama yaddaş vasitəsi ilə ötürülməsi
+D) mikroghjuhfmkaşdırmanın tətbiqini
+E) aralıq nəticələrin yaddaşda saxlanması,operandların bir proqramdandigərproqrama
+yaddaş vasitəsi ilə ötürülməsi
+274. Klaviatura nə üçün nəzərdə tutulmuşdur?
+A) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+B) istifadəçi tərəfindən məlumatın EHM-ə daxil edilməsi
+C) təsvirlərin daxil edilməsi
+D) istifadəçi tərəfindən simvolların EHM-dən xaric edilməsi
+E) mətnlərin kağız üzərində çıxarılması
+275. Klaviaturanın klavişlərinin funksional qruplarına aid olmayan bənd hansıdır?
+A) Xarici qurğulara sorğu
+B) əlifba-rəqəm, funksional
+C) xidməti
+D) əlavə platanın klavişləri
+E) kursorun idarə edilməsi
+276. Aşağıdakıların hansı giriş qurğusu deyil?
+A) maus
+B) skaner
+C) monitor
+D) klaviatura
+E) printer
+277. Monitor nə üçün nəzərdə tutulmuşdur?
+A) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+B) istifadəçiyə məlumatın çıxarılması
+C) istifadəçi tərəfindən məlumatın EHM-ə daxil edilməsi
+D) təsvirlərin daxil edilməsi
+E) mətnlərin və ya qrafiki məlumatların kağız üzərində çıxarılması
+278. Maye kristallı displeylərin hansi növləri vardır?
+A) mətnli, qrafikalı
+B) matrisli, matrissiz
+C) statik matrisli, dinamik matrisli
+D) vektorlu, pikselli
+E) aktiv matrisli, passiv matrisli
+279. Lazer printerlərin əsas mənfi cəhətləri hansılardır?
+A) qənaətsizlik
+B) böyük çəki
+C) etibarsızlıq
+D) böyük qabarit
+E) yuxarı qiymət
+280. Skaynerlərin hansi növləri vardır?
+A) şırnaqlı, planşetli, barabanlı
+B) avtomatik, əllə, intellektual
+C) planşetli, lazerli, şırnaqlı
+D) planşetli, barabanlı, əllə
+E) planşetli, əllə,kombinasiyalı
+281. Xarici yaddaş qurğuları əsasən nə üçün nəzərdə tutulmuşdur?
+A) istifadəçi tərəfindən simvolların EHM-dən xaric edilməsi
+B) istifadəçi tərəfindən simvolların EHM-ə daxil edilməsi
+C) təsvirlərin daxil edilməsi
+D) böyük həcmli məlumatların uzunmüddətli yadda saxlanması
+E) mətnlərin kağız üzərində çıxarılması
+282. Aşağıdakılardan hansı EHM-in xarici qurğularla, proqram kəsilməsi rejimində
+işləməsinin konsepsiyası deyildir?
+A) xarici qurğu prosessora icra olunan proqramı dayandırmaq sorğusu (tələbi) göndərir
+B) xarici qurğuya xidmət proqramı bitdikdən sonra prosessor əsas proqramın icrasına
+qayıdır
+C) prosessor əsas proqramın işini dayandırmadan xarici qurğunun hazırlığını yoxlayır
+D) xarici qurğuda müəyyən anda, EHM-nin müəyyən əməiyyatlar aparması tələbatıyaranır
+E) prosessor əsas proqramın işini dayandırır və xarici qurğuya xidmət proqramınakeçir
+283. Kəsilmə vektorları nələrdən ibarətdir?
+A) ünvanları konkret xarici qurğuya təhkim olunmuş üç yaddaş yuvasıdır
+B) ünvanları konkret xarici qurğuya təhkim olunmuş bir qrup yaddaş yuvasıdır
+C) ünvanları konkret xarici qurğuya təhkim olunmuş yaddaş keşidir
+D) ünvanları konkret xarici qurğuya təhkim olunmuş iki yaddaş yuvasıdır
+E) ünvanları konkret xarici qurğuya təhkim olunmuş yaddaş stekidir
+284. Assembler dilində şərhlər nədir?
+A) Maşın təlimatlarının simvolik analoqları
+B) Maşın dilində analoqu yoxdur
+C) Çeviriciyə (translyatora) iş rejimlərini göstərir
+D) tərcüməçi tərəfindən nəzərə alınmır
+E) Proqramın mətninin müəyyən bir şəkildə formalaşmış cümləsidir
+285. Assembler dilində əmrlərin formatının hansı elementi məcburidir?
+A) mnemokod
+B) Label
+C) şərhlər
+D) operand
+E) hamısı
+286. Dəyişdirilən operandlar nəyi göstərirlər?
+A) hər hansı yaddaş ünvanından ibarət simvolik adlar
+B) ünvanlar sayğacının cari andakı qiymətini
+C) sadəcə registrin adını
+D) müyyən bir sabit qiyməti olan ədəd, sətir, ad və ya ifadəni
+E) operandın, yaddaşda fiziki yerini
+287. Registr operandları nəyi göstərirlər?
+A) müyyən bir sabit qiyməti olan ədəd, sətir, ad və ya ifadəni
+B) ünvanlar sayğacının cari andakı qiymətini
+C) sadəcə registrin adını
+D) operandın, yaddaşda fiziki yerini
+E) hər hansı yaddaş ünvanından ibarət simvolik adlar
+288. Hər hansı bir yazının bitlər sahəsini nələr göstərirlər?
+A) Yazılar direktivləri
+B) Yazılar əmrləri
+C) Yazılar seqmentləri
+D) Yazılar adları
+E) Yazılar operandları
+289. Hansı dəqiqləşdirilmə tipində, seqment yaddaşın yalnız 16-ya bölünən
+ünvanlarından başlaya bilər?
+A) byte
+B) PAGE
+C) PARA
+D) WORD
+E) DWORD
+290. Dəqiqləşdirilmə tipi MEMPAGE olduqda seqment necə seçilir?
+A) Dəqiqləşdirilməaparılmır. Seqment yaddaşın istənilən ünvanından başlaya bilər.
+B) Seqment yaddaşın yalnız cüt ünvanlarından başlaya bilər
+C) Seqment yaddaşın yalnız 16-ya bölünən ünvanlarından başlaya bilər
+D) Seqment yaddaşın yalnız 4-ə bölünən ünvanlarından başlaya bilər
+E) Seqment yaddaşın yalnız 4k bölünən ünvanlarından başlaya bilər
+291. DATA? sadələşdirilmiş direktiv nəyi müyyən edir?
+A) verilənlər seqmentinin başlanğıcı
+B) sabit verilənlər seqmentinin başlanğıcı və davamı
+C) inisalizasiya olunmamış verilənlər seqmentinin başlanğıcı və davamı
+D) kod seqmentinin başlanğıcı
+E) modul stekinin seqmentinin başlanğıcı və davamı
+292. STACK sadələşdirilmiş direktiv nəyi müyyən edir?
+A) inisalizasiya olunmamış verilənlər seqmentinin başlanğıcı və davamı
+B) verilənlər seqmentinin başlanğıcı
+C) kod seqmentinin başlanğıcı
+D) sabit verilənlər seqmentinin başlanğıcı və davamı
+E) modul stekinin seqmentinin başlanğıcı və davamı
+293. POPA, POPAW əmri ilə nə edilir?
+A) stekin zirvəsinin tərkibi qəbuledici operandın yerinə yazılır
+B) stekə qrup halında yazma
+C) mənbənin tərkibi stekin zirvəsinə yazılır
+D) Göstəricilər registrləri stekə yazılır
+E) stekdən qrup halında oxumaq
+294. Stekdən qrup halında oxumaq əmri hansıdır?
+A) POPFW
+B) POPAW
+C) POPF
+D) PUSHFW
+E) PUSH
+295. lgs qəbuledici, verici əmri ilə nə edilir?
+A) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+B) göstəricinin verilənlərin əlavə segment registrinə (gs) yüklənməsi
+C) icra ünvanının yüklənməsi
+D) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+E) göstəricilər registri ds veriləənlər registrinə yüklənilir
+296. lfs qəbuledici, verici əmri ilə nə edilir?
+A) göstəricinin verilənlərin əlavə segment registrinə (fs) yüklənməsi
+B) icra ünvanının(fs) yüklənməsi
+C) göstəricilər registri ds veriləənlər registrinə yüklənilir
+D) göstəricinin verilənlərin əlavə segment registrinə (gs)yüklənməsi
+E) göstəricinin verilənlərin əlavə segment registrinə (es) yüklənməsi
+297. Toplama əməlləri zamanı OF=1 göstəricisinin qoyulması nə deməkdir ?
+A) nəticədə vahidlərin syaı cüt olarsa
+B) onluq ədədlərin toplanması zamanı düzəliş tələb olunarsa
+C) nəticə 0 olursa
+D) nəticə mənfidirsə.
+E) nəticə əks kodda diapazona yerləşmirsə
+298. İNC qəbuledici əmri ilə hansı əməliyyat yerinə yetirilir?
+A) qəbuledici = qəbuledici + 1
+B) qəbuledicinin tərkibi 2 qədər çoxaldılır
+C) qəbuledicinin tərkibi 1 qədər azaldılır
+D) qəbuledici = 0
+E) qəbuledici = qəbuledici - verici
+299. CMP 1operand, 2operand əmri ilə hansı əməliyyat yerinə yetirilir?
+A) müqayisəetmə əməli
+B) işarəsiz ədədlər üçün bölmə əməli
+C) işarəli ədədlər üçün bölmə əməli
+D) işarəsiz ədədlər üçün vurma əməli
+E) işarəli ədədlər üçün vurma əməli
+300. İşarəsiz ədədlər üçün vurma əməliyyatı hansıdır?
+A) MUL qəbuledici əmri
+B) not operand əmri
+C) and verici, qəbuledici əmri
+D) or verici, qəbuledici əmri
+E) CMP 1operand, 2operand əmri

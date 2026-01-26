@@ -52,7 +52,7 @@
             </div>
 
         <!-- NƏTİCƏLƏR SƏHİFƏSİ -->
-        {% elif result %}
+        {% elif result or basic_result %}
             <h2>Nəticələr</h2>
             
             <!-- Statistika -->
@@ -65,32 +65,53 @@
                 </span>
             </div>
 
-            <!-- Nəticələr siyahısı -->
-            <div class="result-list-container">
-                <ul class="result-list">
-                    {% for c in cavablar %}
-                        <li class="result-item {{ 'correct' if c.status else 'incorrect' }}">
-                            <strong>Sual {{ c.no }}:</strong> 
-                            Sizin cavab: <b>{{ c.user.upper() }}</b>
-                            {% if not c.status %}
-                                | Düzgün: <b class="text-success">{{ c.correct.upper() }}</b>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+            <!-- SADƏ NƏTİCƏ -->
+            {% if basic_result %}
+                <div>
+                        {% for c in cavablar %}
+                            <p>
+                                {{ c.no }}. {{ c.user.upper() }}
+                            </p>
+                        {% endfor %}
+                </div>
+                
+                <div class="result-controls">
+                    {% if not is_finished %}
+                        <button class="main-btn btn-continue" onclick="window.location.href='/quiz'">
+                            ✏️ Davam et
+                        </button>
+                    {% endif %}
+                </div>
+            
+            <!-- DETALLI NƏTİCƏ (ilk açılanda bu göstərilir) -->
+            {% else %}
+                <!-- Nəticələr siyahısı -->
+                <div class="result-list-container">
+                    <ul class="result-list">
+                        {% for c in cavablar %}
+                            <li class="result-item {{ 'correct' if c.status else 'incorrect' }}">
+                                <strong>Sual {{ c.no }}:</strong> 
+                                Sizin cavab: <b>{{ c.user.upper() }}</b>
+                                {% if not c.status %}
+                                    | Düzgün: <b class="text-success">{{ c.correct.upper() }}</b>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
-            <!-- Nəticə düymələri -->
-            <div class="result-controls">
-                {% if not is_finished %}
-                    <button class="main-btn btn-continue" onclick="window.location.href='/quiz'">
-                        ✏️ Davam et
+                <!-- Nəticə düymələri -->
+                <div class="result-controls">
+                    {% if not is_finished %}
+                        <button class="main-btn btn-continue" onclick="window.location.href='/quiz'">
+                            ✏️ Davam et
+                        </button>
+                    {% endif %}
+                    <button class="main-btn" onclick="window.location.href='/'">
+                        🏠 Ana Səhifə
                     </button>
-                {% endif %}
-                <button class="main-btn" onclick="window.location.href='/'">
-                    🏠 Ana Səhifə
-                </button>
-            </div>
+                </div>
+            {% endif %}
 
         <!-- SUAL SƏHİFƏSİ -->
         {% else %}
