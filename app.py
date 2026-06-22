@@ -59,7 +59,11 @@ def start_quiz(mode):
     indeksler = list(range(len(BUTUN_SUALAR)))
     
     if mode == 'random':
-        secilmis_indeksler = random.sample(indeksler, min(len(BUTUN_SUALAR), 25))
+        limit = request.args.get('limit', default=25, type=int)
+        range_end = request.args.get('range_end', default=len(BUTUN_SUALAR), type=int)
+        range_end = max(1, min(len(BUTUN_SUALAR), range_end))
+        hovuz = indeksler[:range_end]
+        secilmis_indeksler = random.sample(hovuz, min(len(hovuz), limit))
     else:
         start_from = request.args.get('start', default=1, type=int)
         start_idx = max(0, start_from - 1)
@@ -70,7 +74,7 @@ def start_quiz(mode):
 
     session['sual_idleri'] = secilmis_indeksler
     session['current_index'] = 0
-    session['cavablar'] = []
+    session['cavablar'] = [""] * len(secilmis_indeksler)
     return redirect(url_for('quiz'))
 
 @app.route('/quiz', methods=['GET', 'POST'])
@@ -85,11 +89,6 @@ def quiz():
         
         # Əvvəlki suala qayıt
         if action == 'prev' and curr_idx > 0:
-            # Son cavabı sil
-            cavablar = list(session.get('cavablar', []))
-            if cavablar:
-                cavablar.pop()
-                session['cavablar'] = cavablar
             session['current_index'] = curr_idx - 1
             session.modified = True
             return redirect(url_for('quiz'))
@@ -98,19 +97,10 @@ def quiz():
         if action == 'submit':
             istifadeci_cavabi = request.form.get('cavab', '').strip().lower()
             if istifadeci_cavabi:
-                sual_id = sual_idleri[curr_idx]
-                sual_no = BUTUN_SUALAR[sual_id][0].split('.')[0].strip()
-                duzgun_cavab = DUZGUN_CAVABLAR.get(sual_no, "")
-                
-                is_correct = (istifadeci_cavabi == duzgun_cavab)
-                
                 cavablar = list(session.get('cavablar', []))
-                cavablar.append({
-                    'no': sual_no,
-                    'user': istifadeci_cavabi,
-                    'correct': duzgun_cavab,
-                    'status': is_correct
-                })
+                if len(cavablar) < len(sual_idleri):
+                    cavablar.extend([""] * (len(sual_idleri) - len(cavablar)))
+                cavablar[curr_idx] = istifadeci_cavabi
                 session['cavablar'] = cavablar
                 session['current_index'] = curr_idx + 1
                 session.modified = True
@@ -122,8 +112,27 @@ def quiz():
     if curr_idx < len(sual_idleri):
         sual_id = sual_idleri[curr_idx]
         cari_cavablar = session.get('cavablar', [])
-        duz_sayi = len([c for c in cari_cavablar if c['status'] == True])
-        sehv_sayi = len([c for c in cari_cavablar if c['status'] == False])
+        if len(cari_cavablar) < len(sual_idleri):
+            cari_cavablar.extend([""] * (len(sual_idleri) - len(cari_cavablar)))
+        
+        duz_sayi = 0
+        sehv_sayi = 0
+        sidebar_status = []
+        
+        for i in range(len(sual_idleri)):
+            ans = cari_cavablar[i]
+            if not ans:
+                status = "unanswered"
+            else:
+                s_id = sual_idleri[i]
+                s_no = BUTUN_SUALAR[s_id][0].split('.')[0].strip()
+                if ans == DUZGUN_CAVABLAR.get(s_no, ""):
+                    duz_sayi += 1
+                    status = "correct"
+                else:
+                    sehv_sayi += 1
+                    status = "incorrect"
+            sidebar_status.append({'index': i, 'number': i+1, 'status': status})
         
         return render_template('index.html', 
                                sual=BUTUN_SUALAR[sual_id], 
@@ -131,19 +140,62 @@ def quiz():
                                total=len(sual_idleri),
                                duz_sayi=duz_sayi,
                                sehv_sayi=sehv_sayi,
-                               can_go_back=(curr_idx > 0))
+                               can_go_back=(curr_idx > 0),
+                               sidebar_status=sidebar_status,
+                               curr_idx=curr_idx)
     return redirect(url_for('result'))
+
+@app.route('/jump/<int:index>')
+def jump(index):
+    if 'sual_idleri' not in session: return redirect(url_for('index'))
+    sual_idleri = session['sual_idleri']
+    if 0 <= index < len(sual_idleri):
+        session['current_index'] = index
+        session.modified = True
+    return redirect(url_for('quiz'))
 
 @app.route('/result')
 def result():
-    cavablar = session.get('cavablar', [])
-    is_finished = session.get('current_index', 0) >= len(session.get('sual_idleri', []))
+    cavablar_raw = session.get('cavablar', [])
+    sual_idleri = session.get('sual_idleri', [])
+    
+    cavablar = []
+    for i, ans in enumerate(cavablar_raw):
+        if not ans:
+            ans = "boş"
+        s_id = sual_idleri[i]
+        s_no = BUTUN_SUALAR[s_id][0].split('.')[0].strip()
+        duz_c = DUZGUN_CAVABLAR.get(s_no, "")
+        cavablar.append({
+            'no': s_no,
+            'user': ans,
+            'correct': duz_c,
+            'status': (ans == duz_c)
+        })
+        
+    is_finished = session.get('current_index', 0) >= len(sual_idleri)
     return render_template('index.html', result=True, cavablar=cavablar, is_finished=is_finished)
 
 @app.route('/basic-result')
 def basic_result():
-    cavablar = session.get('cavablar', [])
-    is_finished = session.get('current_index', 0) >= len(session.get('sual_idleri', []))
+    cavablar_raw = session.get('cavablar', [])
+    sual_idleri = session.get('sual_idleri', [])
+    
+    cavablar = []
+    for i, ans in enumerate(cavablar_raw):
+        if not ans:
+            ans = "boş"
+        s_id = sual_idleri[i]
+        s_no = BUTUN_SUALAR[s_id][0].split('.')[0].strip()
+        duz_c = DUZGUN_CAVABLAR.get(s_no, "")
+        cavablar.append({
+            'no': s_no,
+            'user': ans,
+            'correct': duz_c,
+            'status': (ans == duz_c)
+        })
+        
+    is_finished = session.get('current_index', 0) >= len(sual_idleri)
     return render_template('index.html', 
                          basic_result=True,  # ✅ Yeni parametr
                          cavablar=cavablar, 

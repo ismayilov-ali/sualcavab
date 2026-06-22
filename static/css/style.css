@@ -1,151 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* ========================================
    CSS VARİABLES
 ======================================== */
 :root {
-    /* Light theme */
-    --bg-color: #f4f4f9;
-    --container-bg: #ffffff;
-    --text-color: #333;
-    --sual-bg: #f9f9f9;
-    --input-border: #ddd;
-    --btn-bg: #4CAF50;
-    --btn-hover: #45a049;
+    /* Light Theme Palette - Professional, Soft & Modern */
+    --bg-color: #f3f4f6;
+    --container-bg: rgba(255, 255, 255, 0.95);
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    
+    --primary-color: #4f46e5;      /* Professional Indigo */
+    --primary-hover: #4338ca;
+    --primary-light: #e0e7ff;
+    
+    --secondary-color: #0ea5e9;    /* Sky blue */
+    --secondary-hover: #0284c7;
+    
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --gray-btn: #6b7280;
+    --gray-hover: #4b5563;
+
+    --sual-bg: #f8fafc;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 15px rgba(79, 70, 229, 0.3);
+    
+    --ring-color: rgba(79, 70, 229, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.2);
 }
 
 body[data-theme="dark"] {
-    /* Dark theme */
-    --bg-color: #121212;
-    --container-bg: #1e1e1e;
-    --text-color: #e4e6eb;
-    --sual-bg: #2d2d2d;
-    --input-border: #404040;
-    --btn-bg: #2ecc71;
-    --btn-hover: #27ae60;
+    /* Dark Theme Palette - Deep, Sleek & Premium */
+    --bg-color: #0f172a;          /* Slate 900 */
+    --container-bg: rgba(30, 41, 59, 0.95);      /* Slate 800 */
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --border-color: #334155;
+    
+    --primary-color: #6366f1;     /* Lighter indigo */
+    --primary-hover: #818cf8;
+    --primary-light: #312e81;
+    
+    --secondary-color: #38bdf8;
+    --secondary-hover: #7dd3fc;
+    
+    --sual-bg: #0f172a;
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
+    
+    --ring-color: rgba(99, 102, 241, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.05);
 }
-
 
 /* ========================================
    ƏSAS LAYİHƏ
 ======================================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    transition: background 0.3s;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-image: radial-gradient(circle at top right, var(--primary-light) 0%, transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.1) 0%, transparent 40%);
+}
+
+.main-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 95%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-wrapper.with-sidebar {
+    max-width: 1100px;
+}
+
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: var(--container-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    max-height: 85vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.6s ease-out;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 10px;
+}
+
+.sidebar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9em;
+    border: 2px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.sidebar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.sidebar-btn.active {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px var(--ring-color);
+}
+
+.sidebar-btn.status-unanswered {
+    background: var(--bg-color);
+}
+
+.sidebar-btn.status-correct {
+    background: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
+.sidebar-btn.status-incorrect {
+    background: var(--danger-color);
+    color: white;
+    border-color: var(--danger-color);
+}
+
+/* Qaranlıq rejim üçün əlavələr */
+body[data-theme="dark"] .sidebar-btn.status-unanswered {
+    background: var(--bg-color);
+    color: var(--text-primary);
 }
 
 .quiz-container {
     background: var(--container-bg);
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    width: 95%;
-    max-width: 800px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 40px 50px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    width: 100%;
     text-align: center;
     position: relative;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2, h3 {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
 
 /* ========================================
    THEME TOGGLE
 ======================================== */
 .theme-toggle {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 25px;
     cursor: pointer;
-    background: none;
-    border: 1px solid var(--input-border);
-    color: var(--text-color);
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    transition: all 0.3s;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .theme-toggle:hover {
     background: var(--sual-bg);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+    transform: translateY(-1px);
 }
 
-
 /* ========================================
-   MODE SEÇİMİ
+   MODE SEÇİMİ VƏ İNPUTLAR
 ======================================== */
 .mode-buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 25px;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .start-number-section {
     background: var(--sual-bg);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 5px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.start-number-section:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
 }
 
 .start-number-section label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1.05em;
 }
 
 .start-number-input {
-    width: 100px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid var(--btn-bg);
+    width: 120px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
     text-align: center;
-    font-size: 1.1em;
-    background: var(--container-bg);
-    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.start-number-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px var(--ring-color);
 }
 
 .total-questions {
-    font-size: 0.8em;
-    margin-top: 5px;
-    color: #888;
+    font-size: 0.85em;
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-weight: 500;
 }
-
-.mode-random {
-    background-color: #3498db !important;
-}
-
-.mode-random:hover {
-    background-color: #2980b9 !important;
-}
-
 
 /* ========================================
    SUAL SƏHİFƏSİ
 ======================================== */
 .quiz-status {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--btn-bg);
-    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .current-stats {
-    margin-bottom: 15px;
-    font-weight: bold;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.95em;
 }
 
 .sual-text {
     text-align: left;
     background: var(--sual-bg);
-    padding: 30px;
-    border-radius: 12px;
-    margin: 25px 0;
-    font-size: 1.4em;
-    line-height: 1.6;
-    border-left: 6px solid var(--btn-bg);
+    padding: 35px 40px;
+    border-radius: 16px;
+    margin: 20px 0 35px 0;
+    font-size: 1.3em;
+    line-height: 1.7;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    border-left: 6px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+    color: var(--text-primary);
 }
 
 
@@ -154,37 +329,41 @@ body {
 ======================================== */
 .answer-buttons {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     justify-content: center;
-    margin: 25px 0;
+    margin: 30px 0;
     flex-wrap: wrap;
 }
 
 .answer-btn {
-    width: 80px;
-    height: 80px;
-    font-size: 2em;
-    font-weight: bold;
-    border: 3px solid var(--input-border);
-    background: var(--container-bg);
-    color: var(--text-color);
-    border-radius: 12px;
+    width: 75px;
+    height: 75px;
+    font-size: 1.8em;
+    font-weight: 700;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-secondary);
+    border-radius: 18px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+    font-family: 'Inter', sans-serif;
+    position: relative;
 }
 
 .answer-btn:hover {
-    transform: translateY(-3px);
-    border-color: var(--btn-bg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: var(--shadow-md);
 }
 
 .answer-btn.selected {
-    background: var(--btn-bg);
-    color: white;
-    border-color: var(--btn-bg);
-    transform: scale(1.05);
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: var(--shadow-glow);
 }
 
 .answer-btn:active {
@@ -193,23 +372,13 @@ body {
 
 /* Klaviatura basılma animasiyası */
 .answer-btn.keyboard-pressed {
-    animation: keyboardPress 0.2s ease;
-    transform: scale(0.95);
+    animation: keyboardPress 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes keyboardPress {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    50% {
-        transform: scale(0.9);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    100% {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(0.92); }
+    100% { transform: scale(1.08) translateY(-4px); }
 }
 
 
@@ -218,27 +387,50 @@ body {
 ======================================== */
 .main-btn {
     width: 100%;
-    padding: 15px;
-    background: var(--btn-bg);
+    padding: 16px 24px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 14px;
     cursor: pointer;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: all 0.2s;
-    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: var(--shadow-md);
+    letter-spacing: 0.5px;
 }
 
 .main-btn:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.1);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
+}
+
+.main-btn:active {
+    transform: translateY(1px);
 }
 
 .main-btn:disabled {
-    background: #888 !important;
+    background: var(--border-color) !important;
+    color: var(--text-secondary) !important;
     cursor: not-allowed;
     transform: none;
+    box-shadow: none;
+}
+
+.mode-random {
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover));
+}
+.mode-random:hover {
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+}
+
+.restart-quiz {
+    background: var(--gray-btn);
+}
+.restart-quiz:hover {
+    background: var(--gray-hover);
+    box-shadow: 0 4px 10px rgba(107, 114, 128, 0.3);
 }
 
 
@@ -247,66 +439,52 @@ body {
 ======================================== */
 .quiz-controls {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 12px;
+    margin-top: 25px;
     flex-wrap: wrap;
 }
 
 .control-btn {
     flex: 1;
     min-width: 120px;
-    padding: 12px;
+    padding: 14px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     color: white;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 0.9em;
-    transition: all 0.2s;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: var(--shadow-md);
 }
 
-.go-back {
-    background: #9b59b6;
-}
+.go-back { background: #8b5cf6; }
+.go-back:hover { background: #7c3aed; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(139, 92, 246, 0.3); }
 
-.go-back:hover {
-    background: #8e44ad;
-    transform: translateY(-2px);
-}
-
-.view-results {
-    background: #f39c12;
-}
-
-.view-results:hover {
-    background: #e67e22;
-    transform: translateY(-2px);
-}
-
-.restart-quiz {
-    background: #95a5a6;
-}
-
-.restart-quiz:hover {
-    background: #7f8c8d;
-    transform: translateY(-2px);
-}
+.view-results { background: #f59e0b; }
+.view-results:hover { background: #d97706; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(245, 158, 11, 0.3); }
 
 
 /* ========================================
    NƏTİCƏLƏR SƏHİFƏSİ
 ======================================== */
 .stats {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 1.2em;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 1.25em;
+    background: var(--sual-bg);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
 }
 
 .result-list-container {
-    max-height: 400px;
+    max-height: 450px;
     overflow-y: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    padding-right: 5px;
 }
 
 .result-list {
@@ -318,96 +496,117 @@ body {
 
 .result-item {
     background: var(--sual-bg);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 12px;
+    border-radius: 12px;
     font-size: 1.1em;
-    line-height: 1.5;
-    transition: all 0.3s;
+    line-height: 1.6;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.result-item:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
 }
 
 .result-item.correct {
-    border-left: 5px solid #2ecc71;
+    border-left: 6px solid var(--success-color);
 }
 
 .result-item.incorrect {
-    border-left: 5px solid #e74c3c;
+    border-left: 6px solid var(--danger-color);
 }
 
 .result-controls {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .btn-continue {
-    background-color: #3498db !important;
-}
-
-.btn-continue:hover {
-    background-color: #2980b9 !important;
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover)) !important;
 }
 
 
 /* ========================================
    RƏNGLƏNDİRMƏ
 ======================================== */
-.text-success {
-    color: #2ecc71;
-    font-weight: bold;
-}
-
-.text-danger {
-    color: #e74c3c;
-    font-weight: bold;
-}
+.text-success { color: var(--success-color); font-weight: 700; }
+.text-danger { color: var(--danger-color); font-weight: 700; }
 
 
 /* ========================================
    SCROLLBAR
 ======================================== */
-.result-list-container::-webkit-scrollbar {
-    width: 8px;
-}
+.result-list-container::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar { width: 6px; }
 
-.result-list-container::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
+.result-list-container::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track { background: transparent; }
 
-.result-list-container::-webkit-scrollbar-thumb {
-    background: var(--btn-bg);
+.result-list-container::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
     border-radius: 10px;
 }
+
+.result-list-container::-webkit-scrollbar-thumb:hover,
+.sidebar::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
 
 
 /* ========================================
    RESPONSİVE DİZAYN
 ======================================== */
+@media (max-width: 800px) {
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .sidebar {
+        width: 95%;
+        max-height: 35vh;
+        margin-bottom: 20px;
+        position: static;
+    }
+}
+
 @media (max-width: 600px) {
+    .main-wrapper {
+        margin-top: 0;
+        gap: 0;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-radius: 0;
+        max-height: 30vh;
+    }
+
     .quiz-container {
-        padding: 20px;
+        padding: 30px 20px;
+        width: 100%;
+        border-radius: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .answer-btn {
-        width: 60px;
-        height: 60px;
+        width: 65px;
+        height: 65px;
         font-size: 1.5em;
     }
 
-    .answer-buttons {
-        gap: 10px;
-    }
-
     .sual-text {
-        font-size: 1.2em;
-        padding: 20px;
+        font-size: 1.15em;
+        padding: 25px 20px;
     }
 
-    .quiz-controls {
-        flex-direction: column;
-    }
-
-    .control-btn {
-        width: 100%;
-    }
+    .quiz-controls { flex-direction: column; }
+    .control-btn { width: 100%; }
 }
