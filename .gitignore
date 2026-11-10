@@ -1,0 +1,27 @@
+# Python bytecode və keş
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual mühitlər
+venv/
+.venv/
+env/
+ENV/
+
+# Test və əhatəlilik (coverage)
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE və redaktorlar
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS faylları
+.DS_Store
+Thumbs.db
+

@@ -5,12 +5,13 @@ import os
 app = Flask(__name__)
 app.secret_key = "bomba_acar"
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BUTUN_SUALAR = []
 DUZGUN_CAVABLAR = {}
 
 def suallari_yukle():
     global BUTUN_SUALAR
-    sualar_path = os.path.join("txt", "sualar.txt")
+    sualar_path = os.path.join(BASE_DIR, "txt", "sualar.txt")
     try:
         with open(sualar_path, "r", encoding="utf-8") as f:
             sualar = []
@@ -33,7 +34,7 @@ def suallari_yukle():
 
 def cavablari_yukle():
     global DUZGUN_CAVABLAR
-    cavablar_path = os.path.join("cavablar", "cavablar.txt")
+    cavablar_path = os.path.join(BASE_DIR, "cavablar", "cavablar.txt")
     try:
         with open(cavablar_path, "r", encoding="utf-8") as f:
             for line in f:
